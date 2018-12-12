@@ -1,10 +1,10 @@
 ﻿using System.Windows.Forms;
 
-namespace HastaneOtomasyon
+namespace HastaneOtomasyon.Forms
 {
-    public partial class FrmHasta : Form
+    public partial class FrmDoktor : Form
     {
-        public FrmHasta()
+        public FrmDoktor()
         {
             InitializeComponent();
         }

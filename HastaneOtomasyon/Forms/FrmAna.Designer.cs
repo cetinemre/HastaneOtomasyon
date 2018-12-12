@@ -1,4 +1,4 @@
-﻿namespace HastaneOtomasyon
+﻿namespace HastaneOtomasyon.Forms
 {
     partial class FrmAna
     {

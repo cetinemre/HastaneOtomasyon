@@ -1,6 +1,6 @@
-﻿namespace HastaneOtomasyon
+﻿namespace HastaneOtomasyon.Forms
 {
-    partial class FrmDoktor
+    partial class FrmPersonel
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FrmDoktor
+            // FrmPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FrmDoktor";
-            this.Text = "Doktor İşlemleri";
+            this.Name = "FrmPersonel";
+            this.Text = "Personel İşlemleri";
             this.ResumeLayout(false);
 
         }
