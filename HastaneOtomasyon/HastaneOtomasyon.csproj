@@ -45,39 +45,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAna.cs">
+    <Compile Include="Forms\FrmAna.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAna.Designer.cs">
+    <Compile Include="Forms\FrmAna.Designer.cs">
       <DependentUpon>FrmAna.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDoktor.cs">
+    <Compile Include="Forms\FrmDoktor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDoktor.Designer.cs">
+    <Compile Include="Forms\FrmDoktor.Designer.cs">
       <DependentUpon>FrmDoktor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHasta.cs">
+    <Compile Include="Forms\FrmHasta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHasta.Designer.cs">
+    <Compile Include="Forms\FrmHasta.Designer.cs">
       <DependentUpon>FrmHasta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHemsire.cs">
+    <Compile Include="Forms\FrmHemsire.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHemsire.Designer.cs">
+    <Compile Include="Forms\FrmHemsire.Designer.cs">
       <DependentUpon>FrmHemsire.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPersonel.cs">
+    <Compile Include="Forms\FrmPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPersonel.Designer.cs">
+    <Compile Include="Forms\FrmPersonel.Designer.cs">
       <DependentUpon>FrmPersonel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAna.resx">
+    <EmbeddedResource Include="Forms\FrmAna.resx">
       <DependentUpon>FrmAna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -101,6 +101,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstracts\" />
+    <Folder Include="Concretes\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
