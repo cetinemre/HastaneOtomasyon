@@ -107,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -122,7 +123,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\Graphicloads-Medical-Health-Doctor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-Medical-Health-Patient.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webalys-Kameleon.pics-Nurse-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webalys-Kameleon.pics-Road-Worker-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-100-Flat-2-Hospital-bed.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

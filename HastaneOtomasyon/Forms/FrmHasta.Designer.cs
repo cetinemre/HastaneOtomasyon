@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHasta));
             this.txtDT = new System.Windows.Forms.TextBox();
             this.txtTCNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
@@ -135,9 +136,11 @@
             this.Controls.Add(this.lblTCNo);
             this.Controls.Add(this.lblSoyad);
             this.Controls.Add(this.lblAd);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmHasta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta İşlemleri";
             this.ResumeLayout(false);
             this.PerformLayout();

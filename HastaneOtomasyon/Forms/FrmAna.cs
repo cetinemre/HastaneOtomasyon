@@ -59,5 +59,7 @@ namespace HastaneOtomasyon.Forms
                 
             }
         }
+
+        
     }
 }
