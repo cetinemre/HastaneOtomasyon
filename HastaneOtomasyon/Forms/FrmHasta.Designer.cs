@@ -135,6 +135,8 @@
             this.Controls.Add(this.lblTCNo);
             this.Controls.Add(this.lblSoyad);
             this.Controls.Add(this.lblAd);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmHasta";
             this.Text = "Hasta İşlemleri";
             this.ResumeLayout(false);
