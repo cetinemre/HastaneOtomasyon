@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace HastaneOtomasyon
+namespace HastaneOtomasyon.Forms
 {
     public partial class FrmPersonel : Form
     {

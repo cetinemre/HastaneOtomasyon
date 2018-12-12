@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace HastaneOtomasyon
+namespace HastaneOtomasyon.Forms
 {
     public partial class FrmAna : Form
     {

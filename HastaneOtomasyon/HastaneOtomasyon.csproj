@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\Calisan.cs" />
     <Compile Include="Forms\FrmAna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,7 +104,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Abstracts\" />
     <Folder Include="Concretes\" />
     <Folder Include="Resources\" />
   </ItemGroup>
