@@ -82,18 +82,10 @@
     <EmbeddedResource Include="Forms\FrmAna.resx">
       <DependentUpon>FrmAna.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDoktor.resx">
-      <DependentUpon>FrmDoktor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmHasta.resx">
-      <DependentUpon>FrmHasta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmHemsire.resx">
-      <DependentUpon>FrmHemsire.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPersonel.resx">
-      <DependentUpon>FrmPersonel.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDoktor.resx" />
+    <EmbeddedResource Include="Forms\FrmHasta.resx" />
+    <EmbeddedResource Include="Forms\FrmHemsire.resx" />
+    <EmbeddedResource Include="Forms\FrmPersonel.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
