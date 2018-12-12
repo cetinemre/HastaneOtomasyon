@@ -46,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstracts\Calisan.cs" />
+    <Compile Include="Abstracts\Doktor.cs" />
+    <Compile Include="Abstracts\Hemsire.cs" />
+    <Compile Include="Abstracts\Personel.cs" />
     <Compile Include="Concretes\Hasta.cs" />
     <Compile Include="Forms\FrmAna.cs">
       <SubType>Form</SubType>
