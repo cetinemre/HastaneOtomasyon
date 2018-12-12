@@ -43,6 +43,7 @@ namespace HastaneOtomasyon.Forms
                 _frmHemsire.WindowState = FormWindowState.Maximized;
                 _frmHemsire.MdiParent = this;
                 _frmHemsire.Show();
+                
             }
         }
 
@@ -54,6 +55,7 @@ namespace HastaneOtomasyon.Forms
                 _frmPersonel.WindowState = FormWindowState.Maximized;
                 _frmPersonel.MdiParent = this;
                 _frmPersonel.Show();
+                
             }
         }
     }
