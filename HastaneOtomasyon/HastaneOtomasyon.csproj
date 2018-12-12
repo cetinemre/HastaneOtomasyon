@@ -45,14 +45,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmAna.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmAna.Designer.cs">
+      <DependentUpon>FrmAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktor.Designer.cs">
+      <DependentUpon>FrmDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHasta.Designer.cs">
+      <DependentUpon>FrmHasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHemsire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHemsire.Designer.cs">
+      <DependentUpon>FrmHemsire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAna.resx">
+      <DependentUpon>FrmAna.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
