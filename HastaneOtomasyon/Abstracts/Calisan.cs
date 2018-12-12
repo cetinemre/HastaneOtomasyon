@@ -1,45 +1,35 @@
-﻿using System;
-
-namespace HastaneOtomasyon.Abstracts
+﻿namespace HastaneOtomasyon.Abstracts
 {
-    public abstract class Calisan
-   {
-       private string _tcNo, _ad, _soyad, _brans;
-       private DateTime _dogumTarihi;
-       private decimal _maas;
+    public abstract class Calisan:Kisi
+    {
+        private string _brans;
+        private decimal _maas;
 
-       public string TcNo
-       {
-           get => _tcNo;
-           set => _tcNo = value;
-       }
-
-       public string Ad
-       {
-           get => _ad;
-           set => _ad = value;
-       }
-        public string Soyad
-        {
-            get => _soyad;
-            set => _soyad = value;
-        }
-        public string Brans
-        {
-            get => _brans;
-            set => _brans = value;
-        }
-        public DateTime DogumTarihi
-        {
-            get => _dogumTarihi;
-            set => _dogumTarihi = value;
-        }
+     
         public decimal Maas
         {
             get => _maas;
             set => _maas = value;
         }
 
-
+       public string Brans
+       {
+           get => _brans;
+           set => _brans = value;
+       }
     }
+
+    public enum Maaslar
+    {
+        OrtopediDrMaas = 7000,
+        DisDrMaas = 8000,
+        KbbDrMaas = 5000,
+        HastaBakici = 2500,
+        Muhasebe = 3000,
+        Hizmetli = 1605,
+        AnesteziHemsiresi = 3500,
+        PsikiyatriHemsiresi = 2500,
+        Bashemsire = 4000
+    }
+
 }

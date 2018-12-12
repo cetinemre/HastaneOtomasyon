@@ -2,7 +2,7 @@
 
 namespace HastaneOtomasyon.Concretes
 {
-    public class Hasta:Kisi
+    public class PsikiyatriHemsiresi:Hemsire
     {
     }
 }
