@@ -35,75 +35,106 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbBrans = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnDoktorEkle = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbBrans = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(92, 6);
+            this.txtAd.Location = new System.Drawing.Point(123, 7);
+            this.txtAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(126, 20);
+            this.txtAd.Size = new System.Drawing.Size(167, 22);
             this.txtAd.TabIndex = 0;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(92, 30);
+            this.txtSoyad.Location = new System.Drawing.Point(123, 37);
+            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(126, 20);
+            this.txtSoyad.Size = new System.Drawing.Size(167, 22);
             this.txtSoyad.TabIndex = 1;
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(92, 54);
+            this.txtTcNo.Location = new System.Drawing.Point(123, 66);
+            this.txtTcNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(126, 20);
+            this.txtTcNo.Size = new System.Drawing.Size(167, 22);
             this.txtTcNo.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.Size = new System.Drawing.Size(25, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ad";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 33);
+            this.label2.Location = new System.Drawing.Point(16, 41);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Soyad";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 57);
+            this.label3.Location = new System.Drawing.Point(16, 70);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "TC No";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 81);
+            this.label4.Location = new System.Drawing.Point(16, 100);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.Size = new System.Drawing.Size(89, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "DoğumTarihi";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(123, 98);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(167, 22);
+            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.Value = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
+            // 
+            // btnDoktorEkle
+            // 
+            this.btnDoktorEkle.Location = new System.Drawing.Point(191, 161);
+            this.btnDoktorEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDoktorEkle.Name = "btnDoktorEkle";
+            this.btnDoktorEkle.Size = new System.Drawing.Size(100, 28);
+            this.btnDoktorEkle.TabIndex = 5;
+            this.btnDoktorEkle.Text = "Ekle";
+            this.btnDoktorEkle.UseVisualStyleBackColor = true;
+            this.btnDoktorEkle.Click += new System.EventHandler(this.btnDoktorEkle_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 107);
+            this.label5.Location = new System.Drawing.Point(16, 132);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 1;
             this.label5.Text = "Branşı";
             // 
@@ -111,37 +142,17 @@
             // 
             this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBrans.FormattingEnabled = true;
-            this.cbBrans.Location = new System.Drawing.Point(92, 104);
+            this.cbBrans.Location = new System.Drawing.Point(123, 128);
+            this.cbBrans.Margin = new System.Windows.Forms.Padding(4);
             this.cbBrans.Name = "cbBrans";
-            this.cbBrans.Size = new System.Drawing.Size(126, 21);
+            this.cbBrans.Size = new System.Drawing.Size(167, 24);
             this.cbBrans.TabIndex = 4;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 80);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
-            this.dateTimePicker1.TabIndex = 3;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
-            // 
-            // btnDoktorEkle
-            // 
-            this.btnDoktorEkle.Location = new System.Drawing.Point(143, 131);
-            this.btnDoktorEkle.Name = "btnDoktorEkle";
-            this.btnDoktorEkle.Size = new System.Drawing.Size(75, 23);
-            this.btnDoktorEkle.TabIndex = 5;
-            this.btnDoktorEkle.Text = "Ekle";
-            this.btnDoktorEkle.UseVisualStyleBackColor = true;
-            this.btnDoktorEkle.Click += new System.EventHandler(this.btnDoktorEkle_Click);
             // 
             // FrmDoktorEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(236, 169);
+            this.ClientSize = new System.Drawing.Size(315, 208);
             this.Controls.Add(this.btnDoktorEkle);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cbBrans);
@@ -153,6 +164,7 @@
             this.Controls.Add(this.txtTcNo);
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtAd);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDoktorEkle";
@@ -174,9 +186,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbBrans;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnDoktorEkle;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbBrans;
     }
 }

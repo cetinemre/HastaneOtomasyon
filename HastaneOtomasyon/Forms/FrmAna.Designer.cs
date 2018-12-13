@@ -118,22 +118,23 @@
             // doktorToolStripMenuItem
             // 
             this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
-            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
             this.doktorToolStripMenuItem.Text = "Doktor";
             this.doktorToolStripMenuItem.Click += new System.EventHandler(this.doktorToolStripMenuItem_Click);
             // 
             // hemşireToolStripMenuItem
             // 
             this.hemşireToolStripMenuItem.Name = "hemşireToolStripMenuItem";
-            this.hemşireToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.hemşireToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
             this.hemşireToolStripMenuItem.Text = "Hemşire";
             this.hemşireToolStripMenuItem.Click += new System.EventHandler(this.hemşireToolStripMenuItem_Click);
             // 
             // personelToolStripMenuItem
             // 
             this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
-            this.personelToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.personelToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
             this.personelToolStripMenuItem.Text = "Personel";
+            this.personelToolStripMenuItem.Click += new System.EventHandler(this.personelToolStripMenuItem_Click);
             // 
             // silToolStripMenuItem
             // 
@@ -164,6 +165,7 @@
             this.personelToolStripMenuItem1.Name = "personelToolStripMenuItem1";
             this.personelToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.personelToolStripMenuItem1.Text = "Personel";
+            this.personelToolStripMenuItem1.Click += new System.EventHandler(this.personelToolStripMenuItem1_Click);
             // 
             // güncelleToolStripMenuItem
             // 
@@ -194,6 +196,7 @@
             this.personelToolStripMenuItem2.Name = "personelToolStripMenuItem2";
             this.personelToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
             this.personelToolStripMenuItem2.Text = "Personel";
+            this.personelToolStripMenuItem2.Click += new System.EventHandler(this.personelToolStripMenuItem2_Click);
             // 
             // FrmAna
             // 

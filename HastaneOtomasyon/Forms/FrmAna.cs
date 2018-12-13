@@ -18,7 +18,10 @@ namespace HastaneOtomasyon.Forms
         private FrmDoktorGuncelle frmDoktorGuncelle;
         private FrmHemsireEkle frmHemsireEkle;
         private FrmHemsireSil frmHemsireSil;
-        private FrmHemsireGuncelle frmHemsireGuncelle;       
+        private FrmHemsireGuncelle frmHemsireGuncelle;
+        private FrmPersonelEkle frmPersoneEkle;
+        private FrmPersonelSil frmPersoneSil;
+        private FrmPersonelGuncelle frmPersoneGuncelle;
         private void hastaIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_frmHasta == null || _frmHasta.IsDisposed)
@@ -104,6 +107,24 @@ namespace HastaneOtomasyon.Forms
         {
             frmHemsireGuncelle = new FrmHemsireGuncelle();
             frmHemsireGuncelle.ShowDialog();
+        }
+
+        private void personelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPersoneEkle = new FrmPersonelEkle();
+            frmPersoneEkle.ShowDialog();
+        }
+
+        private void personelToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPersoneSil = new FrmPersonelSil();
+            frmPersoneSil.ShowDialog();
+        }
+
+        private void personelToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmPersoneGuncelle = new FrmPersonelGuncelle();
+            frmPersoneGuncelle.ShowDialog();
         }
     }
 }
