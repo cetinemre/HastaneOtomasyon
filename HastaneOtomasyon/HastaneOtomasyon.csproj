@@ -73,6 +73,12 @@
     <Compile Include="Forms\FrmDoktor.Designer.cs">
       <DependentUpon>FrmDoktor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmDoktorEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDoktorEkle.Designer.cs">
+      <DependentUpon>FrmDoktorEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmHasta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
       <DependentUpon>FrmAna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmDoktor.resx" />
+    <EmbeddedResource Include="Forms\FrmDoktorEkle.resx">
+      <DependentUpon>FrmDoktorEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmHasta.resx" />
     <EmbeddedResource Include="Forms\FrmHemsire.resx" />
     <EmbeddedResource Include="Forms\FrmPersonel.resx" />
