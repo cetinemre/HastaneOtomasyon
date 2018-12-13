@@ -13,11 +13,6 @@ namespace HastaneOtomasyon.Forms
             InitializeComponent();
         }
 
-        private void FrmDoktorEkle_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnDoktorEkle_Click(object sender, EventArgs e)
         {
             try
@@ -29,6 +24,9 @@ namespace HastaneOtomasyon.Forms
             } 
         }
 
-       
+        private void FrmDoktorEkle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
