@@ -44,7 +44,7 @@
             // txtAd
             // 
             this.txtAd.Location = new System.Drawing.Point(123, 7);
-            this.txtAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(167, 22);
             this.txtAd.TabIndex = 0;
@@ -52,7 +52,7 @@
             // txtSoyad
             // 
             this.txtSoyad.Location = new System.Drawing.Point(123, 37);
-            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(167, 22);
             this.txtSoyad.TabIndex = 1;
@@ -60,7 +60,7 @@
             // txtTcNo
             // 
             this.txtTcNo.Location = new System.Drawing.Point(123, 66);
-            this.txtTcNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTcNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.Size = new System.Drawing.Size(167, 22);
             this.txtTcNo.TabIndex = 2;
@@ -109,7 +109,7 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(123, 98);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -120,7 +120,7 @@
             // btnDoktorEkle
             // 
             this.btnDoktorEkle.Location = new System.Drawing.Point(191, 161);
-            this.btnDoktorEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDoktorEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDoktorEkle.Name = "btnDoktorEkle";
             this.btnDoktorEkle.Size = new System.Drawing.Size(100, 28);
             this.btnDoktorEkle.TabIndex = 5;
@@ -164,7 +164,8 @@
             this.Controls.Add(this.txtTcNo);
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtAd);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDoktorEkle";

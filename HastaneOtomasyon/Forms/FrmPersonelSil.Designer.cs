@@ -59,9 +59,12 @@
             this.ClientSize = new System.Drawing.Size(300, 212);
             this.Controls.Add(this.lstboxPersonel);
             this.Controls.Add(this.btnDoktorSil);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmPersonelSil";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personeli Silme";
             this.ResumeLayout(false);
 

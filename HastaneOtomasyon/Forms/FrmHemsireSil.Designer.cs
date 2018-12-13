@@ -57,9 +57,12 @@
             this.ClientSize = new System.Drawing.Size(271, 196);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.listBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmHemsireSil";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHemsireSil";
             this.ResumeLayout(false);
 
