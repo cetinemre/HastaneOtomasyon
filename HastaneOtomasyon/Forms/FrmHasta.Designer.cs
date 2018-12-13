@@ -40,11 +40,11 @@
             this.lstDoktor = new System.Windows.Forms.ListBox();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.randevuSaatleri1 = new HastaneOtomasyon.Forms.RandevuSaatleri();
             this.gbServis = new System.Windows.Forms.GroupBox();
             this.gbDoktor = new System.Windows.Forms.GroupBox();
             this.gbSaat = new System.Windows.Forms.GroupBox();
             this.gbHasta = new System.Windows.Forms.GroupBox();
+            this.randevuSaatleri1 = new HastaneOtomasyon.Forms.RandevuSaatleri();
             this.gbServis.SuspendLayout();
             this.gbDoktor.SuspendLayout();
             this.gbSaat.SuspendLayout();
@@ -144,13 +144,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
             this.dateTimePicker1.TabIndex = 3;
             // 
-            // randevuSaatleri1
-            // 
-            this.randevuSaatleri1.Location = new System.Drawing.Point(6, 13);
-            this.randevuSaatleri1.Name = "randevuSaatleri1";
-            this.randevuSaatleri1.Size = new System.Drawing.Size(345, 159);
-            this.randevuSaatleri1.TabIndex = 7;
-            // 
             // gbServis
             // 
             this.gbServis.Controls.Add(this.lstServis);
@@ -201,6 +194,13 @@
             this.gbHasta.TabIndex = 11;
             this.gbHasta.TabStop = false;
             this.gbHasta.Text = "Hasta Bilgileri";
+            // 
+            // randevuSaatleri1
+            // 
+            this.randevuSaatleri1.Location = new System.Drawing.Point(6, 13);
+            this.randevuSaatleri1.Name = "randevuSaatleri1";
+            this.randevuSaatleri1.Size = new System.Drawing.Size(345, 159);
+            this.randevuSaatleri1.TabIndex = 7;
             // 
             // FrmHasta
             // 
