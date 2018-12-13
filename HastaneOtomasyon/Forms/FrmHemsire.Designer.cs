@@ -29,15 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHemsire));
-            this.duzenleme1 = new HastaneOtomasyon.Forms.Duzenleme();
             this.SuspendLayout();
-            // 
-            // duzenleme1
-            // 
-            this.duzenleme1.Location = new System.Drawing.Point(-3, -2);
-            this.duzenleme1.Name = "duzenleme1";
-            this.duzenleme1.Size = new System.Drawing.Size(571, 30);
-            this.duzenleme1.TabIndex = 0;
             // 
             // FrmHemsire
             // 
@@ -45,7 +37,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(804, 461);
-            this.Controls.Add(this.duzenleme1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHemsire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -55,7 +46,5 @@
         }
 
         #endregion
-
-        private Duzenleme duzenleme1;
     }
 }

@@ -34,6 +34,18 @@
             this.doctorIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hemsireIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ekleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.güncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ekleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.silToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.güncelleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ekleToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.silToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.güncellemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeleToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +75,11 @@
             // 
             // doctorIslemleriToolStripMenuItem
             // 
+            this.doctorIslemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ekleToolStripMenuItem,
+            this.silToolStripMenuItem,
+            this.güncelleToolStripMenuItem,
+            this.listeleToolStripMenuItem});
             this.doctorIslemleriToolStripMenuItem.Image = global::HastaneOtomasyon.Properties.Resources.Graphicloads_Medical_Health_Doctor;
             this.doctorIslemleriToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.doctorIslemleriToolStripMenuItem.Name = "doctorIslemleriToolStripMenuItem";
@@ -72,6 +89,11 @@
             // 
             // hemsireIslemleriToolStripMenuItem
             // 
+            this.hemsireIslemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ekleToolStripMenuItem1,
+            this.silToolStripMenuItem1,
+            this.güncelleToolStripMenuItem1,
+            this.listeleToolStripMenuItem1});
             this.hemsireIslemleriToolStripMenuItem.Image = global::HastaneOtomasyon.Properties.Resources.Webalys_Kameleon_pics_Nurse_1;
             this.hemsireIslemleriToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.hemsireIslemleriToolStripMenuItem.Name = "hemsireIslemleriToolStripMenuItem";
@@ -81,12 +103,89 @@
             // 
             // personelIslemleriToolStripMenuItem
             // 
+            this.personelIslemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ekleToolStripMenuItem2,
+            this.silToolStripMenuItem2,
+            this.güncellemeToolStripMenuItem,
+            this.listeleToolStripMenuItem2});
             this.personelIslemleriToolStripMenuItem.Image = global::HastaneOtomasyon.Properties.Resources.Webalys_Kameleon_pics_Road_Worker_1;
             this.personelIslemleriToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.personelIslemleriToolStripMenuItem.Name = "personelIslemleriToolStripMenuItem";
             this.personelIslemleriToolStripMenuItem.Size = new System.Drawing.Size(143, 36);
             this.personelIslemleriToolStripMenuItem.Text = "Personel Islemleri";
             this.personelIslemleriToolStripMenuItem.Click += new System.EventHandler(this.personelIslemleriToolStripMenuItem_Click);
+            // 
+            // ekleToolStripMenuItem
+            // 
+            this.ekleToolStripMenuItem.Name = "ekleToolStripMenuItem";
+            this.ekleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ekleToolStripMenuItem.Text = "Ekle";
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.silToolStripMenuItem.Text = "Sil";
+            // 
+            // güncelleToolStripMenuItem
+            // 
+            this.güncelleToolStripMenuItem.Name = "güncelleToolStripMenuItem";
+            this.güncelleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.güncelleToolStripMenuItem.Text = "Güncelle";
+            // 
+            // listeleToolStripMenuItem
+            // 
+            this.listeleToolStripMenuItem.Name = "listeleToolStripMenuItem";
+            this.listeleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listeleToolStripMenuItem.Text = "Listele";
+            // 
+            // ekleToolStripMenuItem1
+            // 
+            this.ekleToolStripMenuItem1.Name = "ekleToolStripMenuItem1";
+            this.ekleToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ekleToolStripMenuItem1.Text = "Ekle";
+            // 
+            // silToolStripMenuItem1
+            // 
+            this.silToolStripMenuItem1.Name = "silToolStripMenuItem1";
+            this.silToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.silToolStripMenuItem1.Text = "Sil";
+            // 
+            // güncelleToolStripMenuItem1
+            // 
+            this.güncelleToolStripMenuItem1.Name = "güncelleToolStripMenuItem1";
+            this.güncelleToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.güncelleToolStripMenuItem1.Text = "Güncelle";
+            // 
+            // listeleToolStripMenuItem1
+            // 
+            this.listeleToolStripMenuItem1.Name = "listeleToolStripMenuItem1";
+            this.listeleToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.listeleToolStripMenuItem1.Text = "Listele";
+            // 
+            // ekleToolStripMenuItem2
+            // 
+            this.ekleToolStripMenuItem2.Name = "ekleToolStripMenuItem2";
+            this.ekleToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.ekleToolStripMenuItem2.Text = "Ekle";
+            // 
+            // silToolStripMenuItem2
+            // 
+            this.silToolStripMenuItem2.Name = "silToolStripMenuItem2";
+            this.silToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.silToolStripMenuItem2.Text = "Sil";
+            // 
+            // güncellemeToolStripMenuItem
+            // 
+            this.güncellemeToolStripMenuItem.Name = "güncellemeToolStripMenuItem";
+            this.güncellemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.güncellemeToolStripMenuItem.Text = "Güncelle";
+            // 
+            // listeleToolStripMenuItem2
+            // 
+            this.listeleToolStripMenuItem2.Name = "listeleToolStripMenuItem2";
+            this.listeleToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.listeleToolStripMenuItem2.Text = "Listele";
             // 
             // FrmAna
             // 
@@ -118,5 +217,17 @@
         private System.Windows.Forms.ToolStripMenuItem doctorIslemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hemsireIslemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelIslemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ekleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem güncelleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listeleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ekleToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem güncelleToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem listeleToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ekleToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem güncellemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listeleToolStripMenuItem2;
     }
 }
