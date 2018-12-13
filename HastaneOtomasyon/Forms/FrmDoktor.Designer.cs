@@ -29,16 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktor));
-            this.duzenleme1 = new HastaneOtomasyon.Forms.Duzenleme();
             this.SuspendLayout();
-            // 
-            // duzenleme1
-            // 
-            this.duzenleme1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.duzenleme1.Location = new System.Drawing.Point(-2, -1);
-            this.duzenleme1.Name = "duzenleme1";
-            this.duzenleme1.Size = new System.Drawing.Size(571, 30);
-            this.duzenleme1.TabIndex = 0;
+           
             // 
             // FrmDoktor
             // 
@@ -51,11 +43,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor İşlemleri";
             this.ResumeLayout(false);
-
         }
-
         #endregion
 
-        private Duzenleme duzenleme1;
     }
 }
