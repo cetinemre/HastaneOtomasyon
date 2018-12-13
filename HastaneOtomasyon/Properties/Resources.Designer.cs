@@ -83,9 +83,29 @@ namespace HastaneOtomasyon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Graphicloads_Medical_Health_Hospital {
+            get {
+                object obj = ResourceManager.GetObject("Graphicloads-Medical-Health-Hospital", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Graphicloads_Medical_Health_Patient {
             get {
                 object obj = ResourceManager.GetObject("Graphicloads-Medical-Health-Patient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icons_Land_Vista_People_Office_Customer_Female_Light {
+            get {
+                object obj = ResourceManager.GetObject("Icons-Land-Vista-People-Office-Customer-Female-Light", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

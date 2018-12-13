@@ -219,5 +219,11 @@
   <ItemGroup>
     <None Include="Resources\Graphicloads-100-Flat-2-Hospital-bed.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Vista-People-Office-Customer-Female-Light.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-Medical-Health-Hospital.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
