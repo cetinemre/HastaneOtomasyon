@@ -59,6 +59,9 @@ namespace HastaneOtomasyon.Forms
             }
         }
 
-        
+        private void FrmAna_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
