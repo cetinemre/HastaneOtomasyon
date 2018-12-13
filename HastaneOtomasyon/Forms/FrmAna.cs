@@ -13,6 +13,7 @@ namespace HastaneOtomasyon.Forms
         private FrmHasta _frmHasta;
         private FrmHemsire _frmHemsire;
         private FrmPersonel _frmPersonel;
+        private FrmDoktorEkle frmDoktorEkle;
         private void hastaIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_frmHasta == null || _frmHasta.IsDisposed)
@@ -62,6 +63,12 @@ namespace HastaneOtomasyon.Forms
         private void FrmAna_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void doktorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoktorEkle = new FrmDoktorEkle();
+            frmDoktorEkle.ShowDialog();
         }
     }
 }

@@ -118,6 +118,7 @@
             this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
             this.doktorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.doktorToolStripMenuItem.Text = "Doktor";
+            this.doktorToolStripMenuItem.Click += new System.EventHandler(this.doktorToolStripMenuItem_Click);
             // 
             // hemşireToolStripMenuItem
             // 
