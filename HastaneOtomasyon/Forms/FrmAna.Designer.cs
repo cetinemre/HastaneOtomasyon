@@ -48,39 +48,43 @@
             this.personelIslemleriToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(830, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(830, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // hastaIslemleriToolStripMenuItem
             // 
             this.hastaIslemleriToolStripMenuItem.Image = global::HastaneOtomasyon.Properties.Resources.Graphicloads_Medical_Health_Patient;
+            this.hastaIslemleriToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.hastaIslemleriToolStripMenuItem.Name = "hastaIslemleriToolStripMenuItem";
-            this.hastaIslemleriToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
+            this.hastaIslemleriToolStripMenuItem.Size = new System.Drawing.Size(128, 36);
             this.hastaIslemleriToolStripMenuItem.Text = "Hasta Islemleri";
             this.hastaIslemleriToolStripMenuItem.Click += new System.EventHandler(this.hastaIslemleriToolStripMenuItem_Click);
             // 
             // doctorIslemleriToolStripMenuItem
             // 
             this.doctorIslemleriToolStripMenuItem.Image = global::HastaneOtomasyon.Properties.Resources.Graphicloads_Medical_Health_Doctor;
+            this.doctorIslemleriToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.doctorIslemleriToolStripMenuItem.Name = "doctorIslemleriToolStripMenuItem";
-            this.doctorIslemleriToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.doctorIslemleriToolStripMenuItem.Size = new System.Drawing.Size(134, 36);
             this.doctorIslemleriToolStripMenuItem.Text = "Doktor Islemleri";
             this.doctorIslemleriToolStripMenuItem.Click += new System.EventHandler(this.doctorIslemleriToolStripMenuItem_Click);
             // 
             // hemsireIslemleriToolStripMenuItem
             // 
             this.hemsireIslemleriToolStripMenuItem.Image = global::HastaneOtomasyon.Properties.Resources.Webalys_Kameleon_pics_Nurse_1;
+            this.hemsireIslemleriToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.hemsireIslemleriToolStripMenuItem.Name = "hemsireIslemleriToolStripMenuItem";
-            this.hemsireIslemleriToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.hemsireIslemleriToolStripMenuItem.Size = new System.Drawing.Size(142, 36);
             this.hemsireIslemleriToolStripMenuItem.Text = "Hemsire Islemleri";
             this.hemsireIslemleriToolStripMenuItem.Click += new System.EventHandler(this.hemsireIslemleriToolStripMenuItem_Click);
             // 
             // personelIslemleriToolStripMenuItem
             // 
             this.personelIslemleriToolStripMenuItem.Image = global::HastaneOtomasyon.Properties.Resources.Webalys_Kameleon_pics_Road_Worker_1;
+            this.personelIslemleriToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.personelIslemleriToolStripMenuItem.Name = "personelIslemleriToolStripMenuItem";
-            this.personelIslemleriToolStripMenuItem.Size = new System.Drawing.Size(127, 20);
+            this.personelIslemleriToolStripMenuItem.Size = new System.Drawing.Size(143, 36);
             this.personelIslemleriToolStripMenuItem.Text = "Personel Islemleri";
             this.personelIslemleriToolStripMenuItem.Click += new System.EventHandler(this.personelIslemleriToolStripMenuItem_Click);
             // 
