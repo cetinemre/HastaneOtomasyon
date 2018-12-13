@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHasta));
-            this.txtDT = new System.Windows.Forms.TextBox();
             this.txtTCNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
@@ -42,13 +41,6 @@
             this.btnKaydet = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // txtDT
-            // 
-            this.txtDT.Location = new System.Drawing.Point(101, 164);
-            this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(100, 20);
-            this.txtDT.TabIndex = 6;
             // 
             // txtTCNo
             // 
@@ -136,7 +128,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(89, 84);
+            this.dateTimePicker1.Location = new System.Drawing.Point(102, 160);
             this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
@@ -146,10 +138,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnKaydet);
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(804, 454);
+            this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lstDoktor);
             this.Controls.Add(this.lstServis);
