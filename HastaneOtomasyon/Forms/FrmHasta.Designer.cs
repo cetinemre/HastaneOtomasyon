@@ -53,21 +53,22 @@
             // 
             // txtTCNo
             // 
-            this.txtTCNo.Location = new System.Drawing.Point(94, 70);
+            this.txtTCNo.Location = new System.Drawing.Point(90, 121);
+            this.txtTCNo.MaxLength = 11;
             this.txtTCNo.Name = "txtTCNo";
             this.txtTCNo.Size = new System.Drawing.Size(100, 20);
             this.txtTCNo.TabIndex = 2;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(94, 44);
+            this.txtSoyad.Location = new System.Drawing.Point(90, 95);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(100, 20);
             this.txtSoyad.TabIndex = 1;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(94, 18);
+            this.txtAd.Location = new System.Drawing.Point(90, 69);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(100, 20);
             this.txtAd.TabIndex = 0;
@@ -75,7 +76,7 @@
             // lblDT
             // 
             this.lblDT.AutoSize = true;
-            this.lblDT.Location = new System.Drawing.Point(15, 99);
+            this.lblDT.Location = new System.Drawing.Point(11, 150);
             this.lblDT.Name = "lblDT";
             this.lblDT.Size = new System.Drawing.Size(70, 13);
             this.lblDT.TabIndex = 2;
@@ -84,7 +85,7 @@
             // lblTCNo
             // 
             this.lblTCNo.AutoSize = true;
-            this.lblTCNo.Location = new System.Drawing.Point(15, 73);
+            this.lblTCNo.Location = new System.Drawing.Point(11, 124);
             this.lblTCNo.Name = "lblTCNo";
             this.lblTCNo.Size = new System.Drawing.Size(35, 13);
             this.lblTCNo.TabIndex = 3;
@@ -93,7 +94,7 @@
             // lblSoyad
             // 
             this.lblSoyad.AutoSize = true;
-            this.lblSoyad.Location = new System.Drawing.Point(15, 47);
+            this.lblSoyad.Location = new System.Drawing.Point(11, 98);
             this.lblSoyad.Name = "lblSoyad";
             this.lblSoyad.Size = new System.Drawing.Size(37, 13);
             this.lblSoyad.TabIndex = 4;
@@ -102,7 +103,7 @@
             // lblAd
             // 
             this.lblAd.AutoSize = true;
-            this.lblAd.Location = new System.Drawing.Point(17, 21);
+            this.lblAd.Location = new System.Drawing.Point(13, 72);
             this.lblAd.Name = "lblAd";
             this.lblAd.Size = new System.Drawing.Size(20, 13);
             this.lblAd.TabIndex = 5;
@@ -126,7 +127,7 @@
             // 
             // btnKaydet
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(94, 122);
+            this.btnKaydet.Location = new System.Drawing.Point(90, 173);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(99, 23);
             this.btnKaydet.TabIndex = 4;
@@ -137,7 +138,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(94, 92);
+            this.dateTimePicker1.Location = new System.Drawing.Point(90, 143);
             this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
@@ -196,7 +197,7 @@
             this.gbHasta.Controls.Add(this.txtTCNo);
             this.gbHasta.Location = new System.Drawing.Point(12, 22);
             this.gbHasta.Name = "gbHasta";
-            this.gbHasta.Size = new System.Drawing.Size(208, 170);
+            this.gbHasta.Size = new System.Drawing.Size(208, 242);
             this.gbHasta.TabIndex = 11;
             this.gbHasta.TabStop = false;
             this.gbHasta.Text = "Hasta Bilgileri";
