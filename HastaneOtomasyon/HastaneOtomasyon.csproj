@@ -61,6 +61,12 @@
     <Compile Include="Concretes\OrtopediDoktoru.cs" />
     <Compile Include="Concretes\PsikiyatriHemsiresi.cs" />
     <Compile Include="Concretes\Randevu.cs" />
+    <Compile Include="Forms\Duzenleme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Duzenleme.Designer.cs">
+      <DependentUpon>Duzenleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmAna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Duzenleme.resx">
+      <DependentUpon>Duzenleme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmAna.resx">
       <DependentUpon>FrmAna.cs</DependentUpon>
     </EmbeddedResource>
