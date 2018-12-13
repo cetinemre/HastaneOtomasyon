@@ -11,7 +11,6 @@ namespace HastaneOtomasyon.Forms
 
         private void btnKaydet_Click(object sender, System.EventArgs e)
         {
-            
         }
     }
 }
