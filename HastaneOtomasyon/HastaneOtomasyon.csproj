@@ -79,6 +79,18 @@
     <Compile Include="Forms\FrmDoktorEkle.Designer.cs">
       <DependentUpon>FrmDoktorEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmDoktorGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDoktorGuncelle.Designer.cs">
+      <DependentUpon>FrmDoktorGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDoktorSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDoktorSil.Designer.cs">
+      <DependentUpon>FrmDoktorSil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmHasta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +123,12 @@
     <EmbeddedResource Include="Forms\FrmDoktor.resx" />
     <EmbeddedResource Include="Forms\FrmDoktorEkle.resx">
       <DependentUpon>FrmDoktorEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDoktorGuncelle.resx">
+      <DependentUpon>FrmDoktorGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDoktorSil.resx">
+      <DependentUpon>FrmDoktorSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmHasta.resx" />
     <EmbeddedResource Include="Forms\FrmHemsire.resx" />
