@@ -52,7 +52,6 @@
     <Compile Include="Abstracts\Personel.cs" />
     <Compile Include="Concretes\AnesteziHemsiresi.cs" />
     <Compile Include="Concretes\BasHemsire.cs" />
-    <Compile Include="Concretes\DisDoktoru.cs" />
     <Compile Include="Concretes\Hasta.cs" />
     <Compile Include="Concretes\HastaBakici.cs" />
     <Compile Include="Concretes\Hizmetli.cs" />
