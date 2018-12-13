@@ -36,19 +36,19 @@
             this.lblTCNo = new System.Windows.Forms.Label();
             this.lblSoyad = new System.Windows.Forms.Label();
             this.lblAd = new System.Windows.Forms.Label();
-            this.lstServis = new System.Windows.Forms.ListBox();
+            this.lstHasta = new System.Windows.Forms.ListBox();
             this.lstDoktor = new System.Windows.Forms.ListBox();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.gbServis = new System.Windows.Forms.GroupBox();
+            this.gbHastaList = new System.Windows.Forms.GroupBox();
             this.gbDoktor = new System.Windows.Forms.GroupBox();
             this.gbSaat = new System.Windows.Forms.GroupBox();
             this.gbHasta = new System.Windows.Forms.GroupBox();
+            this.btnHastaOnayla = new System.Windows.Forms.Button();
+            this.btnDoktorOnayla = new System.Windows.Forms.Button();
+            this.btnRandevuBitir = new System.Windows.Forms.Button();
             this.randevuSaatleri1 = new HastaneOtomasyon.Forms.RandevuSaatleri();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.gbServis.SuspendLayout();
+            this.gbHastaList.SuspendLayout();
             this.gbDoktor.SuspendLayout();
             this.gbSaat.SuspendLayout();
             this.gbHasta.SuspendLayout();
@@ -112,13 +112,13 @@
             this.lblAd.TabIndex = 5;
             this.lblAd.Text = "Ad";
             // 
-            // lstServis
+            // lstHasta
             // 
-            this.lstServis.FormattingEnabled = true;
-            this.lstServis.Location = new System.Drawing.Point(6, 19);
-            this.lstServis.Name = "lstServis";
-            this.lstServis.Size = new System.Drawing.Size(222, 108);
-            this.lstServis.TabIndex = 5;
+            this.lstHasta.FormattingEnabled = true;
+            this.lstHasta.Location = new System.Drawing.Point(6, 19);
+            this.lstHasta.Name = "lstHasta";
+            this.lstHasta.Size = new System.Drawing.Size(222, 108);
+            this.lstHasta.TabIndex = 5;
             // 
             // lstDoktor
             // 
@@ -134,7 +134,7 @@
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(99, 23);
             this.btnKaydet.TabIndex = 4;
-            this.btnKaydet.Text = "Onayla";
+            this.btnKaydet.Text = "Hasta Ekle";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -147,21 +147,21 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
             this.dateTimePicker1.TabIndex = 3;
             // 
-            // gbServis
+            // gbHastaList
             // 
-            this.gbServis.Controls.Add(this.lstServis);
-            this.gbServis.Controls.Add(this.button1);
-            this.gbServis.Location = new System.Drawing.Point(247, 22);
-            this.gbServis.Name = "gbServis";
-            this.gbServis.Size = new System.Drawing.Size(243, 174);
-            this.gbServis.TabIndex = 8;
-            this.gbServis.TabStop = false;
-            this.gbServis.Text = "Servis Seçiniz";
+            this.gbHastaList.Controls.Add(this.btnHastaOnayla);
+            this.gbHastaList.Controls.Add(this.lstHasta);
+            this.gbHastaList.Location = new System.Drawing.Point(247, 22);
+            this.gbHastaList.Name = "gbHastaList";
+            this.gbHastaList.Size = new System.Drawing.Size(243, 174);
+            this.gbHastaList.TabIndex = 8;
+            this.gbHastaList.TabStop = false;
+            this.gbHastaList.Text = "Hasta Seçiniz";
             // 
             // gbDoktor
             // 
+            this.gbDoktor.Controls.Add(this.btnDoktorOnayla);
             this.gbDoktor.Controls.Add(this.lstDoktor);
-            this.gbDoktor.Controls.Add(this.button2);
             this.gbDoktor.Location = new System.Drawing.Point(517, 22);
             this.gbDoktor.Name = "gbDoktor";
             this.gbDoktor.Size = new System.Drawing.Size(242, 174);
@@ -171,11 +171,11 @@
             // 
             // gbSaat
             // 
+            this.gbSaat.Controls.Add(this.btnRandevuBitir);
             this.gbSaat.Controls.Add(this.randevuSaatleri1);
-            this.gbSaat.Controls.Add(this.button3);
-            this.gbSaat.Location = new System.Drawing.Point(12, 202);
+            this.gbSaat.Location = new System.Drawing.Point(12, 211);
             this.gbSaat.Name = "gbSaat";
-            this.gbSaat.Size = new System.Drawing.Size(780, 172);
+            this.gbSaat.Size = new System.Drawing.Size(478, 205);
             this.gbSaat.TabIndex = 10;
             this.gbSaat.TabStop = false;
             this.gbSaat.Text = "Randevu Saati Seciniz";
@@ -198,42 +198,42 @@
             this.gbHasta.TabStop = false;
             this.gbHasta.Text = "Hasta Bilgileri";
             // 
+            // btnHastaOnayla
+            // 
+            this.btnHastaOnayla.Location = new System.Drawing.Point(153, 131);
+            this.btnHastaOnayla.Name = "btnHastaOnayla";
+            this.btnHastaOnayla.Size = new System.Drawing.Size(75, 23);
+            this.btnHastaOnayla.TabIndex = 6;
+            this.btnHastaOnayla.Text = "Onayla";
+            this.btnHastaOnayla.UseVisualStyleBackColor = true;
+            this.btnHastaOnayla.Click += new System.EventHandler(this.btnHastaOnayla_Click);
+            // 
+            // btnDoktorOnayla
+            // 
+            this.btnDoktorOnayla.Location = new System.Drawing.Point(153, 131);
+            this.btnDoktorOnayla.Name = "btnDoktorOnayla";
+            this.btnDoktorOnayla.Size = new System.Drawing.Size(75, 23);
+            this.btnDoktorOnayla.TabIndex = 7;
+            this.btnDoktorOnayla.Text = "Onayla";
+            this.btnDoktorOnayla.UseVisualStyleBackColor = true;
+            this.btnDoktorOnayla.Click += new System.EventHandler(this.btnDoktorOnayla_Click);
+            // 
+            // btnRandevuBitir
+            // 
+            this.btnRandevuBitir.Location = new System.Drawing.Point(388, 65);
+            this.btnRandevuBitir.Name = "btnRandevuBitir";
+            this.btnRandevuBitir.Size = new System.Drawing.Size(75, 45);
+            this.btnRandevuBitir.TabIndex = 8;
+            this.btnRandevuBitir.Text = "Randevu Al";
+            this.btnRandevuBitir.UseVisualStyleBackColor = true;
+            this.btnRandevuBitir.Click += new System.EventHandler(this.btnRandevuBitir_Click);
+            // 
             // randevuSaatleri1
             // 
             this.randevuSaatleri1.Location = new System.Drawing.Point(6, 13);
             this.randevuSaatleri1.Name = "randevuSaatleri1";
             this.randevuSaatleri1.Size = new System.Drawing.Size(345, 159);
             this.randevuSaatleri1.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(129, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Onayla";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(123, 133);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Onayla";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(378, 78);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Onayla";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // FrmHasta
             // 
@@ -244,13 +244,13 @@
             this.Controls.Add(this.gbHasta);
             this.Controls.Add(this.gbSaat);
             this.Controls.Add(this.gbDoktor);
-            this.Controls.Add(this.gbServis);
+            this.Controls.Add(this.gbHastaList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHasta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta İşlemleri";
             this.Load += new System.EventHandler(this.FrmHasta_Load);
-            this.gbServis.ResumeLayout(false);
+            this.gbHastaList.ResumeLayout(false);
             this.gbDoktor.ResumeLayout(false);
             this.gbSaat.ResumeLayout(false);
             this.gbHasta.ResumeLayout(false);
@@ -267,17 +267,17 @@
         private System.Windows.Forms.Label lblTCNo;
         private System.Windows.Forms.Label lblSoyad;
         private System.Windows.Forms.Label lblAd;
-        private System.Windows.Forms.ListBox lstServis;
+        private System.Windows.Forms.ListBox lstHasta;
         private System.Windows.Forms.ListBox lstDoktor;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private RandevuSaatleri randevuSaatleri1;
-        private System.Windows.Forms.GroupBox gbServis;
+        private System.Windows.Forms.GroupBox gbHastaList;
         private System.Windows.Forms.GroupBox gbDoktor;
         private System.Windows.Forms.GroupBox gbSaat;
         private System.Windows.Forms.GroupBox gbHasta;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnHastaOnayla;
+        private System.Windows.Forms.Button btnDoktorOnayla;
+        private System.Windows.Forms.Button btnRandevuBitir;
     }
 }

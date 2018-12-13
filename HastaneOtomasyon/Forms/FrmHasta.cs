@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using HastaneOtomasyon.Abstracts;
 
 namespace HastaneOtomasyon.Forms
 {
@@ -12,6 +13,8 @@ namespace HastaneOtomasyon.Forms
             InitializeComponent();
         }
         List<Hasta> hastaListesi = new List<Hasta>();
+        Hasta seciliHasta = new Hasta();
+        List<Doktor> doktorListesi = new List<Doktor>();
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
@@ -26,12 +29,9 @@ namespace HastaneOtomasyon.Forms
                 hastaListesi.Add(yeniHasta);
                 FormuTemizle();
 
-              //  MessageBox.Show($@"Hosgeldin {yeniHasta.Ad} {yeniHasta.Soyad}");
-
-              //  if (hastaListesi != null) lstServis.Items.AddRange(hastaListesi.ToArray());
-
-                gbServis.Visible = true;
-                gbHasta.Visible = false;
+              if (hastaListesi != null) lstHasta.Items.AddRange(hastaListesi.ToArray());
+                // gbHasta.Visible = false;
+                gbHastaList.Visible = true;
             }
             catch (Exception exception)
             {
@@ -44,15 +44,31 @@ namespace HastaneOtomasyon.Forms
             txtSoyad.Clear();
             txtTCNo.Clear();
             dateTimePicker1.ResetText();
-            lstServis.Items.Clear();
+            lstHasta.Items.Clear();
         }
 
         private void FrmHasta_Load(object sender, EventArgs e)
         {
             gbHasta.Visible = true;
-            gbServis.Visible = false;
+            gbHastaList.Visible = false;
             gbDoktor.Visible = false;
             gbSaat.Visible = false;
+        }
+
+        private void btnHastaOnayla_Click(object sender, EventArgs e)
+        {
+            seciliHasta = (Hasta) lstHasta.SelectedItem;
+            
+        }
+
+        private void btnDoktorOnayla_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRandevuBitir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
