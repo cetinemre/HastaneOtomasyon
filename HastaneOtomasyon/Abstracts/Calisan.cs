@@ -30,6 +30,6 @@
         PsikiyatriHemsiresi = 2500,
         Bashemsire = 4000
     }
-
+   
     
 }

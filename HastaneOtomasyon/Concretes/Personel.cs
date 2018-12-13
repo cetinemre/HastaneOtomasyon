@@ -2,7 +2,7 @@
 
 namespace HastaneOtomasyon.Concretes
 {
-    public class OrtopediDoktoru:Doktor
+    public class Personel:Calisan
     {
     }
 }

@@ -46,19 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstracts\Calisan.cs" />
-    <Compile Include="Abstracts\Doktor.cs" />
-    <Compile Include="Abstracts\Hemsire.cs" />
+    <Compile Include="Concretes\Doktor.cs" />
+    <Compile Include="Concretes\Hemsire.cs" />
     <Compile Include="Abstracts\Kisi.cs" />
-    <Compile Include="Abstracts\Personel.cs" />
-    <Compile Include="Concretes\AnesteziHemsiresi.cs" />
-    <Compile Include="Concretes\BasHemsire.cs" />
+    <Compile Include="Concretes\Personel.cs" />
     <Compile Include="Concretes\Hasta.cs" />
-    <Compile Include="Concretes\HastaBakici.cs" />
-    <Compile Include="Concretes\Hizmetli.cs" />
-    <Compile Include="Concretes\KbbDoktoru.cs" />
-    <Compile Include="Concretes\Muhasebe.cs" />
-    <Compile Include="Concretes\OrtopediDoktoru.cs" />
-    <Compile Include="Concretes\PsikiyatriHemsiresi.cs" />
     <Compile Include="Concretes\Randevu.cs" />
     <Compile Include="Forms\FrmAna.cs">
       <SubType>Form</SubType>

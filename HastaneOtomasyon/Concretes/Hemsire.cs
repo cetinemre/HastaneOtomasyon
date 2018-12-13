@@ -1,6 +1,8 @@
-﻿namespace HastaneOtomasyon.Abstracts
+﻿using HastaneOtomasyon.Abstracts;
+
+namespace HastaneOtomasyon.Concretes
 {
-    public abstract class Hemsire:Calisan
+    public class Hemsire:Calisan
    {
        private string _servis, _doktor;
 

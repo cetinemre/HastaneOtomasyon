@@ -65,5 +65,27 @@ namespace HastaneOtomasyon.Abstracts
             return $"{Ad} {Soyad}";
         }
 
+        public enum BranslarDoktor
+        {
+            Ortopedi,
+            Dis,
+            Kbb
+        }
+
+        public enum BranslarHemsire
+        {
+            Psikiyatri,
+            Bashemsire,
+            Anestezi
+        }
+
+        public enum BranslarPersonel
+        {
+            Muhasebe,
+            Hizmetli,
+            Satinalma
+        }
+
+
     }
 }
