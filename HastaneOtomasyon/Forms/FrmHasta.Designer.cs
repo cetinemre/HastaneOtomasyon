@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHasta));
-            this.txtDT = new System.Windows.Forms.TextBox();
             this.txtTCNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
@@ -42,13 +41,7 @@
             this.btnKaydet = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // txtDT
-            // 
-            this.txtDT.Location = new System.Drawing.Point(101, 164);
-            this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(100, 20);
-            this.txtDT.TabIndex = 6;
+           
             // 
             // txtTCNo
             // 
