@@ -30,7 +30,7 @@ namespace HastaneOtomasyon.Forms
             {
                 _frmDoktor = new FrmDoktor();
                 _frmDoktor.WindowState = FormWindowState.Maximized;
-                _frmDoktor.MdiParent = this;
+                
                 _frmDoktor.Show();
             }
         }

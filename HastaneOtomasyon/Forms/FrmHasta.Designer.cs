@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHasta));
-            this.txtDT = new System.Windows.Forms.TextBox();
             this.txtTCNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
@@ -39,14 +38,8 @@
             this.lblAd = new System.Windows.Forms.Label();
             this.lstServis = new System.Windows.Forms.ListBox();
             this.lstDoktor = new System.Windows.Forms.ListBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // txtDT
-            // 
-            this.txtDT.Location = new System.Drawing.Point(88, 84);
-            this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(100, 20);
-            this.txtDT.TabIndex = 6;
             // 
             // txtTCNo
             // 
@@ -121,14 +114,24 @@
             this.lstDoktor.Size = new System.Drawing.Size(222, 212);
             this.lstDoktor.TabIndex = 10;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(89, 84);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
             // FrmHasta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.ClientSize = new System.Drawing.Size(804, 454);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lstDoktor);
             this.Controls.Add(this.lstServis);
-            this.Controls.Add(this.txtDT);
             this.Controls.Add(this.txtTCNo);
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtAd);
@@ -148,8 +151,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtDT;
         private System.Windows.Forms.TextBox txtTCNo;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtAd;
@@ -159,5 +160,6 @@
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.ListBox lstServis;
         private System.Windows.Forms.ListBox lstDoktor;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
