@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HastaneOtomasyon.Abstracts;
 
 namespace HastaneOtomasyon.Forms
 {
@@ -17,5 +18,21 @@ namespace HastaneOtomasyon.Forms
             InitializeComponent();
         }
 
+        private void btnDoktorEkle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void FrmDoktorGuncelle_Load(object sender, EventArgs e)
+        {
+            cbBrans.DataSource = Enum.GetValues(typeof(Kisi.BranslarDoktor));
+        }
     }
 }

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace HastaneOtomasyon.Forms
 {
@@ -15,6 +7,10 @@ namespace HastaneOtomasyon.Forms
         public FrmDoktorSil()
         {
             InitializeComponent();
+        }
+
+        private void FrmDoktorSil_Load(object sender, System.EventArgs e)
+        {
         }
     }
 }
