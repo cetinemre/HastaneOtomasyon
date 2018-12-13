@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using HastaneOtomasyon.Abstracts;
 
 namespace HastaneOtomasyon.Forms
 {
@@ -31,6 +32,7 @@ namespace HastaneOtomasyon.Forms
               //  if (hastaListesi != null) lstServis.Items.AddRange(hastaListesi.ToArray());
 
                 gbServis.Visible = true;
+                gbHasta.Visible = false;
             }
             catch (Exception exception)
             {
@@ -46,5 +48,8 @@ namespace HastaneOtomasyon.Forms
             lstServis.Items.Clear();
         }
 
+        private void FrmHasta_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

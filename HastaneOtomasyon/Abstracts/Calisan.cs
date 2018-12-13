@@ -31,10 +31,5 @@
         Bashemsire = 4000
     }
 
-    public enum Servisler
-    {
-        Ortopedi,
-        Dis,
-        Kbb
-    }
+    
 }

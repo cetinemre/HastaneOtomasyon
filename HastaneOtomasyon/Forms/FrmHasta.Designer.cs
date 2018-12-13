@@ -112,6 +112,10 @@
             // lstServis
             // 
             this.lstServis.FormattingEnabled = true;
+            this.lstServis.Items.AddRange(new object[] {
+            "Dis",
+            "Ortopedi",
+            "Kbb"});
             this.lstServis.Location = new System.Drawing.Point(6, 19);
             this.lstServis.Name = "lstServis";
             this.lstServis.Size = new System.Drawing.Size(222, 212);
@@ -147,7 +151,7 @@
             // gbServis
             // 
             this.gbServis.Controls.Add(this.lstServis);
-            this.gbServis.Location = new System.Drawing.Point(220, 22);
+            this.gbServis.Location = new System.Drawing.Point(261, 22);
             this.gbServis.Name = "gbServis";
             this.gbServis.Size = new System.Drawing.Size(245, 242);
             this.gbServis.TabIndex = 8;
@@ -158,7 +162,7 @@
             // gbDoktor
             // 
             this.gbDoktor.Controls.Add(this.lstDoktor);
-            this.gbDoktor.Location = new System.Drawing.Point(471, 22);
+            this.gbDoktor.Location = new System.Drawing.Point(550, 22);
             this.gbDoktor.Name = "gbDoktor";
             this.gbDoktor.Size = new System.Drawing.Size(242, 242);
             this.gbDoktor.TabIndex = 9;
@@ -169,12 +173,12 @@
             // gbSaat
             // 
             this.gbSaat.Controls.Add(this.randevuSaatleri1);
-            this.gbSaat.Location = new System.Drawing.Point(220, 270);
+            this.gbSaat.Location = new System.Drawing.Point(198, 270);
             this.gbSaat.Name = "gbSaat";
             this.gbSaat.Size = new System.Drawing.Size(375, 172);
             this.gbSaat.TabIndex = 10;
             this.gbSaat.TabStop = false;
-            this.gbSaat.Text = "Randevu Saatleri";
+            this.gbSaat.Text = "Randevu Saati Seciniz";
             this.gbSaat.Visible = false;
             // 
             // gbHasta
@@ -216,6 +220,7 @@
             this.Name = "FrmHasta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta İşlemleri";
+            this.Load += new System.EventHandler(this.FrmHasta_Load);
             this.gbServis.ResumeLayout(false);
             this.gbDoktor.ResumeLayout(false);
             this.gbSaat.ResumeLayout(false);
