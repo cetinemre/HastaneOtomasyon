@@ -45,6 +45,9 @@
             this.gbSaat = new System.Windows.Forms.GroupBox();
             this.gbHasta = new System.Windows.Forms.GroupBox();
             this.randevuSaatleri1 = new HastaneOtomasyon.Forms.RandevuSaatleri();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.gbServis.SuspendLayout();
             this.gbDoktor.SuspendLayout();
             this.gbSaat.SuspendLayout();
@@ -53,7 +56,7 @@
             // 
             // txtTCNo
             // 
-            this.txtTCNo.Location = new System.Drawing.Point(90, 121);
+            this.txtTCNo.Location = new System.Drawing.Point(92, 80);
             this.txtTCNo.MaxLength = 11;
             this.txtTCNo.Name = "txtTCNo";
             this.txtTCNo.Size = new System.Drawing.Size(100, 20);
@@ -61,14 +64,14 @@
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(90, 95);
+            this.txtSoyad.Location = new System.Drawing.Point(92, 54);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(100, 20);
             this.txtSoyad.TabIndex = 1;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(90, 69);
+            this.txtAd.Location = new System.Drawing.Point(92, 28);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(100, 20);
             this.txtAd.TabIndex = 0;
@@ -76,7 +79,7 @@
             // lblDT
             // 
             this.lblDT.AutoSize = true;
-            this.lblDT.Location = new System.Drawing.Point(11, 150);
+            this.lblDT.Location = new System.Drawing.Point(13, 109);
             this.lblDT.Name = "lblDT";
             this.lblDT.Size = new System.Drawing.Size(70, 13);
             this.lblDT.TabIndex = 2;
@@ -85,7 +88,7 @@
             // lblTCNo
             // 
             this.lblTCNo.AutoSize = true;
-            this.lblTCNo.Location = new System.Drawing.Point(11, 124);
+            this.lblTCNo.Location = new System.Drawing.Point(13, 83);
             this.lblTCNo.Name = "lblTCNo";
             this.lblTCNo.Size = new System.Drawing.Size(35, 13);
             this.lblTCNo.TabIndex = 3;
@@ -94,7 +97,7 @@
             // lblSoyad
             // 
             this.lblSoyad.AutoSize = true;
-            this.lblSoyad.Location = new System.Drawing.Point(11, 98);
+            this.lblSoyad.Location = new System.Drawing.Point(13, 57);
             this.lblSoyad.Name = "lblSoyad";
             this.lblSoyad.Size = new System.Drawing.Size(37, 13);
             this.lblSoyad.TabIndex = 4;
@@ -103,7 +106,7 @@
             // lblAd
             // 
             this.lblAd.AutoSize = true;
-            this.lblAd.Location = new System.Drawing.Point(13, 72);
+            this.lblAd.Location = new System.Drawing.Point(15, 31);
             this.lblAd.Name = "lblAd";
             this.lblAd.Size = new System.Drawing.Size(20, 13);
             this.lblAd.TabIndex = 5;
@@ -112,13 +115,9 @@
             // lstServis
             // 
             this.lstServis.FormattingEnabled = true;
-            this.lstServis.Items.AddRange(new object[] {
-            "Dis",
-            "Ortopedi",
-            "Kbb"});
             this.lstServis.Location = new System.Drawing.Point(6, 19);
             this.lstServis.Name = "lstServis";
-            this.lstServis.Size = new System.Drawing.Size(222, 212);
+            this.lstServis.Size = new System.Drawing.Size(222, 108);
             this.lstServis.TabIndex = 5;
             // 
             // lstDoktor
@@ -126,23 +125,23 @@
             this.lstDoktor.FormattingEnabled = true;
             this.lstDoktor.Location = new System.Drawing.Point(6, 19);
             this.lstDoktor.Name = "lstDoktor";
-            this.lstDoktor.Size = new System.Drawing.Size(222, 212);
+            this.lstDoktor.Size = new System.Drawing.Size(222, 108);
             this.lstDoktor.TabIndex = 6;
             // 
             // btnKaydet
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(90, 173);
+            this.btnKaydet.Location = new System.Drawing.Point(92, 132);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(99, 23);
             this.btnKaydet.TabIndex = 4;
-            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Text = "Onayla";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(90, 143);
+            this.dateTimePicker1.Location = new System.Drawing.Point(92, 102);
             this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
@@ -151,35 +150,35 @@
             // gbServis
             // 
             this.gbServis.Controls.Add(this.lstServis);
-            this.gbServis.Location = new System.Drawing.Point(261, 22);
+            this.gbServis.Controls.Add(this.button1);
+            this.gbServis.Location = new System.Drawing.Point(247, 22);
             this.gbServis.Name = "gbServis";
-            this.gbServis.Size = new System.Drawing.Size(245, 242);
+            this.gbServis.Size = new System.Drawing.Size(243, 174);
             this.gbServis.TabIndex = 8;
             this.gbServis.TabStop = false;
             this.gbServis.Text = "Servis Seçiniz";
-            this.gbServis.Visible = false;
             // 
             // gbDoktor
             // 
             this.gbDoktor.Controls.Add(this.lstDoktor);
-            this.gbDoktor.Location = new System.Drawing.Point(550, 22);
+            this.gbDoktor.Controls.Add(this.button2);
+            this.gbDoktor.Location = new System.Drawing.Point(517, 22);
             this.gbDoktor.Name = "gbDoktor";
-            this.gbDoktor.Size = new System.Drawing.Size(242, 242);
+            this.gbDoktor.Size = new System.Drawing.Size(242, 174);
             this.gbDoktor.TabIndex = 9;
             this.gbDoktor.TabStop = false;
             this.gbDoktor.Text = "Doktor Seçiniz";
-            this.gbDoktor.Visible = false;
             // 
             // gbSaat
             // 
             this.gbSaat.Controls.Add(this.randevuSaatleri1);
-            this.gbSaat.Location = new System.Drawing.Point(198, 270);
+            this.gbSaat.Controls.Add(this.button3);
+            this.gbSaat.Location = new System.Drawing.Point(12, 202);
             this.gbSaat.Name = "gbSaat";
-            this.gbSaat.Size = new System.Drawing.Size(375, 172);
+            this.gbSaat.Size = new System.Drawing.Size(780, 172);
             this.gbSaat.TabIndex = 10;
             this.gbSaat.TabStop = false;
             this.gbSaat.Text = "Randevu Saati Seciniz";
-            this.gbSaat.Visible = false;
             // 
             // gbHasta
             // 
@@ -194,7 +193,7 @@
             this.gbHasta.Controls.Add(this.txtTCNo);
             this.gbHasta.Location = new System.Drawing.Point(12, 22);
             this.gbHasta.Name = "gbHasta";
-            this.gbHasta.Size = new System.Drawing.Size(208, 242);
+            this.gbHasta.Size = new System.Drawing.Size(208, 174);
             this.gbHasta.TabIndex = 11;
             this.gbHasta.TabStop = false;
             this.gbHasta.Text = "Hasta Bilgileri";
@@ -205,6 +204,36 @@
             this.randevuSaatleri1.Name = "randevuSaatleri1";
             this.randevuSaatleri1.Size = new System.Drawing.Size(345, 159);
             this.randevuSaatleri1.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(129, 133);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Onayla";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnKaydet_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(123, 133);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Onayla";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnKaydet_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(378, 78);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(99, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Onayla";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // FrmHasta
             // 
@@ -247,5 +276,8 @@
         private System.Windows.Forms.GroupBox gbDoktor;
         private System.Windows.Forms.GroupBox gbSaat;
         private System.Windows.Forms.GroupBox gbHasta;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

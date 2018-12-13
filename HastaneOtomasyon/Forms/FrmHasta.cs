@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using HastaneOtomasyon.Abstracts;
 
 namespace HastaneOtomasyon.Forms
 {
@@ -50,6 +49,10 @@ namespace HastaneOtomasyon.Forms
 
         private void FrmHasta_Load(object sender, EventArgs e)
         {
+            gbHasta.Visible = true;
+            gbServis.Visible = false;
+            gbDoktor.Visible = false;
+            gbSaat.Visible = false;
         }
     }
 }
