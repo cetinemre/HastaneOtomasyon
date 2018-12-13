@@ -8,5 +8,9 @@ namespace HastaneOtomasyon.Forms
         {
             InitializeComponent();
         }
+
+        private void btnKaydet_Click(object sender, System.EventArgs e)
+        {
+        }
     }
 }

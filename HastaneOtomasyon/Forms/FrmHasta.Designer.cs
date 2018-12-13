@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHasta));
+            this.txtDT = new System.Windows.Forms.TextBox();
             this.txtTCNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
@@ -38,26 +39,34 @@
             this.lblAd = new System.Windows.Forms.Label();
             this.lstServis = new System.Windows.Forms.ListBox();
             this.lstDoktor = new System.Windows.Forms.ListBox();
+            this.btnKaydet = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
+            // txtDT
+            // 
+            this.txtDT.Location = new System.Drawing.Point(101, 164);
+            this.txtDT.Name = "txtDT";
+            this.txtDT.Size = new System.Drawing.Size(100, 20);
+            this.txtDT.TabIndex = 6;
+            // 
             // txtTCNo
             // 
-            this.txtTCNo.Location = new System.Drawing.Point(89, 58);
+            this.txtTCNo.Location = new System.Drawing.Point(102, 138);
             this.txtTCNo.Name = "txtTCNo";
             this.txtTCNo.Size = new System.Drawing.Size(100, 20);
             this.txtTCNo.TabIndex = 7;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(89, 32);
+            this.txtSoyad.Location = new System.Drawing.Point(102, 112);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(100, 20);
             this.txtSoyad.TabIndex = 8;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(89, 6);
+            this.txtAd.Location = new System.Drawing.Point(102, 86);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(100, 20);
             this.txtAd.TabIndex = 9;
@@ -65,7 +74,7 @@
             // lblDT
             // 
             this.lblDT.AutoSize = true;
-            this.lblDT.Location = new System.Drawing.Point(10, 87);
+            this.lblDT.Location = new System.Drawing.Point(23, 167);
             this.lblDT.Name = "lblDT";
             this.lblDT.Size = new System.Drawing.Size(70, 13);
             this.lblDT.TabIndex = 2;
@@ -74,7 +83,7 @@
             // lblTCNo
             // 
             this.lblTCNo.AutoSize = true;
-            this.lblTCNo.Location = new System.Drawing.Point(10, 61);
+            this.lblTCNo.Location = new System.Drawing.Point(23, 141);
             this.lblTCNo.Name = "lblTCNo";
             this.lblTCNo.Size = new System.Drawing.Size(35, 13);
             this.lblTCNo.TabIndex = 3;
@@ -83,7 +92,7 @@
             // lblSoyad
             // 
             this.lblSoyad.AutoSize = true;
-            this.lblSoyad.Location = new System.Drawing.Point(10, 35);
+            this.lblSoyad.Location = new System.Drawing.Point(23, 115);
             this.lblSoyad.Name = "lblSoyad";
             this.lblSoyad.Size = new System.Drawing.Size(37, 13);
             this.lblSoyad.TabIndex = 4;
@@ -92,7 +101,7 @@
             // lblAd
             // 
             this.lblAd.AutoSize = true;
-            this.lblAd.Location = new System.Drawing.Point(12, 9);
+            this.lblAd.Location = new System.Drawing.Point(25, 89);
             this.lblAd.Name = "lblAd";
             this.lblAd.Size = new System.Drawing.Size(20, 13);
             this.lblAd.TabIndex = 5;
@@ -101,7 +110,7 @@
             // lstServis
             // 
             this.lstServis.FormattingEnabled = true;
-            this.lstServis.Location = new System.Drawing.Point(223, 6);
+            this.lstServis.Location = new System.Drawing.Point(261, 72);
             this.lstServis.Name = "lstServis";
             this.lstServis.Size = new System.Drawing.Size(222, 212);
             this.lstServis.TabIndex = 10;
@@ -109,10 +118,20 @@
             // lstDoktor
             // 
             this.lstDoktor.FormattingEnabled = true;
-            this.lstDoktor.Location = new System.Drawing.Point(468, 6);
+            this.lstDoktor.Location = new System.Drawing.Point(531, 72);
             this.lstDoktor.Name = "lstDoktor";
             this.lstDoktor.Size = new System.Drawing.Size(222, 212);
             this.lstDoktor.TabIndex = 10;
+            // 
+            // btnKaydet
+            // 
+            this.btnKaydet.Location = new System.Drawing.Point(126, 190);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(75, 23);
+            this.btnKaydet.TabIndex = 11;
+            this.btnKaydet.Text = "button1";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // dateTimePicker1
             // 
@@ -127,6 +146,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnKaydet);
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(804, 454);
             this.Controls.Add(this.dateTimePicker1);
@@ -160,6 +181,7 @@
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.ListBox lstServis;
         private System.Windows.Forms.ListBox lstDoktor;
+        private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

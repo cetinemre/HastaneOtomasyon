@@ -4,8 +4,7 @@
     {
         private string _brans;
         private decimal _maas;
-
-     
+        
         public decimal Maas
         {
             get => _maas;
