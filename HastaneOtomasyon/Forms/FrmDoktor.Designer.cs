@@ -45,7 +45,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(804, 461);
-            this.Controls.Add(this.duzenleme1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmDoktor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
