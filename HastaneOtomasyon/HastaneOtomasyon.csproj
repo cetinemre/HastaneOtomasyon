@@ -91,6 +91,12 @@
     <Compile Include="Forms\FrmPersonel.Designer.cs">
       <DependentUpon>FrmPersonel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RandevuSaatleri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\RandevuSaatleri.Designer.cs">
+      <DependentUpon>RandevuSaatleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FrmAna.resx">
@@ -100,6 +106,9 @@
     <EmbeddedResource Include="Forms\FrmHasta.resx" />
     <EmbeddedResource Include="Forms\FrmHemsire.resx" />
     <EmbeddedResource Include="Forms\FrmPersonel.resx" />
+    <EmbeddedResource Include="Forms\RandevuSaatleri.resx">
+      <DependentUpon>RandevuSaatleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
