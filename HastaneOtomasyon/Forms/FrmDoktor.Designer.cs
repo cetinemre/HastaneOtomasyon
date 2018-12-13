@@ -34,7 +34,7 @@
             // 
             // duzenleme1
             // 
-            this.duzenleme1.Location = new System.Drawing.Point(-3, 1);
+            this.duzenleme1.Location = new System.Drawing.Point(-2, -1);
             this.duzenleme1.Name = "duzenleme1";
             this.duzenleme1.Size = new System.Drawing.Size(571, 30);
             this.duzenleme1.TabIndex = 0;
