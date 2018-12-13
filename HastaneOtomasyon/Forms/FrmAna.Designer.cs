@@ -118,20 +118,21 @@
             // doktorToolStripMenuItem
             // 
             this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
-            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.doktorToolStripMenuItem.Text = "Doktor";
             this.doktorToolStripMenuItem.Click += new System.EventHandler(this.doktorToolStripMenuItem_Click);
             // 
             // hemşireToolStripMenuItem
             // 
             this.hemşireToolStripMenuItem.Name = "hemşireToolStripMenuItem";
-            this.hemşireToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.hemşireToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.hemşireToolStripMenuItem.Text = "Hemşire";
+            this.hemşireToolStripMenuItem.Click += new System.EventHandler(this.hemşireToolStripMenuItem_Click);
             // 
             // personelToolStripMenuItem
             // 
             this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
-            this.personelToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.personelToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.personelToolStripMenuItem.Text = "Personel";
             // 
             // silToolStripMenuItem
@@ -156,6 +157,7 @@
             this.hemşireToolStripMenuItem1.Name = "hemşireToolStripMenuItem1";
             this.hemşireToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.hemşireToolStripMenuItem1.Text = "Hemşire";
+            this.hemşireToolStripMenuItem1.Click += new System.EventHandler(this.hemşireToolStripMenuItem1_Click);
             // 
             // personelToolStripMenuItem1
             // 
@@ -185,6 +187,7 @@
             this.hemşireToolStripMenuItem2.Name = "hemşireToolStripMenuItem2";
             this.hemşireToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
             this.hemşireToolStripMenuItem2.Text = "Hemşire";
+            this.hemşireToolStripMenuItem2.Click += new System.EventHandler(this.hemşireToolStripMenuItem2_Click);
             // 
             // personelToolStripMenuItem2
             // 
@@ -203,7 +206,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAna";

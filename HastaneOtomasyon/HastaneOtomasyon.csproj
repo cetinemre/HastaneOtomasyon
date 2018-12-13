@@ -94,6 +94,24 @@
     <Compile Include="Forms\FrmHemsire.Designer.cs">
       <DependentUpon>FrmHemsire.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmHemsireEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHemsireEkle.Designer.cs">
+      <DependentUpon>FrmHemsireEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHemsireGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHemsireGuncelle.Designer.cs">
+      <DependentUpon>FrmHemsireGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHemsireSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHemsireSil.Designer.cs">
+      <DependentUpon>FrmHemsireSil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +141,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmHasta.resx" />
     <EmbeddedResource Include="Forms\FrmHemsire.resx" />
+    <EmbeddedResource Include="Forms\FrmHemsireEkle.resx">
+      <DependentUpon>FrmHemsireEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHemsireGuncelle.resx">
+      <DependentUpon>FrmHemsireGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHemsireSil.resx">
+      <DependentUpon>FrmHemsireSil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmPersonel.resx" />
     <EmbeddedResource Include="Forms\RandevuSaatleri.resx">
       <DependentUpon>RandevuSaatleri.cs</DependentUpon>

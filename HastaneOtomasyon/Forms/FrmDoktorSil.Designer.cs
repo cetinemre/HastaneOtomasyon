@@ -58,6 +58,8 @@
             this.ClientSize = new System.Drawing.Size(302, 200);
             this.Controls.Add(this.lstboxDoktor);
             this.Controls.Add(this.btnDoktorSil);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmDoktorSil";
             this.ShowIcon = false;
             this.Text = "Dokturu Silme";
