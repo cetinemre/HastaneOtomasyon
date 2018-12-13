@@ -28,42 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.txtTcNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbBrans = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnDoktorEkle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtAd
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtAd.Location = new System.Drawing.Point(92, 6);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(126, 20);
+            this.txtAd.TabIndex = 0;
             // 
-            // textBox2
+            // txtSoyad
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtSoyad.Location = new System.Drawing.Point(92, 30);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(126, 20);
+            this.txtSoyad.TabIndex = 0;
             // 
-            // textBox4
+            // txtTcNo
             // 
-            this.textBox4.Location = new System.Drawing.Point(92, 54);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(126, 20);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtTcNo.Location = new System.Drawing.Point(92, 54);
+            this.txtTcNo.Name = "txtTcNo";
+            this.txtTcNo.Size = new System.Drawing.Size(126, 20);
+            this.txtTcNo.TabIndex = 0;
             // 
             // label1
             // 
@@ -110,17 +107,17 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Branşı";
             // 
-            // comboBox1
+            // cbBrans
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbBrans.FormattingEnabled = true;
+            this.cbBrans.Items.AddRange(new object[] {
             "Ortopedi",
             "Dis",
             "Kbb"});
-            this.comboBox1.Location = new System.Drawing.Point(92, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(126, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cbBrans.Location = new System.Drawing.Point(92, 104);
+            this.cbBrans.Name = "cbBrans";
+            this.cbBrans.Size = new System.Drawing.Size(126, 21);
+            this.cbBrans.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -140,6 +137,7 @@
             this.btnDoktorEkle.TabIndex = 4;
             this.btnDoktorEkle.Text = "Ekle";
             this.btnDoktorEkle.UseVisualStyleBackColor = true;
+            this.btnDoktorEkle.Click += new System.EventHandler(this.btnDoktorEkle_Click);
             // 
             // FrmDoktorEkle
             // 
@@ -148,17 +146,20 @@
             this.ClientSize = new System.Drawing.Size(236, 169);
             this.Controls.Add(this.btnDoktorEkle);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbBrans);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTcNo);
+            this.Controls.Add(this.txtSoyad);
+            this.Controls.Add(this.txtAd);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmDoktorEkle";
-            this.Text = "FrmDoktorEkle";
+            this.ShowIcon = false;
+            this.Text = "Yeni Doktor Ekle";
             this.Load += new System.EventHandler(this.FrmDoktorEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -167,15 +168,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.TextBox txtTcNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbBrans;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnDoktorEkle;
     }
