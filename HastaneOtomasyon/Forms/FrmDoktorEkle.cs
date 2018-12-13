@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using HastaneOtomasyon.Abstracts;
-using HastaneOtomasyon.Concretes;
 
 namespace HastaneOtomasyon.Forms
 {
@@ -17,6 +16,7 @@ namespace HastaneOtomasyon.Forms
         {
             try
             {
+
             }
             catch (Exception ex)
             {
@@ -26,7 +26,7 @@ namespace HastaneOtomasyon.Forms
 
         private void FrmDoktorEkle_Load(object sender, EventArgs e)
         {
-
+            cbBrans.DataSource = Enum.GetValues(typeof(Kisi.BranslarDoktor));
         }
     }
 }

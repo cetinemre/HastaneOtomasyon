@@ -43,116 +43,108 @@
             // 
             // btnDoktorEkle
             // 
-            this.btnDoktorEkle.Location = new System.Drawing.Point(188, 159);
-            this.btnDoktorEkle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDoktorEkle.Location = new System.Drawing.Point(141, 129);
             this.btnDoktorEkle.Name = "btnDoktorEkle";
-            this.btnDoktorEkle.Size = new System.Drawing.Size(100, 28);
+            this.btnDoktorEkle.Size = new System.Drawing.Size(75, 23);
             this.btnDoktorEkle.TabIndex = 15;
             this.btnDoktorEkle.Text = "Güncelle";
+            this.btnDoktorEkle.Click += new System.EventHandler(this.btnDoktorEkle_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(120, 96);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Location = new System.Drawing.Point(90, 78);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(167, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
             this.dateTimePicker1.TabIndex = 14;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
             // 
             // cbBrans
             // 
+            this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBrans.FormattingEnabled = true;
             this.cbBrans.Items.AddRange(new object[] {
             "Ortopedi",
             "Dis",
             "Kbb"});
-            this.cbBrans.Location = new System.Drawing.Point(120, 126);
-            this.cbBrans.Margin = new System.Windows.Forms.Padding(4);
+            this.cbBrans.Location = new System.Drawing.Point(90, 102);
             this.cbBrans.Name = "cbBrans";
-            this.cbBrans.Size = new System.Drawing.Size(167, 24);
+            this.cbBrans.Size = new System.Drawing.Size(126, 21);
             this.cbBrans.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 130);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(10, 106);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 17);
+            this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Branşı";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 98);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(10, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 17);
+            this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "DoğumTarihi";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 68);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(10, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 17);
+            this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "TC No";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 39);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(10, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "Soyad";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(10, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 17);
+            this.label1.Size = new System.Drawing.Size(20, 13);
             this.label1.TabIndex = 12;
             this.label1.Text = "Ad";
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(120, 64);
-            this.txtTcNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTcNo.Location = new System.Drawing.Point(90, 52);
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(167, 22);
+            this.txtTcNo.Size = new System.Drawing.Size(126, 20);
             this.txtTcNo.TabIndex = 5;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(120, 35);
-            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoyad.Location = new System.Drawing.Point(90, 28);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(167, 22);
+            this.txtSoyad.Size = new System.Drawing.Size(126, 20);
             this.txtSoyad.TabIndex = 6;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(120, 5);
-            this.txtAd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAd.Location = new System.Drawing.Point(90, 4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(167, 22);
+            this.txtAd.Size = new System.Drawing.Size(126, 20);
             this.txtAd.TabIndex = 7;
             // 
             // FrmDoktorGuncelle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 199);
+            this.ClientSize = new System.Drawing.Size(224, 162);
             this.Controls.Add(this.btnDoktorEkle);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cbBrans);
@@ -164,10 +156,14 @@
             this.Controls.Add(this.txtTcNo);
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtAd);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDoktorGuncelle";
-            this.Text = "FrmDoktorGuncelle";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Doktor Güncelle";
+            this.Load += new System.EventHandler(this.FrmDoktorGuncelle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
