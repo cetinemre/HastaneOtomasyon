@@ -16,7 +16,7 @@ namespace HastaneOtomasyon.Forms
         {
             try
             {
-
+                
             }
             catch (Exception ex)
             {

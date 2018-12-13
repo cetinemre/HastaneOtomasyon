@@ -25,7 +25,7 @@
         KbbDrMaas = 5000,
         HastaBakici = 2500,
         Muhasebe = 3000,
-        Hizmetli = 1605,
+        Satinalma = 4300,
         AnesteziHemsiresi = 3500,
         PsikiyatriHemsiresi = 2500,
         Bashemsire = 4000

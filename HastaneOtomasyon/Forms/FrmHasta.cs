@@ -8,14 +8,12 @@ namespace HastaneOtomasyon.Forms
 {
     public partial class FrmHasta : Form
     {
+        
         public FrmHasta()
         {
             InitializeComponent();
         }
-        List<Hasta> hastaListesi = new List<Hasta>();
-        Hasta seciliHasta = new Hasta();
-        List<Doktor> doktorListesi = new List<Doktor>();
-
+      
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             Hasta yeniHasta = new Hasta();
@@ -26,10 +24,10 @@ namespace HastaneOtomasyon.Forms
                 yeniHasta.DogumTarihi = dateTimePicker1.Value;
                 yeniHasta.TcNo = txtTCNo.Text;
 
-                hastaListesi.Add(yeniHasta);
+                Kisi.HastaList.Add(yeniHasta);
                 FormuTemizle();
 
-              if (hastaListesi != null) lstHasta.Items.AddRange(hastaListesi.ToArray());
+              if (Kisi.HastaList != null) lstHasta.Items.AddRange(Kisi.HastaList.ToArray());
                 // gbHasta.Visible = false;
                 gbHastaList.Visible = true;
             }
@@ -57,8 +55,7 @@ namespace HastaneOtomasyon.Forms
 
         private void btnHastaOnayla_Click(object sender, EventArgs e)
         {
-            seciliHasta = (Hasta) lstHasta.SelectedItem;
-            
+           // seciliHasta = (Hasta) lstHasta.SelectedItem;
         }
 
         private void btnDoktorOnayla_Click(object sender, EventArgs e)

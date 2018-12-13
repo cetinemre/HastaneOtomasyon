@@ -4,12 +4,12 @@ namespace HastaneOtomasyon.Concretes
 {
     public class Hemsire:Calisan
    {
-       private string _servis, _doktor;
+       private string _brans, _doktor;
 
-       public string Servis
+       public string Brans  
        {
-           get => _servis;
-           set => _servis = value;
+           get => _brans;
+           set => _brans = value;
        }
         public string Doktor
         {

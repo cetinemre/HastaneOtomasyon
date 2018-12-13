@@ -1,9 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using HastaneOtomasyon.Concretes;
 
 namespace HastaneOtomasyon.Abstracts
 {
+
    public abstract class Kisi
     {
+        public static List<Doktor> DoktorList { get; set; } = new List<Doktor>();
+
+        public static List<Hasta> HastaList { get; set; } = new List<Hasta>();
+
+        public static List<Personel> PersonelList { get; set; } = new List<Personel>();
+
+
         private string _tcNo, _ad, _soyad;
         private DateTime _dogumTarihi;
 
