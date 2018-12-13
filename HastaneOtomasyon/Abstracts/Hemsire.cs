@@ -14,5 +14,6 @@
             get => _doktor;
             set => _doktor = value;
         }
+
     }
 }

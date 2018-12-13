@@ -10,24 +10,60 @@ namespace HastaneOtomasyon.Abstracts
         public string TcNo
         {
             get => _tcNo;
-            protected set => _tcNo = value;
+            set
+            {
+                if (value.Length != 11)
+                    throw new Exception("TCNO 11 haneli olmalıdır.");
+                foreach (char harf in value)
+                {
+                    if (!char.IsDigit(harf))
+                        throw new Exception("TCNO sadece rakamlardan oluşmalıdır.");
+                }
+                    _tcNo = value;
+            }
         }
 
         public string Ad
         {
             get => _ad;
-            protected set => _ad = value;
+            set
+            {
+                NameValid(value, "Ad");
+                value = value.Trim();
+                _ad = value.Substring(0, 1).ToUpper() + value.Substring(1).ToLower();
+            }
         }
+        
         public string Soyad
         {
             get => _soyad;
-            protected set => _soyad = value;
+            set
+            {
+                NameValid(value, "Soyad");
+                value = value.Trim();
+                _soyad = value.Substring(0, 1).ToUpper() + value.Substring(1).ToLower();
+            }
         }
        
         public DateTime DogumTarihi
         {
             get => _dogumTarihi;
-            protected set => _dogumTarihi = value;
+            set => _dogumTarihi = value;
         }
+
+        private void NameValid(string value, string propertyName)
+        {
+            foreach (char harf in value)
+            {
+                if (!(char.IsLetter(harf) || char.IsWhiteSpace(harf)))
+                    throw new Exception($"{propertyName} girisi sadece harf ve bosluklarla yapilmalidir.");
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"{Ad} {Soyad}";
+        }
+
     }
 }
