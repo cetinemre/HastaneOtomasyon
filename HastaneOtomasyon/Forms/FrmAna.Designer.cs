@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAna));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.hastaIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doctorIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hemsireIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ekleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hemşireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,10 +46,6 @@
             this.doktorToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.hemşireToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.personelToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hastaIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.doctorIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hemsireIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,99 +67,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(830, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // ekleToolStripMenuItem
-            // 
-            this.ekleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.doktorToolStripMenuItem,
-            this.hemşireToolStripMenuItem,
-            this.personelToolStripMenuItem});
-            this.ekleToolStripMenuItem.Name = "ekleToolStripMenuItem";
-            this.ekleToolStripMenuItem.Size = new System.Drawing.Size(40, 36);
-            this.ekleToolStripMenuItem.Text = "Ekle";
-            // 
-            // doktorToolStripMenuItem
-            // 
-            this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
-            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.doktorToolStripMenuItem.Text = "Doktor";
-            this.doktorToolStripMenuItem.Click += new System.EventHandler(this.doktorToolStripMenuItem_Click);
-            // 
-            // hemşireToolStripMenuItem
-            // 
-            this.hemşireToolStripMenuItem.Name = "hemşireToolStripMenuItem";
-            this.hemşireToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.hemşireToolStripMenuItem.Text = "Hemşire";
-            this.hemşireToolStripMenuItem.Click += new System.EventHandler(this.hemşireToolStripMenuItem_Click);
-            // 
-            // personelToolStripMenuItem
-            // 
-            this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
-            this.personelToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.personelToolStripMenuItem.Text = "Personel";
-            this.personelToolStripMenuItem.Click += new System.EventHandler(this.personelToolStripMenuItem_Click);
-            // 
-            // silToolStripMenuItem
-            // 
-            this.silToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.doktorToolStripMenuItem1,
-            this.hemşireToolStripMenuItem1,
-            this.personelToolStripMenuItem1});
-            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(31, 36);
-            this.silToolStripMenuItem.Text = "Sil";
-            // 
-            // doktorToolStripMenuItem1
-            // 
-            this.doktorToolStripMenuItem1.Name = "doktorToolStripMenuItem1";
-            this.doktorToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
-            this.doktorToolStripMenuItem1.Text = "Doktor";
-            this.doktorToolStripMenuItem1.Click += new System.EventHandler(this.doktorToolStripMenuItem1_Click);
-            // 
-            // hemşireToolStripMenuItem1
-            // 
-            this.hemşireToolStripMenuItem1.Name = "hemşireToolStripMenuItem1";
-            this.hemşireToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
-            this.hemşireToolStripMenuItem1.Text = "Hemşire";
-            this.hemşireToolStripMenuItem1.Click += new System.EventHandler(this.hemşireToolStripMenuItem1_Click);
-            // 
-            // personelToolStripMenuItem1
-            // 
-            this.personelToolStripMenuItem1.Name = "personelToolStripMenuItem1";
-            this.personelToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
-            this.personelToolStripMenuItem1.Text = "Personel";
-            this.personelToolStripMenuItem1.Click += new System.EventHandler(this.personelToolStripMenuItem1_Click);
-            // 
-            // güncelleToolStripMenuItem
-            // 
-            this.güncelleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.doktorToolStripMenuItem2,
-            this.hemşireToolStripMenuItem2,
-            this.personelToolStripMenuItem2});
-            this.güncelleToolStripMenuItem.Name = "güncelleToolStripMenuItem";
-            this.güncelleToolStripMenuItem.Size = new System.Drawing.Size(65, 36);
-            this.güncelleToolStripMenuItem.Text = "Güncelle";
-            // 
-            // doktorToolStripMenuItem2
-            // 
-            this.doktorToolStripMenuItem2.Name = "doktorToolStripMenuItem2";
-            this.doktorToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
-            this.doktorToolStripMenuItem2.Text = "Doktor";
-            this.doktorToolStripMenuItem2.Click += new System.EventHandler(this.doktorToolStripMenuItem2_Click);
-            // 
-            // hemşireToolStripMenuItem2
-            // 
-            this.hemşireToolStripMenuItem2.Name = "hemşireToolStripMenuItem2";
-            this.hemşireToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
-            this.hemşireToolStripMenuItem2.Text = "Hemşire";
-            this.hemşireToolStripMenuItem2.Click += new System.EventHandler(this.hemşireToolStripMenuItem2_Click);
-            // 
-            // personelToolStripMenuItem2
-            // 
-            this.personelToolStripMenuItem2.Name = "personelToolStripMenuItem2";
-            this.personelToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
-            this.personelToolStripMenuItem2.Text = "Personel";
-            this.personelToolStripMenuItem2.Click += new System.EventHandler(this.personelToolStripMenuItem2_Click);
             // 
             // hastaIslemleriToolStripMenuItem
             // 
@@ -196,6 +103,90 @@
             this.personelIslemleriToolStripMenuItem.Size = new System.Drawing.Size(143, 36);
             this.personelIslemleriToolStripMenuItem.Text = "Personel Islemleri";
             this.personelIslemleriToolStripMenuItem.Click += new System.EventHandler(this.personelIslemleriToolStripMenuItem_Click);
+            // 
+            // ekleToolStripMenuItem
+            // 
+            this.ekleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doktorToolStripMenuItem,
+            this.hemşireToolStripMenuItem,
+            this.personelToolStripMenuItem});
+            this.ekleToolStripMenuItem.Name = "ekleToolStripMenuItem";
+            this.ekleToolStripMenuItem.Size = new System.Drawing.Size(40, 36);
+            this.ekleToolStripMenuItem.Text = "Ekle";
+            // 
+            // doktorToolStripMenuItem
+            // 
+            this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
+            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doktorToolStripMenuItem.Text = "Doktor";         
+            // 
+            // hemşireToolStripMenuItem
+            // 
+            this.hemşireToolStripMenuItem.Name = "hemşireToolStripMenuItem";
+            this.hemşireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hemşireToolStripMenuItem.Text = "Hemşire"; 
+            // 
+            // personelToolStripMenuItem
+            // 
+            this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
+            this.personelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelToolStripMenuItem.Text = "Personel"; 
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doktorToolStripMenuItem1,
+            this.hemşireToolStripMenuItem1,
+            this.personelToolStripMenuItem1});
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(31, 36);
+            this.silToolStripMenuItem.Text = "Sil";
+            // 
+            // doktorToolStripMenuItem1
+            // 
+            this.doktorToolStripMenuItem1.Name = "doktorToolStripMenuItem1";
+            this.doktorToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
+            this.doktorToolStripMenuItem1.Text = "Doktor";
+            // 
+            // hemşireToolStripMenuItem1
+            // 
+            this.hemşireToolStripMenuItem1.Name = "hemşireToolStripMenuItem1";
+            this.hemşireToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
+            this.hemşireToolStripMenuItem1.Text = "Hemşire";
+            // 
+            // personelToolStripMenuItem1
+            // 
+            this.personelToolStripMenuItem1.Name = "personelToolStripMenuItem1";
+            this.personelToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
+            this.personelToolStripMenuItem1.Text = "Personel";
+            // 
+            // güncelleToolStripMenuItem
+            // 
+            this.güncelleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doktorToolStripMenuItem2,
+            this.hemşireToolStripMenuItem2,
+            this.personelToolStripMenuItem2});
+            this.güncelleToolStripMenuItem.Name = "güncelleToolStripMenuItem";
+            this.güncelleToolStripMenuItem.Size = new System.Drawing.Size(65, 36);
+            this.güncelleToolStripMenuItem.Text = "Güncelle";
+            // 
+            // doktorToolStripMenuItem2
+            // 
+            this.doktorToolStripMenuItem2.Name = "doktorToolStripMenuItem2";
+            this.doktorToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
+            this.doktorToolStripMenuItem2.Text = "Doktor";
+            //
+            // hemşireToolStripMenuItem2
+            // 
+            this.hemşireToolStripMenuItem2.Name = "hemşireToolStripMenuItem2";
+            this.hemşireToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
+            this.hemşireToolStripMenuItem2.Text = "Hemşire";
+            // 
+            // personelToolStripMenuItem2
+            // 
+            this.personelToolStripMenuItem2.Name = "personelToolStripMenuItem2";
+            this.personelToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
+            this.personelToolStripMenuItem2.Text = "Personel";
             // 
             // FrmAna
             // 

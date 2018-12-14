@@ -12,10 +12,7 @@ namespace HastaneOtomasyon.Forms
         private FrmDoktor _frmDoktor;
         private FrmHasta _frmHasta;
         private FrmHemsire _frmHemsire;
-        private FrmPersonel _frmPersonel;
-        private FrmDoktorEkle frmDoktorEkle;
-        private FrmDoktorSil frmDoktorSil;
-        private FrmDoktorGuncelle frmDoktorGuncelle;
+        private FrmPersonel _frmPersonel;   
         private FrmHemsireEkle frmHemsireEkle;
         private FrmHemsireSil frmHemsireSil;
         private FrmHemsireGuncelle frmHemsireGuncelle;
@@ -71,60 +68,6 @@ namespace HastaneOtomasyon.Forms
         private void FrmAna_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void doktorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmDoktorEkle = new FrmDoktorEkle();
-            frmDoktorEkle.ShowDialog();
-        }
-
-        private void doktorToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmDoktorSil = new FrmDoktorSil();
-            frmDoktorSil.ShowDialog();
-        }
-
-        private void doktorToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            frmDoktorGuncelle = new FrmDoktorGuncelle();
-            frmDoktorGuncelle.ShowDialog();
-        }
-
-        private void hemşireToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHemsireEkle = new FrmHemsireEkle();
-            frmHemsireEkle.ShowDialog();
-        }
-
-        private void hemşireToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmHemsireSil = new FrmHemsireSil();
-            frmHemsireSil.ShowDialog();
-        }
-
-        private void hemşireToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            frmHemsireGuncelle = new FrmHemsireGuncelle();
-            frmHemsireGuncelle.ShowDialog();
-        }
-
-        private void personelToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPersoneEkle = new FrmPersonelEkle();
-            frmPersoneEkle.ShowDialog();
-        }
-
-        private void personelToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmPersoneSil = new FrmPersonelSil();
-            frmPersoneSil.ShowDialog();
-        }
-
-        private void personelToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            frmPersoneGuncelle = new FrmPersonelGuncelle();
-            frmPersoneGuncelle.ShowDialog();
         }
     }
 }
