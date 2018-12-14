@@ -111,12 +111,12 @@
             // 
             this.TxtArama.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.TxtArama.Location = new System.Drawing.Point(201, 111);
-            this.TxtArama.MaxDate = new System.DateTime(2010, 12, 31, 0, 0, 0, 0);
+            this.TxtArama.MaxDate = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             this.TxtArama.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(139, 20);
             this.TxtArama.TabIndex = 36;
-            this.TxtArama.Value = new System.DateTime(2010, 12, 31, 0, 0, 0, 0);
+            this.TxtArama.Value = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             // 
             // cbBrans
             // 

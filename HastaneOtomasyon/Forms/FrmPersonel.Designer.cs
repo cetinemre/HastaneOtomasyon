@@ -42,13 +42,13 @@
             this.btnDoktorSil = new System.Windows.Forms.Button();
             this.btnPersonelGuncelle = new System.Windows.Forms.Button();
             this.lstb3 = new System.Windows.Forms.ListBox();
-            this.txtbPersonelAraTxtAramaa = new System.Windows.Forms.TextBox();
+            this.TxtArama = new System.Windows.Forms.TextBox();
             this.gbPersonel.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbPersonel
             // 
-            this.gbPersonel.Controls.Add(this.txtbPersonelAraTxtAramaa);
+            this.gbPersonel.Controls.Add(this.TxtArama);
             this.gbPersonel.Controls.Add(this.lstb3);
             this.gbPersonel.Controls.Add(this.btnPersonelGuncelle);
             this.gbPersonel.Controls.Add(this.btnDoktorSil);
@@ -70,7 +70,7 @@
             // 
             // btnPersonelEkle
             // 
-            this.btnPersonelEkle.Location = new System.Drawing.Point(197, 145);
+            this.btnPersonelEkle.Location = new System.Drawing.Point(197, 156);
             this.btnPersonelEkle.Name = "btnPersonelEkle";
             this.btnPersonelEkle.Size = new System.Drawing.Size(152, 47);
             this.btnPersonelEkle.TabIndex = 25;
@@ -81,12 +81,12 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(197, 93);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(152, 20);
             this.dateTimePicker1.TabIndex = 24;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2000, 12, 13, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -148,7 +148,7 @@
             // 
             // btnDoktorSil
             // 
-            this.btnDoktorSil.Location = new System.Drawing.Point(197, 257);
+            this.btnDoktorSil.Location = new System.Drawing.Point(197, 209);
             this.btnDoktorSil.Name = "btnDoktorSil";
             this.btnDoktorSil.Size = new System.Drawing.Size(152, 47);
             this.btnDoktorSil.TabIndex = 26;
@@ -157,7 +157,7 @@
             // 
             // btnPersonelGuncelle
             // 
-            this.btnPersonelGuncelle.Location = new System.Drawing.Point(197, 324);
+            this.btnPersonelGuncelle.Location = new System.Drawing.Point(197, 262);
             this.btnPersonelGuncelle.Name = "btnPersonelGuncelle";
             this.btnPersonelGuncelle.Size = new System.Drawing.Size(152, 47);
             this.btnPersonelGuncelle.TabIndex = 27;
@@ -171,12 +171,12 @@
             this.lstb3.Size = new System.Drawing.Size(234, 303);
             this.lstb3.TabIndex = 28;
             // 
-            // txtbPersonelAraTxtAramaa
+            // TxtArama
             // 
-            this.txtbPersonelAraTxtAramaa.Location = new System.Drawing.Point(412, 42);
-            this.txtbPersonelAraTxtAramaa.Name = "txtbPersonelAraTxtAramaa";
-            this.txtbPersonelAraTxtAramaa.Size = new System.Drawing.Size(233, 20);
-            this.txtbPersonelAraTxtAramaa.TabIndex = 29;
+            this.TxtArama.Location = new System.Drawing.Point(411, 42);
+            this.TxtArama.Name = "TxtArama";
+            this.TxtArama.Size = new System.Drawing.Size(234, 20);
+            this.TxtArama.TabIndex = 29;
             // 
             // FrmPersonel
             // 
@@ -210,6 +210,6 @@
         private System.Windows.Forms.Button btnDoktorSil;
         private System.Windows.Forms.Button btnPersonelGuncelle;
         private System.Windows.Forms.ListBox lstb3;
-        private System.Windows.Forms.TextBox txtbPersonelAraTxtAramaa;
+        private System.Windows.Forms.TextBox TxtArama;
     }
 }
