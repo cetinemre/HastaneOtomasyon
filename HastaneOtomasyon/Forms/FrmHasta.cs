@@ -57,7 +57,7 @@ namespace HastaneOtomasyon.Forms
                 btn.FlatStyle = FlatStyle.Popup;
                 btn.Text = muayeneSaati.ToShortTimeString();
 
-                if (muayeneSaati.ToShortTimeString().ToString() == "11:45") muayeneSaati = muayeneSaati.AddHours(1);
+                if (muayeneSaati.ToShortTimeString() == "11:45") muayeneSaati = muayeneSaati.AddHours(1);
 
                 kontrol = TimeSpan.Compare(muayeneSaati.TimeOfDay, DateTime.Now.TimeOfDay);
 
