@@ -46,6 +46,7 @@ namespace HastaneOtomasyon.Forms
             gbHastaList.Visible = false;
             gbDoktor.Visible = false;
             flowLayoutPanel1.Visible = false;
+
             Button btn;
             DateTime muayeneSaati = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 9, 0, 0);
             int kontrol;

@@ -25,8 +25,6 @@ namespace HastaneOtomasyon.Forms
                 yeniDoktor.TcNo = txtTcNo.Text;
                 yeniDoktor.Brans = cbBrans.Text;
                 yeniDoktor.Maas = (decimal) Enum.Parse(typeof(Maaslar),cbBrans.Text);
-
-
                 doktorListesi.Add(yeniDoktor);
 
                 FormuTemizle(gbDoktorEkle);
