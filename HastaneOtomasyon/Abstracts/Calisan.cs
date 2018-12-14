@@ -20,9 +20,9 @@
 
     public enum Maaslar
     {
-        OrtopediDrMaas = 7000,
-        DisDrMaas = 8000,
-        KbbDrMaas = 5000,
+        Ortopedi = 7000,
+        Dis = 8000,
+        Kbb = 5000,
         HastaBakici = 2500,
         Muhasebe = 3000,
         Satinalma = 4300,
