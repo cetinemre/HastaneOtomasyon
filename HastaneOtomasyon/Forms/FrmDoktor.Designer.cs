@@ -44,11 +44,13 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
+            this.txtbDoktorArma = new System.Windows.Forms.TextBox();
             this.gbDoktorEkle.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbDoktorEkle
             // 
+            this.gbDoktorEkle.Controls.Add(this.txtbDoktorArma);
             this.gbDoktorEkle.Controls.Add(this.btnDoktorSil);
             this.gbDoktorEkle.Controls.Add(this.btnDoktorGuncelle);
             this.gbDoktorEkle.Controls.Add(this.lstDoktor);
@@ -92,7 +94,7 @@
             // lstDoktor
             // 
             this.lstDoktor.FormattingEnabled = true;
-            this.lstDoktor.Location = new System.Drawing.Point(407, 43);
+            this.lstDoktor.Location = new System.Drawing.Point(408, 67);
             this.lstDoktor.Name = "lstDoktor";
             this.lstDoktor.Size = new System.Drawing.Size(257, 290);
             this.lstDoktor.TabIndex = 17;
@@ -193,6 +195,13 @@
             this.txtAd.Size = new System.Drawing.Size(162, 20);
             this.txtAd.TabIndex = 6;
             // 
+            // txtbDoktorArma
+            // 
+            this.txtbDoktorArma.Location = new System.Drawing.Point(408, 38);
+            this.txtbDoktorArma.Name = "txtbDoktorArma";
+            this.txtbDoktorArma.Size = new System.Drawing.Size(257, 20);
+            this.txtbDoktorArma.TabIndex = 19;
+            // 
             // FrmDoktor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,5 +236,6 @@
         private System.Windows.Forms.Button btnDoktorSil;
         private System.Windows.Forms.ListBox lstDoktor;
         private System.Windows.Forms.Button btnDoktorGuncelle;
+        private System.Windows.Forms.TextBox txtbDoktorArma;
     }
 }

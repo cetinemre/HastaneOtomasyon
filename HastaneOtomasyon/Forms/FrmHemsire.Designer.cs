@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHemsire));
             this.gbHemsire = new System.Windows.Forms.GroupBox();
+            this.btnHemsireGuncelle = new System.Windows.Forms.Button();
+            this.btnHemsireSil = new System.Windows.Forms.Button();
+            this.lstbHemsire = new System.Windows.Forms.ListBox();
             this.btnHemsireEkle = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cbBrans = new System.Windows.Forms.ComboBox();
@@ -41,14 +44,13 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.btnHemsireSil = new System.Windows.Forms.Button();
-            this.lstbHemsire = new System.Windows.Forms.ListBox();
-            this.btnHemsireGuncelle = new System.Windows.Forms.Button();
+            this.txtbHemsireArama = new System.Windows.Forms.TextBox();
             this.gbHemsire.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbHemsire
             // 
+            this.gbHemsire.Controls.Add(this.txtbHemsireArama);
             this.gbHemsire.Controls.Add(this.btnHemsireGuncelle);
             this.gbHemsire.Controls.Add(this.btnHemsireSil);
             this.gbHemsire.Controls.Add(this.lstbHemsire);
@@ -69,6 +71,33 @@
             this.gbHemsire.TabIndex = 0;
             this.gbHemsire.TabStop = false;
             this.gbHemsire.Text = "Hemsire Bilgileri";
+            // 
+            // btnHemsireGuncelle
+            // 
+            this.btnHemsireGuncelle.Location = new System.Drawing.Point(153, 307);
+            this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
+            this.btnHemsireGuncelle.Size = new System.Drawing.Size(139, 52);
+            this.btnHemsireGuncelle.TabIndex = 40;
+            this.btnHemsireGuncelle.Text = "Güncelle";
+            // 
+            // btnHemsireSil
+            // 
+            this.btnHemsireSil.Location = new System.Drawing.Point(153, 235);
+            this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHemsireSil.Name = "btnHemsireSil";
+            this.btnHemsireSil.Size = new System.Drawing.Size(139, 52);
+            this.btnHemsireSil.TabIndex = 39;
+            this.btnHemsireSil.Text = "Sil";
+            this.btnHemsireSil.UseVisualStyleBackColor = true;
+            // 
+            // lstbHemsire
+            // 
+            this.lstbHemsire.FormattingEnabled = true;
+            this.lstbHemsire.Location = new System.Drawing.Point(346, 62);
+            this.lstbHemsire.Margin = new System.Windows.Forms.Padding(2);
+            this.lstbHemsire.Name = "lstbHemsire";
+            this.lstbHemsire.Size = new System.Drawing.Size(246, 316);
+            this.lstbHemsire.TabIndex = 38;
             // 
             // btnHemsireEkle
             // 
@@ -163,32 +192,12 @@
             this.txtAd.Size = new System.Drawing.Size(139, 20);
             this.txtAd.TabIndex = 29;
             // 
-            // btnHemsireSil
+            // txtbHemsireArama
             // 
-            this.btnHemsireSil.Location = new System.Drawing.Point(153, 235);
-            this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHemsireSil.Name = "btnHemsireSil";
-            this.btnHemsireSil.Size = new System.Drawing.Size(139, 52);
-            this.btnHemsireSil.TabIndex = 39;
-            this.btnHemsireSil.Text = "Sil";
-            this.btnHemsireSil.UseVisualStyleBackColor = true;
-            // 
-            // lstbHemsire
-            // 
-            this.lstbHemsire.FormattingEnabled = true;
-            this.lstbHemsire.Location = new System.Drawing.Point(339, 38);
-            this.lstbHemsire.Margin = new System.Windows.Forms.Padding(2);
-            this.lstbHemsire.Name = "lstbHemsire";
-            this.lstbHemsire.Size = new System.Drawing.Size(246, 316);
-            this.lstbHemsire.TabIndex = 38;
-            // 
-            // btnHemsireGuncelle
-            // 
-            this.btnHemsireGuncelle.Location = new System.Drawing.Point(153, 307);
-            this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
-            this.btnHemsireGuncelle.Size = new System.Drawing.Size(139, 52);
-            this.btnHemsireGuncelle.TabIndex = 40;
-            this.btnHemsireGuncelle.Text = "Güncelle";
+            this.txtbHemsireArama.Location = new System.Drawing.Point(346, 33);
+            this.txtbHemsireArama.Name = "txtbHemsireArama";
+            this.txtbHemsireArama.Size = new System.Drawing.Size(246, 20);
+            this.txtbHemsireArama.TabIndex = 41;
             // 
             // FrmHemsire
             // 
@@ -224,5 +233,6 @@
         private System.Windows.Forms.Button btnHemsireSil;
         private System.Windows.Forms.ListBox lstbHemsire;
         private System.Windows.Forms.Button btnHemsireGuncelle;
+        private System.Windows.Forms.TextBox txtbHemsireArama;
     }
 }
