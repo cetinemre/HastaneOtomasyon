@@ -94,7 +94,7 @@ namespace HastaneOtomasyon.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Bir hata olustu: " + ex.Message);
+                    MessageBox.Show(@"Bir hata olustu: " + ex.Message);
                 }
             }
         }
@@ -116,8 +116,8 @@ namespace HastaneOtomasyon.Forms
 
         private void doktorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            dosyaKaydet.Title = "Bir JSON dosyası seçiniz";
-            dosyaKaydet.Filter = "(JSON Dosyası) | *.json";
+            dosyaKaydet.Title = @"Bir JSON dosyası seçiniz";
+            dosyaKaydet.Filter = @"(JSON Dosyası) | *.json";
             dosyaKaydet.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             dosyaKaydet.FileName = "DoktorListesi.json";
             if (dosyaKaydet.ShowDialog() == DialogResult.OK)

@@ -3,6 +3,10 @@ using HastaneOtomasyon.Concretes;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+// ReSharper disable NotAccessedVariable
+// ReSharper disable UnusedMember.Local
+// ReSharper disable UnusedParameter.Local
+// ReSharper disable RedundantAssignment
 
 namespace HastaneOtomasyon.Forms
 {
