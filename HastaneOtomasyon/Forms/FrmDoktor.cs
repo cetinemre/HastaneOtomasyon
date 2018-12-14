@@ -24,7 +24,9 @@ namespace HastaneOtomasyon.Forms
                 yeniDoktor.DogumTarihi = dateTimePicker1.Value;
                 yeniDoktor.TcNo = txtTcNo.Text;
                 yeniDoktor.Brans = cbBrans.Text;
-           //     yeniDoktor.Maas = (decimal) Enum.Parse(typeof(Maaslar), cbBrans.Text);
+                yeniDoktor.Maas = (decimal) Enum.Parse(typeof(Maaslar),cbBrans.Text);
+
+
                 doktorListesi.Add(yeniDoktor);
 
                 FormuTemizle(gbDoktorEkle);
@@ -60,6 +62,7 @@ namespace HastaneOtomasyon.Forms
             Doktor seciliDoktor = (Doktor)lstDoktor.SelectedItem;
 
             Kisi.DoktorList.Remove(seciliDoktor);
+
             MessageBox.Show($@"{seciliDoktor.Ad} {seciliDoktor.Soyad} doktoru silindi.",@"Uyarı!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
 
             FormuTemizle(gbDoktorEkle);
