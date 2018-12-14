@@ -13,14 +13,7 @@ namespace HastaneOtomasyon.Forms
         private FrmDoktor _frmDoktor;
         private FrmHasta _frmHasta;
         private FrmHemsire _frmHemsire;
-        private FrmPersonel _frmPersonel;   
-        private FrmHemsireEkle frmHemsireEkle;
-        private FrmHemsireSil frmHemsireSil;
-        private FrmHemsireGuncelle frmHemsireGuncelle;
-        private FrmPersonelEkle frmPersoneEkle;
-        private FrmPersonelSil frmPersoneSil;
-        private FrmPersonelGuncelle frmPersoneGuncelle;
-
+        private FrmPersonel _frmPersonel;
         private void hastaIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_frmHasta == null || _frmHasta.IsDisposed)
