@@ -121,12 +121,12 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(175, 117);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MaxDate = new System.DateTime(1994, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(162, 20);
             this.dateTimePicker1.TabIndex = 14;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(1994, 12, 31, 0, 0, 0, 0);
             // 
             // cbBrans
             // 
