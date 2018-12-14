@@ -12,7 +12,7 @@ namespace HastaneOtomasyon.Forms
             InitializeComponent();
         }
 
-        private void btnDoktorEkle_Click(object sender, System.EventArgs e)
+        private void btnDoktorEkle_Click(object sender, EventArgs e)
         {
             var doktorListesi = Kisi.DoktorList;
 
@@ -23,8 +23,8 @@ namespace HastaneOtomasyon.Forms
                 yeniDoktor.Soyad = txtSoyad.Text;
                 yeniDoktor.DogumTarihi = dateTimePicker1.Value;
                 yeniDoktor.TcNo = txtTcNo.Text;
-                yeniDoktor.Brans = cbBrans.SelectedText;
-             // yeniDoktor.Maas = 
+                yeniDoktor.Brans = (string) Enum.Parse(typeof(Kisi.BranslarDoktor), cbBrans.SelectedText);
+           //   yeniDoktor.Maas = 
                 doktorListesi.Add(yeniDoktor);
 
                 FormuTemizle(gbDoktorEkle);
@@ -53,33 +53,32 @@ namespace HastaneOtomasyon.Forms
             }
         }
 
-        private void btnDoktorSil_Click(object sender, System.EventArgs e)
+        private void btnDoktorSil_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnDoktorGuncelle_Click(object sender, System.EventArgs e)
+        private void btnDoktorGuncelle_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void FrmDoktor_Load(object sender, System.EventArgs e)
+        private void FrmDoktor_Load(object sender, EventArgs e)
         {
-            cbBrans.DataSource = Enum.GetValues(typeof(Kisi.BranslarDoktor));
+            cbBrans.Items.AddRange(Enum.GetNames(typeof(Kisi.BranslarDoktor)));
            // lstDoktor.DataSource = Kisi.DoktorList;
         }
 
         private void lstDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lstDoktor.SelectedItem == null) return;
-
-            //Kisi seciliKisi = lstKisiler.SelectedItem as Kisi;
+            
             var seciliDoktor = (Doktor)lstDoktor.SelectedItem;
             txtAd.Text = seciliDoktor.Ad;
             txtSoyad.Text = seciliDoktor.Soyad;
             txtTcNo.Text = seciliDoktor.TcNo;
-            cbBrans.Text = seciliDoktor.Brans;
-            dateTimePicker1.MaxDate = seciliDoktor.DogumTarihi;
+            cbBrans.SelectedItem = seciliDoktor.Brans;
+            dateTimePicker1.Value = seciliDoktor.DogumTarihi;
             
         }
     }

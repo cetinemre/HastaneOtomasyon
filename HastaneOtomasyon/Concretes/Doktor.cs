@@ -1,4 +1,5 @@
 ﻿using HastaneOtomasyon.Abstracts;
+#pragma warning disable 169
 
 namespace HastaneOtomasyon.Concretes
 {
@@ -6,10 +7,6 @@ namespace HastaneOtomasyon.Concretes
     {
         private string _brans;
 
-        public string Brans
-        {
-            get => _brans;
-            set => _brans = value;
-        }
+        public string Brans { get; set; }
     }
 }

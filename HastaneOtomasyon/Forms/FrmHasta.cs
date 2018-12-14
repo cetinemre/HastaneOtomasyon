@@ -16,8 +16,6 @@ namespace HastaneOtomasyon.Forms
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             var hastaListesi = Kisi.HastaList;
-            var doktorListesi = Kisi.DoktorList;
-            var personelListesi = Kisi.PersonelList;
 
             Hasta yeniHasta = new Hasta();
             try

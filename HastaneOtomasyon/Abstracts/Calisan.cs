@@ -2,7 +2,6 @@
 {
     public abstract class Calisan:Kisi
     {
-        private string _brans;
         private decimal _maas;
         
         public decimal Maas
@@ -10,12 +9,8 @@
             get => _maas;
             set => _maas = value;
         }
-
-       public string Brans
-       {
-           get => _brans;
-           set => _brans = value;
-       }
+        
+    }
     }
 
     public enum Maaslar
@@ -30,4 +25,4 @@
         PsikiyatriHemsiresi = 2500,
         Bashemsire = 4000
     }
-}
+
