@@ -32,7 +32,7 @@
             this.gbDoktorEkle = new System.Windows.Forms.GroupBox();
             this.btnDoktorSil = new System.Windows.Forms.Button();
             this.btnDoktorGuncelle = new System.Windows.Forms.Button();
-            this.lstb1 = new System.Windows.Forms.ListBox();
+            this.lstDoktor = new System.Windows.Forms.ListBox();
             this.btnDoktorEkle = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cbBrans = new System.Windows.Forms.ComboBox();
@@ -51,7 +51,7 @@
             // 
             this.gbDoktorEkle.Controls.Add(this.btnDoktorSil);
             this.gbDoktorEkle.Controls.Add(this.btnDoktorGuncelle);
-            this.gbDoktorEkle.Controls.Add(this.lstb1);
+            this.gbDoktorEkle.Controls.Add(this.lstDoktor);
             this.gbDoktorEkle.Controls.Add(this.btnDoktorEkle);
             this.gbDoktorEkle.Controls.Add(this.dateTimePicker1);
             this.gbDoktorEkle.Controls.Add(this.cbBrans);
@@ -78,6 +78,7 @@
             this.btnDoktorSil.TabIndex = 17;
             this.btnDoktorSil.Text = "Sil";
             this.btnDoktorSil.UseVisualStyleBackColor = true;
+            this.btnDoktorSil.Click += new System.EventHandler(this.btnDoktorSil_Click);
             // 
             // btnDoktorGuncelle
             // 
@@ -86,14 +87,15 @@
             this.btnDoktorGuncelle.Size = new System.Drawing.Size(162, 53);
             this.btnDoktorGuncelle.TabIndex = 18;
             this.btnDoktorGuncelle.Text = "Güncelle";
+            this.btnDoktorGuncelle.Click += new System.EventHandler(this.btnDoktorGuncelle_Click);
             // 
-            // lstb1
+            // lstDoktor
             // 
-            this.lstb1.FormattingEnabled = true;
-            this.lstb1.Location = new System.Drawing.Point(407, 43);
-            this.lstb1.Name = "lstb1";
-            this.lstb1.Size = new System.Drawing.Size(257, 290);
-            this.lstb1.TabIndex = 17;
+            this.lstDoktor.FormattingEnabled = true;
+            this.lstDoktor.Location = new System.Drawing.Point(407, 43);
+            this.lstDoktor.Name = "lstDoktor";
+            this.lstDoktor.Size = new System.Drawing.Size(257, 290);
+            this.lstDoktor.TabIndex = 17;
             // 
             // btnDoktorEkle
             // 
@@ -103,6 +105,7 @@
             this.btnDoktorEkle.TabIndex = 16;
             this.btnDoktorEkle.Text = "Ekle";
             this.btnDoktorEkle.UseVisualStyleBackColor = true;
+            this.btnDoktorEkle.Click += new System.EventHandler(this.btnDoktorEkle_Click);
             // 
             // dateTimePicker1
             // 
@@ -201,6 +204,7 @@
             this.Name = "FrmDoktor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor İşlemleri";
+            this.Load += new System.EventHandler(this.FrmDoktor_Load);
             this.gbDoktorEkle.ResumeLayout(false);
             this.gbDoktorEkle.PerformLayout();
             this.ResumeLayout(false);
@@ -221,7 +225,7 @@
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Button btnDoktorSil;
-        private System.Windows.Forms.ListBox lstb1;
+        private System.Windows.Forms.ListBox lstDoktor;
         private System.Windows.Forms.Button btnDoktorGuncelle;
     }
 }
