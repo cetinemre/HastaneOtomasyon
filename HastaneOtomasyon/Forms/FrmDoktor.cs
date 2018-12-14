@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using HastaneOtomasyon.Abstracts;
 using HastaneOtomasyon.Concretes;
@@ -11,7 +12,9 @@ namespace HastaneOtomasyon.Forms
         {
             InitializeComponent();
         }
-       
+
+        List<Doktor> _aramalar = new List<Doktor>();
+
         private void btnDoktorEkle_Click(object sender, EventArgs e)
         {
             var doktorListesi = Kisi.DoktorList;
@@ -93,6 +96,23 @@ namespace HastaneOtomasyon.Forms
             cbBrans.SelectedItem = seciliDoktor.Brans;
             dateTimePicker1.Value = seciliDoktor.DogumTarihi;
             
+        }
+
+        private void TxtArama_KeyUp(object sender, KeyEventArgs e)
+        {
+            string ara = TxtArama.Text.ToLower();
+            _aramalar = new List<Doktor>();
+
+            foreach (Doktor dr in Kisi.DoktorList)
+            {
+                if (dr.Ad.ToLower().Contains(ara) || dr.Soyad.ToLower().Contains(ara) ||
+                    dr.TcNo.StartsWith(ara))
+                {
+                    _aramalar.Add(dr);
+                }
+            }
+            FrmAna.FormuTemizle(gbDoktorEkle);
+            lstDoktor.Items.AddRange(_aramalar.ToArray());
         }
     }
 }

@@ -78,6 +78,7 @@
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(246, 20);
             this.TxtArama.TabIndex = 19;
+            this.TxtArama.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtArama_KeyUp);
             // 
             // btnDoktorSil
             // 
@@ -212,6 +213,7 @@
             this.ClientSize = new System.Drawing.Size(804, 461);
             this.Controls.Add(this.gbDoktorEkle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "FrmDoktor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor İşlemleri";

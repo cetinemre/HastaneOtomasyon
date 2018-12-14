@@ -105,17 +105,17 @@ namespace HastaneOtomasyon.Forms
                     reader.Close();
                     dosya.Close();
                     Kisi.DoktorList = JsonConvert.DeserializeObject<List<Doktor>>(dosyaIcerigi);
-
-                    //kisiler = JsonConvert.DeserializeObject(dosyaIcerigi) as List<Kisi>;
-                    //kisiler = (List<Kisi>)JsonConvert.DeserializeObject(dosyaIcerigi);
-
-                    MessageBox.Show($@"{Kisi.DoktorList.Count} kisi sisteme basariyla eklendi");
-
+                    
+                    MessageBox.Show($@"{Kisi.DoktorList.Count} doktor sisteme basariyla eklendi");
+                    var doktorListesi = Kisi.DoktorList;
+                    if (Kisi.DoktorList != null) doktorListesi.AddRange(doktorListesi.ToArray());
+                    doctorIslemleriToolStripMenuItem.PerformClick();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(@"Bir hata olustu: " + ex.Message);
                 }
+                doctorIslemleriToolStripMenuItem.PerformClick();
             }
         }
 
