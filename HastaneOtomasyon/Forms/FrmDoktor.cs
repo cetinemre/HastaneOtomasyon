@@ -68,5 +68,19 @@ namespace HastaneOtomasyon.Forms
             cbBrans.DataSource = Enum.GetValues(typeof(Kisi.BranslarDoktor));
            // lstDoktor.DataSource = Kisi.DoktorList;
         }
+
+        private void lstDoktor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lstDoktor.SelectedItem == null) return;
+
+            //Kisi seciliKisi = lstKisiler.SelectedItem as Kisi;
+            var seciliDoktor = (Doktor)lstDoktor.SelectedItem;
+            txtAd.Text = seciliDoktor.Ad;
+            txtSoyad.Text = seciliDoktor.Soyad;
+            txtTcNo.Text = seciliDoktor.TcNo;
+            cbBrans.Text = seciliDoktor.Brans;
+            dateTimePicker1.MaxDate = seciliDoktor.DogumTarihi;
+            
+        }
     }
 }

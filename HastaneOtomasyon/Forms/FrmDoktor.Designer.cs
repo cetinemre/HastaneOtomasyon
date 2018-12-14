@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktor));
             this.gbDoktorEkle = new System.Windows.Forms.GroupBox();
+            this.TxtArama = new System.Windows.Forms.TextBox();
             this.btnDoktorSil = new System.Windows.Forms.Button();
             this.btnDoktorGuncelle = new System.Windows.Forms.Button();
             this.lstDoktor = new System.Windows.Forms.ListBox();
@@ -44,7 +45,6 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.TxtArama = new System.Windows.Forms.TextBox();
             this.gbDoktorEkle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,13 @@
             this.gbDoktorEkle.TabStop = false;
             this.gbDoktorEkle.Text = "Doktor Bilgileri";
             // 
+            // TxtArama
+            // 
+            this.TxtArama.Location = new System.Drawing.Point(408, 38);
+            this.TxtArama.Name = "TxtArama";
+            this.TxtArama.Size = new System.Drawing.Size(246, 20);
+            this.TxtArama.TabIndex = 19;
+            // 
             // btnDoktorSil
             // 
             this.btnDoktorSil.Location = new System.Drawing.Point(175, 232);
@@ -98,6 +105,7 @@
             this.lstDoktor.Name = "lstDoktor";
             this.lstDoktor.Size = new System.Drawing.Size(246, 277);
             this.lstDoktor.TabIndex = 17;
+            this.lstDoktor.SelectedIndexChanged += new System.EventHandler(this.lstDoktor_SelectedIndexChanged);
             // 
             // btnDoktorEkle
             // 
@@ -195,13 +203,6 @@
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(162, 20);
             this.txtAd.TabIndex = 6;
-            // 
-            // TxtArama
-            // 
-            this.TxtArama.Location = new System.Drawing.Point(408, 38);
-            this.TxtArama.Name = "TxtArama";
-            this.TxtArama.Size = new System.Drawing.Size(246, 20);
-            this.TxtArama.TabIndex = 19;
             // 
             // FrmDoktor
             // 
