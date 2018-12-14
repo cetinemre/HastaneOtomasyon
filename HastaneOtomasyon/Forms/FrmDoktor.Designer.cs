@@ -44,13 +44,13 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.txtbDoktorArma = new System.Windows.Forms.TextBox();
+            this.TxtArama = new System.Windows.Forms.TextBox();
             this.gbDoktorEkle.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbDoktorEkle
             // 
-            this.gbDoktorEkle.Controls.Add(this.txtbDoktorArma);
+            this.gbDoktorEkle.Controls.Add(this.TxtArama);
             this.gbDoktorEkle.Controls.Add(this.btnDoktorSil);
             this.gbDoktorEkle.Controls.Add(this.btnDoktorGuncelle);
             this.gbDoktorEkle.Controls.Add(this.lstDoktor);
@@ -65,18 +65,18 @@
             this.gbDoktorEkle.Controls.Add(this.txtTcNo);
             this.gbDoktorEkle.Controls.Add(this.txtSoyad);
             this.gbDoktorEkle.Controls.Add(this.txtAd);
-            this.gbDoktorEkle.Location = new System.Drawing.Point(13, 13);
+            this.gbDoktorEkle.Location = new System.Drawing.Point(12, 12);
             this.gbDoktorEkle.Name = "gbDoktorEkle";
-            this.gbDoktorEkle.Size = new System.Drawing.Size(731, 376);
+            this.gbDoktorEkle.Size = new System.Drawing.Size(780, 437);
             this.gbDoktorEkle.TabIndex = 0;
             this.gbDoktorEkle.TabStop = false;
             this.gbDoktorEkle.Text = "Doktor Bilgileri";
             // 
             // btnDoktorSil
             // 
-            this.btnDoktorSil.Location = new System.Drawing.Point(271, 179);
+            this.btnDoktorSil.Location = new System.Drawing.Point(175, 232);
             this.btnDoktorSil.Name = "btnDoktorSil";
-            this.btnDoktorSil.Size = new System.Drawing.Size(66, 53);
+            this.btnDoktorSil.Size = new System.Drawing.Size(162, 53);
             this.btnDoktorSil.TabIndex = 17;
             this.btnDoktorSil.Text = "Sil";
             this.btnDoktorSil.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             // 
             // btnDoktorGuncelle
             // 
-            this.btnDoktorGuncelle.Location = new System.Drawing.Point(175, 247);
+            this.btnDoktorGuncelle.Location = new System.Drawing.Point(175, 291);
             this.btnDoktorGuncelle.Name = "btnDoktorGuncelle";
             this.btnDoktorGuncelle.Size = new System.Drawing.Size(162, 53);
             this.btnDoktorGuncelle.TabIndex = 18;
@@ -96,14 +96,14 @@
             this.lstDoktor.FormattingEnabled = true;
             this.lstDoktor.Location = new System.Drawing.Point(408, 67);
             this.lstDoktor.Name = "lstDoktor";
-            this.lstDoktor.Size = new System.Drawing.Size(257, 290);
+            this.lstDoktor.Size = new System.Drawing.Size(246, 277);
             this.lstDoktor.TabIndex = 17;
             // 
             // btnDoktorEkle
             // 
-            this.btnDoktorEkle.Location = new System.Drawing.Point(175, 179);
+            this.btnDoktorEkle.Location = new System.Drawing.Point(175, 173);
             this.btnDoktorEkle.Name = "btnDoktorEkle";
-            this.btnDoktorEkle.Size = new System.Drawing.Size(66, 53);
+            this.btnDoktorEkle.Size = new System.Drawing.Size(162, 53);
             this.btnDoktorEkle.TabIndex = 16;
             this.btnDoktorEkle.Text = "Ekle";
             this.btnDoktorEkle.UseVisualStyleBackColor = true;
@@ -113,8 +113,8 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(175, 117);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(162, 20);
             this.dateTimePicker1.TabIndex = 14;
@@ -177,6 +177,7 @@
             // txtTcNo
             // 
             this.txtTcNo.Location = new System.Drawing.Point(175, 91);
+            this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.Size = new System.Drawing.Size(162, 20);
             this.txtTcNo.TabIndex = 13;
@@ -195,12 +196,12 @@
             this.txtAd.Size = new System.Drawing.Size(162, 20);
             this.txtAd.TabIndex = 6;
             // 
-            // txtbDoktorArma
+            // TxtArama
             // 
-            this.txtbDoktorArma.Location = new System.Drawing.Point(408, 38);
-            this.txtbDoktorArma.Name = "txtbDoktorArma";
-            this.txtbDoktorArma.Size = new System.Drawing.Size(257, 20);
-            this.txtbDoktorArma.TabIndex = 19;
+            this.TxtArama.Location = new System.Drawing.Point(408, 38);
+            this.TxtArama.Name = "TxtArama";
+            this.TxtArama.Size = new System.Drawing.Size(246, 20);
+            this.TxtArama.TabIndex = 19;
             // 
             // FrmDoktor
             // 
@@ -236,6 +237,6 @@
         private System.Windows.Forms.Button btnDoktorSil;
         private System.Windows.Forms.ListBox lstDoktor;
         private System.Windows.Forms.Button btnDoktorGuncelle;
-        private System.Windows.Forms.TextBox txtbDoktorArma;
+        private System.Windows.Forms.TextBox TxtArama;
     }
 }
