@@ -24,10 +24,10 @@ namespace HastaneOtomasyon.Forms
                 yeniDoktor.DogumTarihi = dateTimePicker1.Value;
                 yeniDoktor.TcNo = txtTcNo.Text;
                 yeniDoktor.Brans = cbBrans.Text;
-               // yeniDoktor.Maas = (decimal) Enum.Parse(typeof(Maaslar),cbBrans.Text);
+                yeniDoktor.Maas = (int) Enum.Parse(typeof(Maaslar), yeniDoktor.Brans);
                 doktorListesi.Add(yeniDoktor);
 
-                FormuTemizle(gbDoktorEkle);
+                FrmAna.FormuTemizle(gbDoktorEkle);
 
                  if (doktorListesi != null) lstDoktor.Items.AddRange(doktorListesi.ToArray());
             }
@@ -36,22 +36,7 @@ namespace HastaneOtomasyon.Forms
                 MessageBox.Show(exception.Message);
             }
         }
-        private void FormuTemizle(Control parent)
-        {
-            foreach (Control child in parent.Controls)
-            {
-                if (child is TextBox)
-                {
-                    if (child.Name == "TxtArama") { continue; }
-
-                    child.Text = string.Empty;
-                }
-                else if (child is ListBox lstBox)
-                {
-                    lstBox.Items.Clear();
-                }
-            }
-        }
+       
 
         private void btnDoktorSil_Click(object sender, EventArgs e)
         {
@@ -63,7 +48,7 @@ namespace HastaneOtomasyon.Forms
 
             MessageBox.Show($@"{seciliDoktor.Ad} {seciliDoktor.Soyad} doktoru silindi.",@"Uyarı!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
 
-            FormuTemizle(gbDoktorEkle);
+            FrmAna.FormuTemizle(gbDoktorEkle);
 
             lstDoktor.Items.AddRange(Kisi.DoktorList.ToArray());
         }
@@ -87,14 +72,14 @@ namespace HastaneOtomasyon.Forms
                 MessageBox.Show(ex.Message);
             }
 
-            FormuTemizle(gbDoktorEkle);
+            FrmAna.FormuTemizle(gbDoktorEkle);
             lstDoktor.Items.AddRange(Kisi.DoktorList.ToArray());
         }
 
         private void FrmDoktor_Load(object sender, EventArgs e)
         {
             cbBrans.Items.AddRange(Enum.GetNames(typeof(Kisi.BranslarDoktor)));
-           // lstDoktor.DataSource = Kisi.DoktorList;
+            // lstDoktor.DataSource = Kisi.DoktorList;
         }
 
         private void lstDoktor_SelectedIndexChanged(object sender, EventArgs e)

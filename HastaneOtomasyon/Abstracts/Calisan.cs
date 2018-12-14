@@ -2,7 +2,7 @@
 {
     public abstract class Calisan:Kisi
     {
-        public decimal Maas { get; set; }
+        public int Maas { get; set; }
     }
     }
 

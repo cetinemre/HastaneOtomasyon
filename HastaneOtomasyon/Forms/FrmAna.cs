@@ -10,7 +10,26 @@ namespace HastaneOtomasyon.Forms
 {
     public partial class FrmAna : Form
     {
-        
+        public static void FormuTemizle(Control parent)
+        {
+            foreach (Control child in parent.Controls)
+            {
+                if (child is TextBox)
+                {
+                    if (child.Name == "TxtArama") { continue; }
+
+                    child.Text = string.Empty;
+                }
+                else if (child is ListBox lstBox)
+                {
+                    lstBox.Items.Clear();
+                }
+                else if (child is DateTimePicker dtp)
+                {
+                    dtp.Value = dtp.MaxDate;
+                }
+            }
+        }
         public FrmAna()
         {
             InitializeComponent();
@@ -91,6 +110,7 @@ namespace HastaneOtomasyon.Forms
                     //kisiler = (List<Kisi>)JsonConvert.DeserializeObject(dosyaIcerigi);
 
                     MessageBox.Show($@"{Kisi.DoktorList.Count} kisi sisteme basariyla eklendi");
+
                 }
                 catch (Exception ex)
                 {
