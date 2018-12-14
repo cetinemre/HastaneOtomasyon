@@ -41,16 +41,13 @@
             this.btnKaydet = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gbHastaList = new System.Windows.Forms.GroupBox();
-            this.gbDoktor = new System.Windows.Forms.GroupBox();
-            this.gbSaat = new System.Windows.Forms.GroupBox();
-            this.gbHasta = new System.Windows.Forms.GroupBox();
             this.btnHastaOnayla = new System.Windows.Forms.Button();
+            this.gbDoktor = new System.Windows.Forms.GroupBox();
             this.btnDoktorOnayla = new System.Windows.Forms.Button();
-            this.btnRandevuBitir = new System.Windows.Forms.Button();
-            this.randevuSaatleri1 = new HastaneOtomasyon.Forms.RandevuSaatleri();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gbHasta = new System.Windows.Forms.GroupBox();
             this.gbHastaList.SuspendLayout();
             this.gbDoktor.SuspendLayout();
-            this.gbSaat.SuspendLayout();
             this.gbHasta.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,6 +155,16 @@
             this.gbHastaList.TabStop = false;
             this.gbHastaList.Text = "Hasta Seçiniz";
             // 
+            // btnHastaOnayla
+            // 
+            this.btnHastaOnayla.Location = new System.Drawing.Point(153, 131);
+            this.btnHastaOnayla.Name = "btnHastaOnayla";
+            this.btnHastaOnayla.Size = new System.Drawing.Size(75, 23);
+            this.btnHastaOnayla.TabIndex = 6;
+            this.btnHastaOnayla.Text = "Onayla";
+            this.btnHastaOnayla.UseVisualStyleBackColor = true;
+            this.btnHastaOnayla.Click += new System.EventHandler(this.btnHastaOnayla_Click);
+            // 
             // gbDoktor
             // 
             this.gbDoktor.Controls.Add(this.btnDoktorOnayla);
@@ -169,16 +176,22 @@
             this.gbDoktor.TabStop = false;
             this.gbDoktor.Text = "Doktor Seçiniz";
             // 
-            // gbSaat
+            // btnDoktorOnayla
             // 
-            this.gbSaat.Controls.Add(this.btnRandevuBitir);
-            this.gbSaat.Controls.Add(this.randevuSaatleri1);
-            this.gbSaat.Location = new System.Drawing.Point(12, 211);
-            this.gbSaat.Name = "gbSaat";
-            this.gbSaat.Size = new System.Drawing.Size(478, 205);
-            this.gbSaat.TabIndex = 10;
-            this.gbSaat.TabStop = false;
-            this.gbSaat.Text = "Randevu Saati Seciniz";
+            this.btnDoktorOnayla.Location = new System.Drawing.Point(153, 131);
+            this.btnDoktorOnayla.Name = "btnDoktorOnayla";
+            this.btnDoktorOnayla.Size = new System.Drawing.Size(75, 23);
+            this.btnDoktorOnayla.TabIndex = 7;
+            this.btnDoktorOnayla.Text = "Onayla";
+            this.btnDoktorOnayla.UseVisualStyleBackColor = true;
+            this.btnDoktorOnayla.Click += new System.EventHandler(this.btnDoktorOnayla_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 237);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(478, 205);
+            this.flowLayoutPanel1.TabIndex = 12;
             // 
             // gbHasta
             // 
@@ -198,51 +211,14 @@
             this.gbHasta.TabStop = false;
             this.gbHasta.Text = "Hasta Bilgileri";
             // 
-            // btnHastaOnayla
-            // 
-            this.btnHastaOnayla.Location = new System.Drawing.Point(153, 131);
-            this.btnHastaOnayla.Name = "btnHastaOnayla";
-            this.btnHastaOnayla.Size = new System.Drawing.Size(75, 23);
-            this.btnHastaOnayla.TabIndex = 6;
-            this.btnHastaOnayla.Text = "Onayla";
-            this.btnHastaOnayla.UseVisualStyleBackColor = true;
-            this.btnHastaOnayla.Click += new System.EventHandler(this.btnHastaOnayla_Click);
-            // 
-            // btnDoktorOnayla
-            // 
-            this.btnDoktorOnayla.Location = new System.Drawing.Point(153, 131);
-            this.btnDoktorOnayla.Name = "btnDoktorOnayla";
-            this.btnDoktorOnayla.Size = new System.Drawing.Size(75, 23);
-            this.btnDoktorOnayla.TabIndex = 7;
-            this.btnDoktorOnayla.Text = "Onayla";
-            this.btnDoktorOnayla.UseVisualStyleBackColor = true;
-            this.btnDoktorOnayla.Click += new System.EventHandler(this.btnDoktorOnayla_Click);
-            // 
-            // btnRandevuBitir
-            // 
-            this.btnRandevuBitir.Location = new System.Drawing.Point(388, 65);
-            this.btnRandevuBitir.Name = "btnRandevuBitir";
-            this.btnRandevuBitir.Size = new System.Drawing.Size(75, 45);
-            this.btnRandevuBitir.TabIndex = 8;
-            this.btnRandevuBitir.Text = "Randevu Al";
-            this.btnRandevuBitir.UseVisualStyleBackColor = true;
-            this.btnRandevuBitir.Click += new System.EventHandler(this.btnRandevuBitir_Click);
-            // 
-            // randevuSaatleri1
-            // 
-            this.randevuSaatleri1.Location = new System.Drawing.Point(6, 13);
-            this.randevuSaatleri1.Name = "randevuSaatleri1";
-            this.randevuSaatleri1.Size = new System.Drawing.Size(345, 159);
-            this.randevuSaatleri1.TabIndex = 7;
-            // 
             // FrmHasta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(804, 454);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.gbHasta);
-            this.Controls.Add(this.gbSaat);
             this.Controls.Add(this.gbDoktor);
             this.Controls.Add(this.gbHastaList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -252,7 +228,6 @@
             this.Load += new System.EventHandler(this.FrmHasta_Load);
             this.gbHastaList.ResumeLayout(false);
             this.gbDoktor.ResumeLayout(false);
-            this.gbSaat.ResumeLayout(false);
             this.gbHasta.ResumeLayout(false);
             this.gbHasta.PerformLayout();
             this.ResumeLayout(false);
@@ -271,13 +246,11 @@
         private System.Windows.Forms.ListBox lstDoktor;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private RandevuSaatleri randevuSaatleri1;
         private System.Windows.Forms.GroupBox gbHastaList;
         private System.Windows.Forms.GroupBox gbDoktor;
-        private System.Windows.Forms.GroupBox gbSaat;
         private System.Windows.Forms.GroupBox gbHasta;
         private System.Windows.Forms.Button btnHastaOnayla;
         private System.Windows.Forms.Button btnDoktorOnayla;
-        private System.Windows.Forms.Button btnRandevuBitir;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
