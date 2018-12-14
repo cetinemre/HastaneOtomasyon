@@ -34,6 +34,16 @@
             this.doctorIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hemsireIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iceriAktarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disariAktarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doktorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hemsireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hastaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doktorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hemsireToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hastaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +56,9 @@
             this.hastaIslemleriToolStripMenuItem,
             this.doctorIslemleriToolStripMenuItem,
             this.hemsireIslemleriToolStripMenuItem,
-            this.personelIslemleriToolStripMenuItem});
+            this.personelIslemleriToolStripMenuItem,
+            this.iceriAktarToolStripMenuItem,
+            this.disariAktarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(830, 40);
@@ -89,6 +101,76 @@
             this.personelIslemleriToolStripMenuItem.Text = "Personel Islemleri";
             this.personelIslemleriToolStripMenuItem.Click += new System.EventHandler(this.personelIslemleriToolStripMenuItem_Click);
             // 
+            // iceriAktarToolStripMenuItem
+            // 
+            this.iceriAktarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doktorToolStripMenuItem,
+            this.hemsireToolStripMenuItem,
+            this.personelToolStripMenuItem,
+            this.hastaToolStripMenuItem});
+            this.iceriAktarToolStripMenuItem.Name = "iceriAktarToolStripMenuItem";
+            this.iceriAktarToolStripMenuItem.Size = new System.Drawing.Size(69, 36);
+            this.iceriAktarToolStripMenuItem.Text = "İceriAktar";
+            // 
+            // disariAktarToolStripMenuItem
+            // 
+            this.disariAktarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doktorToolStripMenuItem1,
+            this.hemsireToolStripMenuItem1,
+            this.personelToolStripMenuItem1,
+            this.hastaToolStripMenuItem1});
+            this.disariAktarToolStripMenuItem.Name = "disariAktarToolStripMenuItem";
+            this.disariAktarToolStripMenuItem.Size = new System.Drawing.Size(76, 36);
+            this.disariAktarToolStripMenuItem.Text = "DisariAktar";
+            // 
+            // doktorToolStripMenuItem
+            // 
+            this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
+            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doktorToolStripMenuItem.Text = "Doktor";
+            // 
+            // hemsireToolStripMenuItem
+            // 
+            this.hemsireToolStripMenuItem.Name = "hemsireToolStripMenuItem";
+            this.hemsireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hemsireToolStripMenuItem.Text = "Hemsire";
+            // 
+            // personelToolStripMenuItem
+            // 
+            this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
+            this.personelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelToolStripMenuItem.Text = "Personel";
+            // 
+            // hastaToolStripMenuItem
+            // 
+            this.hastaToolStripMenuItem.Name = "hastaToolStripMenuItem";
+            this.hastaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hastaToolStripMenuItem.Text = "Hasta";
+            // 
+            // doktorToolStripMenuItem1
+            // 
+            this.doktorToolStripMenuItem1.Name = "doktorToolStripMenuItem1";
+            this.doktorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.doktorToolStripMenuItem1.Text = "Doktor";
+            // 
+            // hemsireToolStripMenuItem1
+            // 
+            this.hemsireToolStripMenuItem1.Name = "hemsireToolStripMenuItem1";
+            this.hemsireToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.hemsireToolStripMenuItem1.Text = "Hemsire";
+            // 
+            // personelToolStripMenuItem1
+            // 
+            this.personelToolStripMenuItem1.Name = "personelToolStripMenuItem1";
+            this.personelToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.personelToolStripMenuItem1.Text = "Personel";
+            // 
+            // hastaToolStripMenuItem1
+            // 
+            this.hastaToolStripMenuItem1.Name = "hastaToolStripMenuItem1";
+            this.hastaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.hastaToolStripMenuItem1.Text = "Hasta";
+            // 
             // FrmAna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,5 +202,15 @@
         private System.Windows.Forms.ToolStripMenuItem doctorIslemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hemsireIslemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelIslemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iceriAktarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doktorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hemsireToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hastaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disariAktarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doktorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem hemsireToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem personelToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem hastaToolStripMenuItem1;
     }
 }
