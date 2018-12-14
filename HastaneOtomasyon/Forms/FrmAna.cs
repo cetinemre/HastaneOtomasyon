@@ -109,13 +109,11 @@ namespace HastaneOtomasyon.Forms
                     MessageBox.Show($@"{Kisi.DoktorList.Count} doktor sisteme basariyla eklendi");
                     var doktorListesi = Kisi.DoktorList;
                     if (Kisi.DoktorList != null) doktorListesi.AddRange(doktorListesi.ToArray());
-                    doctorIslemleriToolStripMenuItem.PerformClick();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(@"Bir hata olustu: " + ex.Message);
                 }
-                doctorIslemleriToolStripMenuItem.PerformClick();
             }
         }
 

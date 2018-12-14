@@ -81,7 +81,10 @@ namespace HastaneOtomasyon.Forms
 
         private void FrmDoktor_Load(object sender, EventArgs e)
         {
+            FrmAna.FormuTemizle(gbDoktorEkle);
             cbBrans.Items.AddRange(Enum.GetNames(typeof(Kisi.BranslarDoktor)));
+            var doktorListesi = Kisi.DoktorList;
+            if (Kisi.DoktorList != null) doktorListesi.AddRange(doktorListesi.ToArray());
             // lstDoktor.DataSource = Kisi.DoktorList;
         }
 
@@ -113,6 +116,11 @@ namespace HastaneOtomasyon.Forms
             }
             FrmAna.FormuTemizle(gbDoktorEkle);
             lstDoktor.Items.AddRange(_aramalar.ToArray());
+        }
+
+        private void gbDoktorEkle_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

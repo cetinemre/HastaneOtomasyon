@@ -71,6 +71,7 @@
             this.gbDoktorEkle.TabIndex = 0;
             this.gbDoktorEkle.TabStop = false;
             this.gbDoktorEkle.Text = "Doktor Bilgileri";
+            this.gbDoktorEkle.Enter += new System.EventHandler(this.gbDoktorEkle_Enter);
             // 
             // TxtArama
             // 
