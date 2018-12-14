@@ -126,7 +126,6 @@
             this.btnDoktorEkle.TabIndex = 5;
             this.btnDoktorEkle.Text = "Ekle";
             this.btnDoktorEkle.UseVisualStyleBackColor = true;
-            this.btnDoktorEkle.Click += new System.EventHandler(this.btnDoktorEkle_Click);
             // 
             // label5
             // 
@@ -172,7 +171,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Doktor Ekle";
-            this.Load += new System.EventHandler(this.FrmDoktorEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -5,6 +5,7 @@ namespace HastaneOtomasyon.Forms
 {
     public partial class FrmAna : Form
     {
+        
         public FrmAna()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace HastaneOtomasyon.Forms
         private FrmPersonelEkle frmPersoneEkle;
         private FrmPersonelSil frmPersoneSil;
         private FrmPersonelGuncelle frmPersoneGuncelle;
+
         private void hastaIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_frmHasta == null || _frmHasta.IsDisposed)

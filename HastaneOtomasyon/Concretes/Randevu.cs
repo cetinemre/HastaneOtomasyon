@@ -1,5 +1,4 @@
 ﻿using System;
-using HastaneOtomasyon.Abstracts;
 
 namespace HastaneOtomasyon.Concretes
 {

@@ -1,8 +1,7 @@
-﻿using HastaneOtomasyon.Concretes;
+﻿using HastaneOtomasyon.Abstracts;
+using HastaneOtomasyon.Concretes;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
-using HastaneOtomasyon.Abstracts;
 
 namespace HastaneOtomasyon.Forms
 {
@@ -16,6 +15,10 @@ namespace HastaneOtomasyon.Forms
       
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+            var hastaListesi = Kisi.HastaList;
+            var doktorListesi = Kisi.DoktorList;
+            var personelListesi = Kisi.PersonelList;
+
             Hasta yeniHasta = new Hasta();
             try
             {
@@ -24,10 +27,10 @@ namespace HastaneOtomasyon.Forms
                 yeniHasta.DogumTarihi = dateTimePicker1.Value;
                 yeniHasta.TcNo = txtTCNo.Text;
 
-                Kisi.HastaList.Add(yeniHasta);
-                FormuTemizle();
+                hastaListesi.Add(yeniHasta);
 
-              if (Kisi.HastaList != null) lstHasta.Items.AddRange(Kisi.HastaList.ToArray());
+
+              if (hastaListesi != null) lstHasta.Items.AddRange(hastaListesi.ToArray());
                 // gbHasta.Visible = false;
                 gbHastaList.Visible = true;
             }
@@ -36,14 +39,7 @@ namespace HastaneOtomasyon.Forms
                 MessageBox.Show(exception.Message);
             }
         }
-        private void FormuTemizle()
-        {
-            txtAd.Clear();
-            txtSoyad.Clear();
-            txtTCNo.Clear();
-            dateTimePicker1.ResetText();
-            lstHasta.Items.Clear();
-        }
+        
 
         private void FrmHasta_Load(object sender, EventArgs e)
         {
@@ -55,7 +51,8 @@ namespace HastaneOtomasyon.Forms
 
         private void btnHastaOnayla_Click(object sender, EventArgs e)
         {
-           // seciliHasta = (Hasta) lstHasta.SelectedItem;
+           var seciliHasta = (Hasta) lstHasta.SelectedItem;
+           lstHasta.DataSource = Kisi.DoktorList;
         }
 
         private void btnDoktorOnayla_Click(object sender, EventArgs e)
