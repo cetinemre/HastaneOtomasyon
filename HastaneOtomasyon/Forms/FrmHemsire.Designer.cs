@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHemsire));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbHemsire = new System.Windows.Forms.GroupBox();
             this.btnHemsireEkle = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cbBrans = new System.Windows.Forms.ComboBox();
@@ -41,34 +41,34 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.btnSil = new System.Windows.Forms.Button();
+            this.btnHemsireSil = new System.Windows.Forms.Button();
             this.lstbHemsire = new System.Windows.Forms.ListBox();
-            this.btnDoktorEkle = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.btnHemsireGuncelle = new System.Windows.Forms.Button();
+            this.gbHemsire.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbHemsire
             // 
-            this.groupBox1.Controls.Add(this.btnDoktorEkle);
-            this.groupBox1.Controls.Add(this.btnSil);
-            this.groupBox1.Controls.Add(this.lstbHemsire);
-            this.groupBox1.Controls.Add(this.btnHemsireEkle);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.cbBrans);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtTcNo);
-            this.groupBox1.Controls.Add(this.txtSoyad);
-            this.groupBox1.Controls.Add(this.txtAd);
-            this.groupBox1.Location = new System.Drawing.Point(42, 34);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(726, 411);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.gbHemsire.Controls.Add(this.btnHemsireGuncelle);
+            this.gbHemsire.Controls.Add(this.btnHemsireSil);
+            this.gbHemsire.Controls.Add(this.lstbHemsire);
+            this.gbHemsire.Controls.Add(this.btnHemsireEkle);
+            this.gbHemsire.Controls.Add(this.dateTimePicker1);
+            this.gbHemsire.Controls.Add(this.cbBrans);
+            this.gbHemsire.Controls.Add(this.label5);
+            this.gbHemsire.Controls.Add(this.label4);
+            this.gbHemsire.Controls.Add(this.label3);
+            this.gbHemsire.Controls.Add(this.label2);
+            this.gbHemsire.Controls.Add(this.label1);
+            this.gbHemsire.Controls.Add(this.txtTcNo);
+            this.gbHemsire.Controls.Add(this.txtSoyad);
+            this.gbHemsire.Controls.Add(this.txtAd);
+            this.gbHemsire.Location = new System.Drawing.Point(42, 34);
+            this.gbHemsire.Name = "gbHemsire";
+            this.gbHemsire.Size = new System.Drawing.Size(726, 411);
+            this.gbHemsire.TabIndex = 0;
+            this.gbHemsire.TabStop = false;
+            this.gbHemsire.Text = "Hemsire Bilgileri";
             // 
             // btnHemsireEkle
             // 
@@ -163,15 +163,15 @@
             this.txtAd.Size = new System.Drawing.Size(139, 20);
             this.txtAd.TabIndex = 29;
             // 
-            // btnSil
+            // btnHemsireSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(153, 235);
-            this.btnSil.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(139, 52);
-            this.btnSil.TabIndex = 39;
-            this.btnSil.Text = "Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnHemsireSil.Location = new System.Drawing.Point(153, 235);
+            this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHemsireSil.Name = "btnHemsireSil";
+            this.btnHemsireSil.Size = new System.Drawing.Size(139, 52);
+            this.btnHemsireSil.TabIndex = 39;
+            this.btnHemsireSil.Text = "Sil";
+            this.btnHemsireSil.UseVisualStyleBackColor = true;
             // 
             // lstbHemsire
             // 
@@ -182,13 +182,13 @@
             this.lstbHemsire.Size = new System.Drawing.Size(246, 316);
             this.lstbHemsire.TabIndex = 38;
             // 
-            // btnDoktorEkle
+            // btnHemsireGuncelle
             // 
-            this.btnDoktorEkle.Location = new System.Drawing.Point(153, 307);
-            this.btnDoktorEkle.Name = "btnDoktorEkle";
-            this.btnDoktorEkle.Size = new System.Drawing.Size(139, 52);
-            this.btnDoktorEkle.TabIndex = 40;
-            this.btnDoktorEkle.Text = "Güncelle";
+            this.btnHemsireGuncelle.Location = new System.Drawing.Point(153, 307);
+            this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
+            this.btnHemsireGuncelle.Size = new System.Drawing.Size(139, 52);
+            this.btnHemsireGuncelle.TabIndex = 40;
+            this.btnHemsireGuncelle.Text = "Güncelle";
             // 
             // FrmHemsire
             // 
@@ -196,20 +196,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(804, 461);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbHemsire);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHemsire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hemşire İşlemleri";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbHemsire.ResumeLayout(false);
+            this.gbHemsire.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbHemsire;
         private System.Windows.Forms.Button btnHemsireEkle;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox cbBrans;
@@ -221,8 +221,8 @@
         private System.Windows.Forms.TextBox txtTcNo;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtAd;
-        private System.Windows.Forms.Button btnSil;
+        private System.Windows.Forms.Button btnHemsireSil;
         private System.Windows.Forms.ListBox lstbHemsire;
-        private System.Windows.Forms.Button btnDoktorEkle;
+        private System.Windows.Forms.Button btnHemsireGuncelle;
     }
 }

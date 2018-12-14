@@ -76,47 +76,11 @@
     <Compile Include="Forms\FrmHemsire.Designer.cs">
       <DependentUpon>FrmHemsire.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmHemsireEkle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmHemsireEkle.Designer.cs">
-      <DependentUpon>FrmHemsireEkle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmHemsireGuncelle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmHemsireGuncelle.Designer.cs">
-      <DependentUpon>FrmHemsireGuncelle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmHemsireSil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmHemsireSil.Designer.cs">
-      <DependentUpon>FrmHemsireSil.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmPersonel.Designer.cs">
       <DependentUpon>FrmPersonel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmPersonelEkle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmPersonelEkle.Designer.cs">
-      <DependentUpon>FrmPersonelEkle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmPersonelGuncelle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmPersonelGuncelle.Designer.cs">
-      <DependentUpon>FrmPersonelGuncelle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmPersonelSil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmPersonelSil.Designer.cs">
-      <DependentUpon>FrmPersonelSil.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RandevuSaatleri.cs">
       <SubType>UserControl</SubType>
@@ -132,25 +96,7 @@
     <EmbeddedResource Include="Forms\FrmDoktor.resx" />
     <EmbeddedResource Include="Forms\FrmHasta.resx" />
     <EmbeddedResource Include="Forms\FrmHemsire.resx" />
-    <EmbeddedResource Include="Forms\FrmHemsireEkle.resx">
-      <DependentUpon>FrmHemsireEkle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmHemsireGuncelle.resx">
-      <DependentUpon>FrmHemsireGuncelle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmHemsireSil.resx">
-      <DependentUpon>FrmHemsireSil.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmPersonel.resx" />
-    <EmbeddedResource Include="Forms\FrmPersonelEkle.resx">
-      <DependentUpon>FrmPersonelEkle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmPersonelGuncelle.resx">
-      <DependentUpon>FrmPersonelGuncelle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmPersonelSil.resx">
-      <DependentUpon>FrmPersonelSil.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RandevuSaatleri.resx">
       <DependentUpon>RandevuSaatleri.cs</DependentUpon>
     </EmbeddedResource>
