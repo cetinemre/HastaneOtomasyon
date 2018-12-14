@@ -35,15 +35,17 @@
             this.hemsireIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelIslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iceriAktarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.disariAktarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hemsireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hastaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disariAktarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hemsireToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.personelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hastaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dosyaKaydet = new System.Windows.Forms.SaveFileDialog();
+            this.dosyaAc = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,6 +114,34 @@
             this.iceriAktarToolStripMenuItem.Size = new System.Drawing.Size(69, 36);
             this.iceriAktarToolStripMenuItem.Text = "İceriAktar";
             // 
+            // doktorToolStripMenuItem
+            // 
+            this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
+            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doktorToolStripMenuItem.Text = "Doktor";
+            this.doktorToolStripMenuItem.Click += new System.EventHandler(this.doktorToolStripMenuItem_Click);
+            // 
+            // hemsireToolStripMenuItem
+            // 
+            this.hemsireToolStripMenuItem.Name = "hemsireToolStripMenuItem";
+            this.hemsireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hemsireToolStripMenuItem.Text = "Hemsire";
+            this.hemsireToolStripMenuItem.Click += new System.EventHandler(this.hemsireToolStripMenuItem_Click);
+            // 
+            // personelToolStripMenuItem
+            // 
+            this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
+            this.personelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelToolStripMenuItem.Text = "Personel";
+            this.personelToolStripMenuItem.Click += new System.EventHandler(this.personelToolStripMenuItem_Click);
+            // 
+            // hastaToolStripMenuItem
+            // 
+            this.hastaToolStripMenuItem.Name = "hastaToolStripMenuItem";
+            this.hastaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hastaToolStripMenuItem.Text = "Hasta";
+            this.hastaToolStripMenuItem.Click += new System.EventHandler(this.hastaToolStripMenuItem_Click);
+            // 
             // disariAktarToolStripMenuItem
             // 
             this.disariAktarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -123,53 +153,37 @@
             this.disariAktarToolStripMenuItem.Size = new System.Drawing.Size(76, 36);
             this.disariAktarToolStripMenuItem.Text = "DisariAktar";
             // 
-            // doktorToolStripMenuItem
-            // 
-            this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
-            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.doktorToolStripMenuItem.Text = "Doktor";
-            // 
-            // hemsireToolStripMenuItem
-            // 
-            this.hemsireToolStripMenuItem.Name = "hemsireToolStripMenuItem";
-            this.hemsireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hemsireToolStripMenuItem.Text = "Hemsire";
-            // 
-            // personelToolStripMenuItem
-            // 
-            this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
-            this.personelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.personelToolStripMenuItem.Text = "Personel";
-            // 
-            // hastaToolStripMenuItem
-            // 
-            this.hastaToolStripMenuItem.Name = "hastaToolStripMenuItem";
-            this.hastaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hastaToolStripMenuItem.Text = "Hasta";
-            // 
             // doktorToolStripMenuItem1
             // 
             this.doktorToolStripMenuItem1.Name = "doktorToolStripMenuItem1";
             this.doktorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.doktorToolStripMenuItem1.Text = "Doktor";
+            this.doktorToolStripMenuItem1.Click += new System.EventHandler(this.doktorToolStripMenuItem1_Click);
             // 
             // hemsireToolStripMenuItem1
             // 
             this.hemsireToolStripMenuItem1.Name = "hemsireToolStripMenuItem1";
             this.hemsireToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.hemsireToolStripMenuItem1.Text = "Hemsire";
+            this.hemsireToolStripMenuItem1.Click += new System.EventHandler(this.hemsireToolStripMenuItem1_Click);
             // 
             // personelToolStripMenuItem1
             // 
             this.personelToolStripMenuItem1.Name = "personelToolStripMenuItem1";
             this.personelToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.personelToolStripMenuItem1.Text = "Personel";
+            this.personelToolStripMenuItem1.Click += new System.EventHandler(this.personelToolStripMenuItem1_Click);
             // 
             // hastaToolStripMenuItem1
             // 
             this.hastaToolStripMenuItem1.Name = "hastaToolStripMenuItem1";
             this.hastaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.hastaToolStripMenuItem1.Text = "Hasta";
+            this.hastaToolStripMenuItem1.Click += new System.EventHandler(this.hastaToolStripMenuItem1_Click);
+            // 
+            // dosyaAc
+            // 
+            this.dosyaAc.FileName = "openFileDialog1";
             // 
             // FrmAna
             // 
@@ -212,5 +226,7 @@
         private System.Windows.Forms.ToolStripMenuItem hemsireToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem personelToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem hastaToolStripMenuItem1;
+        private System.Windows.Forms.SaveFileDialog dosyaKaydet;
+        private System.Windows.Forms.OpenFileDialog dosyaAc;
     }
 }
