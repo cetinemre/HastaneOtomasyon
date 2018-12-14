@@ -42,13 +42,13 @@
             this.btnDoktorSil = new System.Windows.Forms.Button();
             this.btnPersonelGuncelle = new System.Windows.Forms.Button();
             this.lstb3 = new System.Windows.Forms.ListBox();
-            this.txtbPersonelArama = new System.Windows.Forms.TextBox();
+            this.txtbPersonelAraTxtAramaa = new System.Windows.Forms.TextBox();
             this.gbPersonel.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbPersonel
             // 
-            this.gbPersonel.Controls.Add(this.txtbPersonelArama);
+            this.gbPersonel.Controls.Add(this.txtbPersonelAraTxtAramaa);
             this.gbPersonel.Controls.Add(this.lstb3);
             this.gbPersonel.Controls.Add(this.btnPersonelGuncelle);
             this.gbPersonel.Controls.Add(this.btnDoktorSil);
@@ -61,18 +61,18 @@
             this.gbPersonel.Controls.Add(this.txtTcNo);
             this.gbPersonel.Controls.Add(this.txtSoyad);
             this.gbPersonel.Controls.Add(this.txtAd);
-            this.gbPersonel.Location = new System.Drawing.Point(13, 13);
+            this.gbPersonel.Location = new System.Drawing.Point(12, 12);
             this.gbPersonel.Name = "gbPersonel";
             this.gbPersonel.Size = new System.Drawing.Size(779, 436);
             this.gbPersonel.TabIndex = 0;
             this.gbPersonel.TabStop = false;
-            this.gbPersonel.Text = "groupBox1";
+            this.gbPersonel.Text = "Personel Bilgileri";
             // 
             // btnPersonelEkle
             // 
-            this.btnPersonelEkle.Location = new System.Drawing.Point(168, 151);
+            this.btnPersonelEkle.Location = new System.Drawing.Point(197, 145);
             this.btnPersonelEkle.Name = "btnPersonelEkle";
-            this.btnPersonelEkle.Size = new System.Drawing.Size(126, 47);
+            this.btnPersonelEkle.Size = new System.Drawing.Size(152, 47);
             this.btnPersonelEkle.TabIndex = 25;
             this.btnPersonelEkle.Text = "Ekle";
             this.btnPersonelEkle.UseVisualStyleBackColor = true;
@@ -80,18 +80,18 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(171, 116);
+            this.dateTimePicker1.Location = new System.Drawing.Point(197, 93);
             this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(152, 20);
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.Value = new System.DateTime(2018, 12, 13, 0, 0, 0, 0);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(89, 122);
+            this.label4.Location = new System.Drawing.Point(91, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 18;
@@ -100,7 +100,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(89, 93);
+            this.label3.Location = new System.Drawing.Point(91, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 19;
@@ -109,7 +109,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 71);
+            this.label2.Location = new System.Drawing.Point(91, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 20;
@@ -118,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 45);
+            this.label1.Location = new System.Drawing.Point(91, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 13);
             this.label1.TabIndex = 21;
@@ -126,39 +126,40 @@
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(171, 90);
+            this.txtTcNo.Location = new System.Drawing.Point(197, 119);
+            this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(126, 20);
+            this.txtTcNo.Size = new System.Drawing.Size(152, 20);
             this.txtTcNo.TabIndex = 23;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(171, 68);
+            this.txtSoyad.Location = new System.Drawing.Point(197, 67);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(126, 20);
+            this.txtSoyad.Size = new System.Drawing.Size(152, 20);
             this.txtSoyad.TabIndex = 22;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(171, 42);
+            this.txtAd.Location = new System.Drawing.Point(197, 42);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(126, 20);
+            this.txtAd.Size = new System.Drawing.Size(152, 20);
             this.txtAd.TabIndex = 17;
             // 
             // btnDoktorSil
             // 
-            this.btnDoktorSil.Location = new System.Drawing.Point(168, 204);
+            this.btnDoktorSil.Location = new System.Drawing.Point(197, 257);
             this.btnDoktorSil.Name = "btnDoktorSil";
-            this.btnDoktorSil.Size = new System.Drawing.Size(126, 47);
+            this.btnDoktorSil.Size = new System.Drawing.Size(152, 47);
             this.btnDoktorSil.TabIndex = 26;
             this.btnDoktorSil.Text = "Sil";
             this.btnDoktorSil.UseVisualStyleBackColor = true;
             // 
             // btnPersonelGuncelle
             // 
-            this.btnPersonelGuncelle.Location = new System.Drawing.Point(168, 257);
+            this.btnPersonelGuncelle.Location = new System.Drawing.Point(197, 324);
             this.btnPersonelGuncelle.Name = "btnPersonelGuncelle";
-            this.btnPersonelGuncelle.Size = new System.Drawing.Size(126, 47);
+            this.btnPersonelGuncelle.Size = new System.Drawing.Size(152, 47);
             this.btnPersonelGuncelle.TabIndex = 27;
             this.btnPersonelGuncelle.Text = "Güncelle";
             // 
@@ -170,12 +171,12 @@
             this.lstb3.Size = new System.Drawing.Size(234, 303);
             this.lstb3.TabIndex = 28;
             // 
-            // txtbPersonelArama
+            // txtbPersonelAraTxtAramaa
             // 
-            this.txtbPersonelArama.Location = new System.Drawing.Point(412, 42);
-            this.txtbPersonelArama.Name = "txtbPersonelArama";
-            this.txtbPersonelArama.Size = new System.Drawing.Size(233, 20);
-            this.txtbPersonelArama.TabIndex = 29;
+            this.txtbPersonelAraTxtAramaa.Location = new System.Drawing.Point(412, 42);
+            this.txtbPersonelAraTxtAramaa.Name = "txtbPersonelAraTxtAramaa";
+            this.txtbPersonelAraTxtAramaa.Size = new System.Drawing.Size(233, 20);
+            this.txtbPersonelAraTxtAramaa.TabIndex = 29;
             // 
             // FrmPersonel
             // 
@@ -209,6 +210,6 @@
         private System.Windows.Forms.Button btnDoktorSil;
         private System.Windows.Forms.Button btnPersonelGuncelle;
         private System.Windows.Forms.ListBox lstb3;
-        private System.Windows.Forms.TextBox txtbPersonelArama;
+        private System.Windows.Forms.TextBox txtbPersonelAraTxtAramaa;
     }
 }

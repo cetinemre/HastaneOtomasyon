@@ -34,7 +34,7 @@
             this.btnHemsireSil = new System.Windows.Forms.Button();
             this.lstbHemsire = new System.Windows.Forms.ListBox();
             this.btnHemsireEkle = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.TxtArama = new System.Windows.Forms.DateTimePicker();
             this.cbBrans = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.gbHemsire.Controls.Add(this.btnHemsireSil);
             this.gbHemsire.Controls.Add(this.lstbHemsire);
             this.gbHemsire.Controls.Add(this.btnHemsireEkle);
-            this.gbHemsire.Controls.Add(this.dateTimePicker1);
+            this.gbHemsire.Controls.Add(this.TxtArama);
             this.gbHemsire.Controls.Add(this.cbBrans);
             this.gbHemsire.Controls.Add(this.label5);
             this.gbHemsire.Controls.Add(this.label4);
@@ -65,16 +65,16 @@
             this.gbHemsire.Controls.Add(this.txtTcNo);
             this.gbHemsire.Controls.Add(this.txtSoyad);
             this.gbHemsire.Controls.Add(this.txtAd);
-            this.gbHemsire.Location = new System.Drawing.Point(42, 34);
+            this.gbHemsire.Location = new System.Drawing.Point(12, 12);
             this.gbHemsire.Name = "gbHemsire";
-            this.gbHemsire.Size = new System.Drawing.Size(726, 411);
+            this.gbHemsire.Size = new System.Drawing.Size(780, 437);
             this.gbHemsire.TabIndex = 0;
             this.gbHemsire.TabStop = false;
             this.gbHemsire.Text = "Hemsire Bilgileri";
             // 
             // btnHemsireGuncelle
             // 
-            this.btnHemsireGuncelle.Location = new System.Drawing.Point(153, 307);
+            this.btnHemsireGuncelle.Location = new System.Drawing.Point(201, 278);
             this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
             this.btnHemsireGuncelle.Size = new System.Drawing.Size(139, 52);
             this.btnHemsireGuncelle.TabIndex = 40;
@@ -82,7 +82,7 @@
             // 
             // btnHemsireSil
             // 
-            this.btnHemsireSil.Location = new System.Drawing.Point(153, 235);
+            this.btnHemsireSil.Location = new System.Drawing.Point(201, 221);
             this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(2);
             this.btnHemsireSil.Name = "btnHemsireSil";
             this.btnHemsireSil.Size = new System.Drawing.Size(139, 52);
@@ -93,35 +93,35 @@
             // lstbHemsire
             // 
             this.lstbHemsire.FormattingEnabled = true;
-            this.lstbHemsire.Location = new System.Drawing.Point(346, 62);
+            this.lstbHemsire.Location = new System.Drawing.Point(412, 66);
             this.lstbHemsire.Margin = new System.Windows.Forms.Padding(2);
             this.lstbHemsire.Name = "lstbHemsire";
-            this.lstbHemsire.Size = new System.Drawing.Size(246, 316);
+            this.lstbHemsire.Size = new System.Drawing.Size(246, 264);
             this.lstbHemsire.TabIndex = 38;
             // 
             // btnHemsireEkle
             // 
-            this.btnHemsireEkle.Location = new System.Drawing.Point(153, 163);
+            this.btnHemsireEkle.Location = new System.Drawing.Point(201, 164);
             this.btnHemsireEkle.Name = "btnHemsireEkle";
             this.btnHemsireEkle.Size = new System.Drawing.Size(139, 52);
             this.btnHemsireEkle.TabIndex = 37;
             this.btnHemsireEkle.Text = "Ekle";
             // 
-            // dateTimePicker1
+            // TxtArama
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 112);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(139, 20);
-            this.dateTimePicker1.TabIndex = 36;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
+            this.TxtArama.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.TxtArama.Location = new System.Drawing.Point(201, 111);
+            this.TxtArama.MaxDate = new System.DateTime(2010, 12, 31, 0, 0, 0, 0);
+            this.TxtArama.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
+            this.TxtArama.Name = "TxtArama";
+            this.TxtArama.Size = new System.Drawing.Size(139, 20);
+            this.TxtArama.TabIndex = 36;
+            this.TxtArama.Value = new System.DateTime(2010, 12, 31, 0, 0, 0, 0);
             // 
             // cbBrans
             // 
             this.cbBrans.FormattingEnabled = true;
-            this.cbBrans.Location = new System.Drawing.Point(153, 136);
+            this.cbBrans.Location = new System.Drawing.Point(201, 137);
             this.cbBrans.Name = "cbBrans";
             this.cbBrans.Size = new System.Drawing.Size(139, 21);
             this.cbBrans.TabIndex = 35;
@@ -129,7 +129,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(73, 140);
+            this.label5.Location = new System.Drawing.Point(98, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 30;
@@ -138,7 +138,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(73, 114);
+            this.label4.Location = new System.Drawing.Point(98, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 31;
@@ -147,7 +147,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 89);
+            this.label3.Location = new System.Drawing.Point(98, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 32;
@@ -156,7 +156,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 66);
+            this.label2.Location = new System.Drawing.Point(98, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 33;
@@ -165,7 +165,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 41);
+            this.label1.Location = new System.Drawing.Point(98, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 13);
             this.label1.TabIndex = 34;
@@ -173,28 +173,29 @@
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(153, 86);
+            this.txtTcNo.Location = new System.Drawing.Point(201, 87);
+            this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.Size = new System.Drawing.Size(139, 20);
             this.txtTcNo.TabIndex = 27;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(153, 62);
+            this.txtSoyad.Location = new System.Drawing.Point(201, 64);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(139, 20);
             this.txtSoyad.TabIndex = 28;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(153, 38);
+            this.txtAd.Location = new System.Drawing.Point(201, 38);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(139, 20);
             this.txtAd.TabIndex = 29;
             // 
             // txtbHemsireArama
             // 
-            this.txtbHemsireArama.Location = new System.Drawing.Point(346, 33);
+            this.txtbHemsireArama.Location = new System.Drawing.Point(412, 38);
             this.txtbHemsireArama.Name = "txtbHemsireArama";
             this.txtbHemsireArama.Size = new System.Drawing.Size(246, 20);
             this.txtbHemsireArama.TabIndex = 41;
@@ -220,7 +221,7 @@
 
         private System.Windows.Forms.GroupBox gbHemsire;
         private System.Windows.Forms.Button btnHemsireEkle;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker TxtArama;
         private System.Windows.Forms.ComboBox cbBrans;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
