@@ -11,20 +11,22 @@ namespace HastaneOtomasyon.Forms
         {
             InitializeComponent();
         }
-
+       
         private void btnDoktorEkle_Click(object sender, EventArgs e)
         {
             var doktorListesi = Kisi.DoktorList;
-
             Doktor yeniDoktor = new Doktor();
+
             try
             {
                 yeniDoktor.Ad = txtAd.Text;
                 yeniDoktor.Soyad = txtSoyad.Text;
                 yeniDoktor.DogumTarihi = dateTimePicker1.Value;
                 yeniDoktor.TcNo = txtTcNo.Text;
-                yeniDoktor.Brans = (string) Enum.Parse(typeof(Kisi.BranslarDoktor), cbBrans.SelectedText);
-           //   yeniDoktor.Maas = 
+                yeniDoktor.Brans = cbBrans.Text;
+                yeniDoktor.Maas = (decimal) Enum.Parse(typeof(Maaslar), cbBrans.Text);
+           
+
                 doktorListesi.Add(yeniDoktor);
 
                 FormuTemizle(gbDoktorEkle);
@@ -55,12 +57,37 @@ namespace HastaneOtomasyon.Forms
 
         private void btnDoktorSil_Click(object sender, EventArgs e)
         {
+            if (lstDoktor.SelectedItem == null) return;
 
+            Doktor seciliDoktor = (Doktor)lstDoktor.SelectedItem;
+            Kisi.DoktorList.Remove(seciliDoktor);
+
+            FormuTemizle(gbDoktorEkle);
+
+            lstDoktor.Items.AddRange(Kisi.DoktorList.ToArray());
         }
-
+        
         private void btnDoktorGuncelle_Click(object sender, EventArgs e)
         {
+            if (lstDoktor.SelectedItem == null) return;
 
+            Doktor seciliDoktor = (Doktor)lstDoktor.SelectedItem;
+
+            try
+            {
+                seciliDoktor.Ad = txtAd.Text;
+                seciliDoktor.Soyad = txtSoyad.Text;
+                seciliDoktor.TcNo = txtTcNo.Text;
+                seciliDoktor.Brans = cbBrans.Text;
+                seciliDoktor.DogumTarihi = dateTimePicker1.Value;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            FormuTemizle(gbDoktorEkle);
+            lstDoktor.Items.AddRange(Kisi.DoktorList.ToArray());
         }
 
         private void FrmDoktor_Load(object sender, EventArgs e)
