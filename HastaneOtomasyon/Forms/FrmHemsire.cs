@@ -91,7 +91,7 @@ namespace HastaneOtomasyon.Forms
         {
             if (lstHemsire.SelectedItem == null) return;
 
-            var seciliHemsire = (Doktor)lstHemsire.SelectedItem;
+            var seciliHemsire = (Hemsire)lstHemsire.SelectedItem;
             txtAd.Text = seciliHemsire.Ad;
             txtSoyad.Text = seciliHemsire.Soyad;
             txtTcNo.Text = seciliHemsire.TcNo;
