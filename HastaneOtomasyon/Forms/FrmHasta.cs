@@ -49,11 +49,11 @@ namespace HastaneOtomasyon.Forms
             gbHasta.Visible = true;
             gbHastaList.Visible = false;
             gbDoktor.Visible = false;
-            flowLayoutPanel1.Visible = false;
+            flowLayoutPanel1.Visible = true;
 
             Button btn;
             DateTime muayeneSaati = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 9, 0, 0);
-            int kontrol;
+            int kontrolSaat;
             for (int i = 1; i <= 20; i++)
             {
 
@@ -63,10 +63,13 @@ namespace HastaneOtomasyon.Forms
                 btn.Text = muayeneSaati.ToShortTimeString();
 
                 if (muayeneSaati.ToShortTimeString() == "11:45") muayeneSaati = muayeneSaati.AddHours(1);
-
-                kontrol = TimeSpan.Compare(muayeneSaati.TimeOfDay, DateTime.Now.TimeOfDay);
-
-                //if (kontrol == -1) btn.Enabled = false;
+               
+                // if (dtpMuayene.Value.DayOfYear > DateTime.Now.DayOfYear) btn.Enabled = true;
+                else
+                {
+                    kontrolSaat = TimeSpan.Compare(muayeneSaati.TimeOfDay, DateTime.Now.TimeOfDay);
+                    if (kontrolSaat == -1) btn.Enabled = true;
+                }
 
                 muayeneSaati = muayeneSaati.AddMinutes(15);
 
