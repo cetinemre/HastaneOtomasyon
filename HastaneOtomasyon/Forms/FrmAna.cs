@@ -40,48 +40,50 @@ namespace HastaneOtomasyon.Forms
         private FrmPersonel _frmPersonel;
         private void hastaIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (_frmHasta == null || _frmHasta.IsDisposed)
+            if (_frmHasta != null && !_frmHasta.IsDisposed) return;
+
+            _frmHasta = new FrmHasta
             {
-                _frmHasta = new FrmHasta();
-                _frmHasta.WindowState = FormWindowState.Maximized;
-                _frmHasta.MdiParent = this;
-                _frmHasta.Show();
-            }
+                WindowState = FormWindowState.Maximized,
+                MdiParent = this
+            };
+            _frmHasta.Show();
         }
 
         private void doctorIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (_frmDoktor == null || _frmDoktor.IsDisposed)
+            if (_frmDoktor != null && !_frmDoktor.IsDisposed) return;
+
+            _frmDoktor = new FrmDoktor
             {
-                _frmDoktor = new FrmDoktor();
-                _frmDoktor.WindowState = FormWindowState.Maximized;
-                _frmDoktor.MdiParent = this;
-                _frmDoktor.Show();
-            }
+                WindowState = FormWindowState.Maximized,
+                MdiParent = this
+            };
+            _frmDoktor.Show();
         }
 
         private void hemsireIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (_frmHemsire == null || _frmHemsire.IsDisposed)
+            if (_frmHemsire != null && !_frmHemsire.IsDisposed) return;
+
+            _frmHemsire = new FrmHemsire
             {
-                _frmHemsire = new FrmHemsire();
-                _frmHemsire.WindowState = FormWindowState.Maximized;
-                _frmHemsire.MdiParent = this;
-                _frmHemsire.Show();
-                
-            }
+                WindowState = FormWindowState.Maximized,
+                MdiParent = this
+            };
+            _frmHemsire.Show();
         }
 
         private void personelIslemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (_frmPersonel == null || _frmPersonel.IsDisposed)
+            if (_frmPersonel != null && !_frmPersonel.IsDisposed) return;
+
+            _frmPersonel = new FrmPersonel
             {
-                _frmPersonel = new FrmPersonel();
-                _frmPersonel.WindowState = FormWindowState.Maximized;
-                _frmPersonel.MdiParent = this;
-                _frmPersonel.Show();
-                
-            }
+                WindowState = FormWindowState.Maximized,
+                MdiParent = this
+            };
+            _frmPersonel.Show();
         }
 
         private void FrmAna_Load(object sender, EventArgs e)
@@ -99,9 +101,9 @@ namespace HastaneOtomasyon.Forms
             {
                 try
                 {
-                    FileStream dosya = File.OpenRead(dosyaAc.FileName);
-                    StreamReader reader = new StreamReader(dosya);
-                    string dosyaIcerigi = reader.ReadToEnd();
+                    var dosya = File.OpenRead(dosyaAc.FileName);
+                    var reader = new StreamReader(dosya);
+                    var dosyaIcerigi = reader.ReadToEnd();
                     reader.Close();
                     dosya.Close();
                     Kisi.DoktorList = JsonConvert.DeserializeObject<List<Doktor>>(dosyaIcerigi);
@@ -140,8 +142,8 @@ namespace HastaneOtomasyon.Forms
             dosyaKaydet.FileName = "DoktorListesi.json";
             if (dosyaKaydet.ShowDialog() == DialogResult.OK)
             {
-                FileStream file = File.Open(dosyaKaydet.FileName, FileMode.Create);
-                StreamWriter writer = new StreamWriter(file);
+                var file = File.Open(dosyaKaydet.FileName, FileMode.Create);
+                var writer = new StreamWriter(file);
                 writer.Write(JsonConvert.SerializeObject(Kisi.DoktorList));
                 writer.Close();
                 writer.Dispose();
