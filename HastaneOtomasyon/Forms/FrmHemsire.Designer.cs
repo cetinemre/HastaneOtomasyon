@@ -81,7 +81,7 @@
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(327, 22);
             this.TxtArama.TabIndex = 41;
-            this.TxtArama.TextChanged += new System.EventHandler(this.txtbHemsireArama_TextChanged);
+            this.TxtArama.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtArama_KeyUp);
             // 
             // btnHemsireGuncelle
             // 

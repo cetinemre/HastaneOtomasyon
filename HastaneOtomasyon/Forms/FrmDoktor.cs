@@ -122,5 +122,7 @@ namespace HastaneOtomasyon.Forms
         {
 
         }
+
+        
     }
 }

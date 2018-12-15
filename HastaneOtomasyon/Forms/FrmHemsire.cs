@@ -97,9 +97,9 @@ namespace HastaneOtomasyon.Forms
             txtTcNo.Text = seciliHemsire.TcNo;
             cbBrans.SelectedItem = seciliHemsire.Brans;
             dateTimePicker1.Value = seciliHemsire.DogumTarihi;
-        }
+        }   
 
-        private void txtbHemsireArama_TextChanged(object sender, EventArgs e)
+        private void TxtArama_KeyUp(object sender, KeyEventArgs e)
         {
             string ara = TxtArama.Text.ToLower();
             _aramalar = new List<Hemsire>();

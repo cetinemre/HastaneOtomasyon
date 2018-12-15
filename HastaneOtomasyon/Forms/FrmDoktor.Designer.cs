@@ -65,9 +65,11 @@
             this.gbDoktorEkle.Controls.Add(this.txtTcNo);
             this.gbDoktorEkle.Controls.Add(this.txtSoyad);
             this.gbDoktorEkle.Controls.Add(this.txtAd);
-            this.gbDoktorEkle.Location = new System.Drawing.Point(12, 12);
+            this.gbDoktorEkle.Location = new System.Drawing.Point(16, 15);
+            this.gbDoktorEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbDoktorEkle.Name = "gbDoktorEkle";
-            this.gbDoktorEkle.Size = new System.Drawing.Size(780, 437);
+            this.gbDoktorEkle.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbDoktorEkle.Size = new System.Drawing.Size(1040, 538);
             this.gbDoktorEkle.TabIndex = 0;
             this.gbDoktorEkle.TabStop = false;
             this.gbDoktorEkle.Text = "Doktor Bilgileri";
@@ -75,17 +77,19 @@
             // 
             // TxtArama
             // 
-            this.TxtArama.Location = new System.Drawing.Point(408, 38);
+            this.TxtArama.Location = new System.Drawing.Point(544, 47);
+            this.TxtArama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtArama.Name = "TxtArama";
-            this.TxtArama.Size = new System.Drawing.Size(246, 20);
+            this.TxtArama.Size = new System.Drawing.Size(327, 22);
             this.TxtArama.TabIndex = 19;
             this.TxtArama.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtArama_KeyUp);
             // 
             // btnDoktorSil
             // 
-            this.btnDoktorSil.Location = new System.Drawing.Point(175, 232);
+            this.btnDoktorSil.Location = new System.Drawing.Point(233, 286);
+            this.btnDoktorSil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDoktorSil.Name = "btnDoktorSil";
-            this.btnDoktorSil.Size = new System.Drawing.Size(162, 53);
+            this.btnDoktorSil.Size = new System.Drawing.Size(216, 65);
             this.btnDoktorSil.TabIndex = 17;
             this.btnDoktorSil.Text = "Sil";
             this.btnDoktorSil.UseVisualStyleBackColor = true;
@@ -93,9 +97,10 @@
             // 
             // btnDoktorGuncelle
             // 
-            this.btnDoktorGuncelle.Location = new System.Drawing.Point(175, 291);
+            this.btnDoktorGuncelle.Location = new System.Drawing.Point(233, 358);
+            this.btnDoktorGuncelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDoktorGuncelle.Name = "btnDoktorGuncelle";
-            this.btnDoktorGuncelle.Size = new System.Drawing.Size(162, 53);
+            this.btnDoktorGuncelle.Size = new System.Drawing.Size(216, 65);
             this.btnDoktorGuncelle.TabIndex = 18;
             this.btnDoktorGuncelle.Text = "Güncelle";
             this.btnDoktorGuncelle.Click += new System.EventHandler(this.btnDoktorGuncelle_Click);
@@ -103,17 +108,20 @@
             // lstDoktor
             // 
             this.lstDoktor.FormattingEnabled = true;
-            this.lstDoktor.Location = new System.Drawing.Point(408, 67);
+            this.lstDoktor.ItemHeight = 16;
+            this.lstDoktor.Location = new System.Drawing.Point(544, 82);
+            this.lstDoktor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstDoktor.Name = "lstDoktor";
-            this.lstDoktor.Size = new System.Drawing.Size(246, 277);
+            this.lstDoktor.Size = new System.Drawing.Size(327, 340);
             this.lstDoktor.TabIndex = 17;
             this.lstDoktor.SelectedIndexChanged += new System.EventHandler(this.lstDoktor_SelectedIndexChanged);
             // 
             // btnDoktorEkle
             // 
-            this.btnDoktorEkle.Location = new System.Drawing.Point(175, 173);
+            this.btnDoktorEkle.Location = new System.Drawing.Point(233, 213);
+            this.btnDoktorEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDoktorEkle.Name = "btnDoktorEkle";
-            this.btnDoktorEkle.Size = new System.Drawing.Size(162, 53);
+            this.btnDoktorEkle.Size = new System.Drawing.Size(216, 65);
             this.btnDoktorEkle.TabIndex = 16;
             this.btnDoktorEkle.Text = "Ekle";
             this.btnDoktorEkle.UseVisualStyleBackColor = true;
@@ -122,11 +130,12 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(175, 117);
+            this.dateTimePicker1.Location = new System.Drawing.Point(233, 144);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.MaxDate = new System.DateTime(1994, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(215, 22);
             this.dateTimePicker1.TabIndex = 14;
             this.dateTimePicker1.Value = new System.DateTime(1994, 12, 31, 0, 0, 0, 0);
             // 
@@ -134,87 +143,97 @@
             // 
             this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBrans.FormattingEnabled = true;
-            this.cbBrans.Location = new System.Drawing.Point(175, 141);
+            this.cbBrans.Location = new System.Drawing.Point(233, 174);
+            this.cbBrans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbBrans.Name = "cbBrans";
-            this.cbBrans.Size = new System.Drawing.Size(162, 21);
+            this.cbBrans.Size = new System.Drawing.Size(215, 24);
             this.cbBrans.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(95, 144);
+            this.label5.Location = new System.Drawing.Point(127, 177);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 7;
             this.label5.Text = "Branşı";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(95, 118);
+            this.label4.Location = new System.Drawing.Point(127, 145);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.Size = new System.Drawing.Size(89, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "DoğumTarihi";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(95, 94);
+            this.label3.Location = new System.Drawing.Point(127, 116);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "TC No";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 70);
+            this.label2.Location = new System.Drawing.Point(127, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 10;
             this.label2.Text = "Soyad";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 46);
+            this.label1.Location = new System.Drawing.Point(127, 57);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.Size = new System.Drawing.Size(25, 17);
             this.label1.TabIndex = 11;
             this.label1.Text = "Ad";
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(175, 91);
+            this.txtTcNo.Location = new System.Drawing.Point(233, 112);
+            this.txtTcNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(162, 20);
+            this.txtTcNo.Size = new System.Drawing.Size(215, 22);
             this.txtTcNo.TabIndex = 13;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(175, 67);
+            this.txtSoyad.Location = new System.Drawing.Point(233, 82);
+            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(162, 20);
+            this.txtSoyad.Size = new System.Drawing.Size(215, 22);
             this.txtSoyad.TabIndex = 12;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(175, 43);
+            this.txtAd.Location = new System.Drawing.Point(233, 53);
+            this.txtAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(162, 20);
+            this.txtAd.Size = new System.Drawing.Size(215, 22);
             this.txtAd.TabIndex = 6;
             // 
             // FrmDoktor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(804, 461);
+            this.ClientSize = new System.Drawing.Size(1072, 567);
             this.Controls.Add(this.gbDoktorEkle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmDoktor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor İşlemleri";
