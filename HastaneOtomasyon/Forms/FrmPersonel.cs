@@ -4,7 +4,6 @@ using System.Windows.Forms;
 using HastaneOtomasyon.Abstracts;
 using HastaneOtomasyon.Concretes;
 
-
 namespace HastaneOtomasyon.Forms
 {
     public partial class FrmPersonel : Form
@@ -27,8 +26,8 @@ namespace HastaneOtomasyon.Forms
                 yeniPersonel.Soyad = txtSoyad.Text;
                 yeniPersonel.DogumTarihi = dateTimePicker1.Value;
                 yeniPersonel.TcNo = txtTcNo.Text;
-                //yeniPersonel.Brans = cbBrans.Text;
-                //yeniPersonel.Maas = (int)Enum.Parse(typeof(Maaslar), yeniPersonel.Brans);
+                yeniPersonel.Brans = cbBrans.Text;
+                yeniPersonel.Maas = (int)Enum.Parse(typeof(Maaslar), yeniPersonel.Brans);
                 personelListesi.Add(yeniPersonel);
 
                 FrmAna.FormuTemizle(gbPersonel);
@@ -53,7 +52,7 @@ namespace HastaneOtomasyon.Forms
 
             FrmAna.FormuTemizle(gbPersonel);
 
-            lstPersonel.Items.AddRange(Kisi.DoktorList.ToArray());
+            lstPersonel.Items.AddRange(Kisi.PersonelList.ToArray());
         }
 
         private void btnPersonelGuncelle_Click(object sender, EventArgs e)
@@ -67,7 +66,7 @@ namespace HastaneOtomasyon.Forms
                 seciliPersonel.Ad = txtAd.Text;
                 seciliPersonel.Soyad = txtSoyad.Text;
                 seciliPersonel.TcNo = txtTcNo.Text;
-               // seciliPersonel.Brans = cbBrans.Text;
+                seciliPersonel.Brans = cbBrans.Text;
                 seciliPersonel.DogumTarihi = dateTimePicker1.Value;
             }
             catch (Exception ex)
@@ -81,24 +80,22 @@ namespace HastaneOtomasyon.Forms
 
         private void FrmPersonel_Load(object sender, EventArgs e)
         {
-
             FrmAna.FormuTemizle(gbPersonel);
-            //cbBrans.Items.AddRange(Enum.GetNames(typeof(Kisi.BranslarDoktor)));
+            cbBrans.Items.AddRange(Enum.GetNames(typeof(Kisi.BranslarPersonel)));
             var personelListesi = Kisi.PersonelList;
-            if (Kisi.DoktorList != null) personelListesi.AddRange(personelListesi.ToArray());
+            if (Kisi.PersonelList != null) personelListesi.AddRange(personelListesi.ToArray());
             // lstPersonel.DataSource = Kisi.PersonelList;
         }
 
         private void lstPersonel_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (lstPersonel.SelectedItem == null) return;
 
             var seciliPersonel = (Personel)lstPersonel.SelectedItem;
             txtAd.Text = seciliPersonel.Ad;
             txtSoyad.Text = seciliPersonel.Soyad;
             txtTcNo.Text = seciliPersonel.TcNo;
-           // cbBrans.SelectedItem = seciliDoktor.Brans;
+            cbBrans.SelectedItem = seciliPersonel.Brans;
             dateTimePicker1.Value = seciliPersonel.DogumTarihi;
         }
 

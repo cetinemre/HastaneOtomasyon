@@ -43,11 +43,15 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
+            this.cbBrans = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.gbPersonel.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbPersonel
             // 
+            this.gbPersonel.Controls.Add(this.label6);
+            this.gbPersonel.Controls.Add(this.cbBrans);
             this.gbPersonel.Controls.Add(this.TxtArama);
             this.gbPersonel.Controls.Add(this.lstPersonel);
             this.gbPersonel.Controls.Add(this.btnPersonelGuncelle);
@@ -92,7 +96,7 @@
             // 
             // btnPersonelGuncelle
             // 
-            this.btnPersonelGuncelle.Location = new System.Drawing.Point(263, 322);
+            this.btnPersonelGuncelle.Location = new System.Drawing.Point(259, 376);
             this.btnPersonelGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnPersonelGuncelle.Name = "btnPersonelGuncelle";
             this.btnPersonelGuncelle.Size = new System.Drawing.Size(203, 58);
@@ -102,7 +106,7 @@
             // 
             // btnPersonelSil
             // 
-            this.btnPersonelSil.Location = new System.Drawing.Point(263, 257);
+            this.btnPersonelSil.Location = new System.Drawing.Point(259, 310);
             this.btnPersonelSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnPersonelSil.Name = "btnPersonelSil";
             this.btnPersonelSil.Size = new System.Drawing.Size(203, 58);
@@ -113,7 +117,7 @@
             // 
             // btnPersonelEkle
             // 
-            this.btnPersonelEkle.Location = new System.Drawing.Point(263, 192);
+            this.btnPersonelEkle.Location = new System.Drawing.Point(261, 235);
             this.btnPersonelEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnPersonelEkle.Name = "btnPersonelEkle";
             this.btnPersonelEkle.Size = new System.Drawing.Size(203, 58);
@@ -125,12 +129,12 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(263, 114);
+            this.dateTimePicker1.Location = new System.Drawing.Point(263, 112);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.MaxDate = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(201, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(203, 22);
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.Value = new System.DateTime(2000, 12, 13, 0, 0, 0, 0);
             // 
@@ -180,7 +184,7 @@
             this.txtTcNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(201, 22);
+            this.txtTcNo.Size = new System.Drawing.Size(203, 22);
             this.txtTcNo.TabIndex = 23;
             // 
             // txtSoyad
@@ -188,7 +192,7 @@
             this.txtSoyad.Location = new System.Drawing.Point(263, 82);
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(201, 22);
+            this.txtSoyad.Size = new System.Drawing.Size(203, 22);
             this.txtSoyad.TabIndex = 22;
             // 
             // txtAd
@@ -196,8 +200,26 @@
             this.txtAd.Location = new System.Drawing.Point(263, 52);
             this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(201, 22);
+            this.txtAd.Size = new System.Drawing.Size(203, 22);
             this.txtAd.TabIndex = 17;
+            // 
+            // cbBrans
+            // 
+            this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBrans.FormattingEnabled = true;
+            this.cbBrans.Location = new System.Drawing.Point(263, 183);
+            this.cbBrans.Name = "cbBrans";
+            this.cbBrans.Size = new System.Drawing.Size(203, 24);
+            this.cbBrans.TabIndex = 31;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(124, 183);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 17);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Brans";
             // 
             // FrmPersonel
             // 
@@ -234,5 +256,7 @@
         private System.Windows.Forms.Button btnPersonelGuncelle;
         private System.Windows.Forms.ListBox lstPersonel;
         private System.Windows.Forms.TextBox TxtArama;
+        private System.Windows.Forms.ComboBox cbBrans;
+        private System.Windows.Forms.Label label6;
     }
 }
