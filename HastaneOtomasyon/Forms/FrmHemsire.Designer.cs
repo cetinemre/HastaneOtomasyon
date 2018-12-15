@@ -139,6 +139,7 @@
             // 
             // cbBrans
             // 
+            this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBrans.FormattingEnabled = true;
             this.cbBrans.Location = new System.Drawing.Point(268, 169);
             this.cbBrans.Margin = new System.Windows.Forms.Padding(4);
