@@ -116,6 +116,10 @@ namespace HastaneOtomasyon.Forms
             lstHemsire.Items.AddRange(_aramalar.ToArray());
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAna.FormuTemizle(gbHemsire);
+            if (Kisi.HemsireList != null) lstHemsire.Items.AddRange(Kisi.HemsireList.ToArray());
+        }
     }
 }

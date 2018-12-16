@@ -45,11 +45,15 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbPersonel.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbPersonel
             // 
+            this.gbPersonel.Controls.Add(this.button1);
+            this.gbPersonel.Controls.Add(this.label5);
             this.gbPersonel.Controls.Add(this.label6);
             this.gbPersonel.Controls.Add(this.cbBrans);
             this.gbPersonel.Controls.Add(this.TxtArama);
@@ -87,16 +91,16 @@
             this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBrans.FormattingEnabled = true;
             this.cbBrans.Location = new System.Drawing.Point(175, 141);
-            this.cbBrans.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBrans.Margin = new System.Windows.Forms.Padding(2);
             this.cbBrans.Name = "cbBrans";
             this.cbBrans.Size = new System.Drawing.Size(162, 21);
             this.cbBrans.TabIndex = 4;
             // 
             // TxtArama
             // 
-            this.TxtArama.Location = new System.Drawing.Point(408, 38);
+            this.TxtArama.Location = new System.Drawing.Point(408, 43);
             this.TxtArama.Name = "TxtArama";
-            this.TxtArama.Size = new System.Drawing.Size(246, 20);
+            this.TxtArama.Size = new System.Drawing.Size(194, 20);
             this.TxtArama.TabIndex = 8;
             this.TxtArama.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtArama_KeyUp);
             // 
@@ -207,6 +211,26 @@
             this.txtAd.Size = new System.Drawing.Size(162, 20);
             this.txtAd.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(405, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Personel Listesinde Arama:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(608, 41);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Yenile";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,5 +267,7 @@
         private System.Windows.Forms.TextBox TxtArama;
         private System.Windows.Forms.ComboBox cbBrans;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
     }
 }

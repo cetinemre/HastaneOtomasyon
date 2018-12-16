@@ -115,5 +115,11 @@ namespace HastaneOtomasyon.Forms
             FrmAna.FormuTemizle(gbPersonel);
             lstPersonel.Items.AddRange(_aramalar.ToArray());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAna.FormuTemizle(gbPersonel);
+            if (Kisi.PersonelList != null) lstPersonel.Items.AddRange(Kisi.PersonelList.ToArray());
+        }
     }
 }

@@ -109,6 +109,7 @@ namespace HastaneOtomasyon.Forms
                     
                     MessageBox.Show($@"{Kisi.DoktorList.Count} doktor sisteme basariyla eklendi");
                     var doktorListesi = Kisi.DoktorList;
+                   
                 }
                 catch (Exception ex)
                 {

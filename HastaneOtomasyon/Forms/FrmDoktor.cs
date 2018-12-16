@@ -29,19 +29,23 @@ namespace HastaneOtomasyon.Forms
                 yeniDoktor.Brans = cbBrans.Text;
                 yeniDoktor.Maas = (int) Enum.Parse(typeof(Maaslar), yeniDoktor.Brans);
                 doktorListesi.Add(yeniDoktor);
-
-
+                
                 FrmAna.FormuTemizle(gbDoktorEkle);
 
-                if (doktorListesi != null) lstDoktor.Items.AddRange(doktorListesi.ToArray());
-             
+                RefreshList();
+
             }
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
             }
         }
-       
+
+        public void RefreshList()
+        {
+            if (Kisi.DoktorList != null) lstDoktor.Items.AddRange(Kisi.DoktorList.ToArray());
+        }
+
 
         private void btnDoktorSil_Click(object sender, EventArgs e)
         {
@@ -120,6 +124,10 @@ namespace HastaneOtomasyon.Forms
             lstDoktor.Items.AddRange(_aramalar.ToArray());
         }
 
-        
+        private void btnYenile_Click(object sender, EventArgs e)
+        {
+            FrmAna.FormuTemizle(gbDoktorEkle);
+            if (Kisi.DoktorList != null) lstDoktor.Items.AddRange(Kisi.DoktorList.ToArray());
+        }
     }
 }
