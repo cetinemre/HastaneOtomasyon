@@ -48,7 +48,7 @@ namespace HastaneOtomasyon.Forms
 
             Kisi.PersonelList.Remove(seciliPersonel);
 
-            MessageBox.Show($@"{seciliPersonel.Ad} {seciliPersonel.Soyad} doktoru silindi.", @"Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            MessageBox.Show($@"{seciliPersonel.Ad} {seciliPersonel.Soyad} personeli silindi.", @"Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
             FrmAna.FormuTemizle(gbPersonel);
 
