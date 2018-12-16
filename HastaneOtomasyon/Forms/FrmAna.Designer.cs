@@ -118,28 +118,28 @@
             // doktorToolStripMenuItem
             // 
             this.doktorToolStripMenuItem.Name = "doktorToolStripMenuItem";
-            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doktorToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.doktorToolStripMenuItem.Text = "Doktor";
             this.doktorToolStripMenuItem.Click += new System.EventHandler(this.doktorToolStripMenuItem_Click);
             // 
             // hemsireToolStripMenuItem
             // 
             this.hemsireToolStripMenuItem.Name = "hemsireToolStripMenuItem";
-            this.hemsireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hemsireToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.hemsireToolStripMenuItem.Text = "Hemsire";
             this.hemsireToolStripMenuItem.Click += new System.EventHandler(this.hemsireToolStripMenuItem_Click);
             // 
             // personelToolStripMenuItem
             // 
             this.personelToolStripMenuItem.Name = "personelToolStripMenuItem";
-            this.personelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.personelToolStripMenuItem.Text = "Personel";
             this.personelToolStripMenuItem.Click += new System.EventHandler(this.personelToolStripMenuItem_Click);
             // 
             // hastaToolStripMenuItem
             // 
             this.hastaToolStripMenuItem.Name = "hastaToolStripMenuItem";
-            this.hastaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hastaToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.hastaToolStripMenuItem.Text = "Hasta";
             this.hastaToolStripMenuItem.Click += new System.EventHandler(this.hastaToolStripMenuItem_Click);
             // 
