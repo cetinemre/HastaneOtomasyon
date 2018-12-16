@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHemsire));
             this.gbHemsire = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.TxtArama = new System.Windows.Forms.TextBox();
             this.btnHemsireGuncelle = new System.Windows.Forms.Button();
             this.btnHemsireSil = new System.Windows.Forms.Button();
@@ -45,8 +47,8 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbDoktoru = new System.Windows.Forms.ComboBox();
             this.gbHemsire.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +62,8 @@
             this.gbHemsire.Controls.Add(this.lstHemsire);
             this.gbHemsire.Controls.Add(this.btnHemsireEkle);
             this.gbHemsire.Controls.Add(this.dateTimePicker1);
+            this.gbHemsire.Controls.Add(this.cbDoktoru);
+            this.gbHemsire.Controls.Add(this.label7);
             this.gbHemsire.Controls.Add(this.cbBrans);
             this.gbHemsire.Controls.Add(this.label5);
             this.gbHemsire.Controls.Add(this.label4);
@@ -76,6 +80,26 @@
             this.gbHemsire.TabStop = false;
             this.gbHemsire.Text = "Hemsire Bilgileri";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(405, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Hemsire Listesinde Arama:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(608, 41);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Yenile";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TxtArama
             // 
             this.TxtArama.Location = new System.Drawing.Point(408, 43);
@@ -87,7 +111,7 @@
             // 
             // btnHemsireGuncelle
             // 
-            this.btnHemsireGuncelle.Location = new System.Drawing.Point(175, 291);
+            this.btnHemsireGuncelle.Location = new System.Drawing.Point(175, 311);
             this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
             this.btnHemsireGuncelle.Size = new System.Drawing.Size(162, 53);
             this.btnHemsireGuncelle.TabIndex = 8;
@@ -96,8 +120,8 @@
             // 
             // btnHemsireSil
             // 
-            this.btnHemsireSil.Location = new System.Drawing.Point(175, 232);
-            this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHemsireSil.Location = new System.Drawing.Point(175, 253);
+            this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(2);
             this.btnHemsireSil.Name = "btnHemsireSil";
             this.btnHemsireSil.Size = new System.Drawing.Size(162, 53);
             this.btnHemsireSil.TabIndex = 7;
@@ -109,7 +133,7 @@
             // 
             this.lstHemsire.FormattingEnabled = true;
             this.lstHemsire.Location = new System.Drawing.Point(408, 67);
-            this.lstHemsire.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstHemsire.Margin = new System.Windows.Forms.Padding(2);
             this.lstHemsire.Name = "lstHemsire";
             this.lstHemsire.Size = new System.Drawing.Size(246, 277);
             this.lstHemsire.TabIndex = 10;
@@ -117,7 +141,7 @@
             // 
             // btnHemsireEkle
             // 
-            this.btnHemsireEkle.Location = new System.Drawing.Point(175, 173);
+            this.btnHemsireEkle.Location = new System.Drawing.Point(175, 195);
             this.btnHemsireEkle.Name = "btnHemsireEkle";
             this.btnHemsireEkle.Size = new System.Drawing.Size(162, 53);
             this.btnHemsireEkle.TabIndex = 6;
@@ -211,25 +235,23 @@
             this.txtAd.Size = new System.Drawing.Size(162, 20);
             this.txtAd.TabIndex = 1;
             // 
-            // button1
+            // label7
             // 
-            this.button1.Location = new System.Drawing.Point(608, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Yenile";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(95, 171);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Doktoru";
             // 
-            // label6
+            // cbDoktoru
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(405, 27);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Hemsire Listesinde Arama:";
+            this.cbDoktoru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDoktoru.FormattingEnabled = true;
+            this.cbDoktoru.Location = new System.Drawing.Point(175, 168);
+            this.cbDoktoru.Name = "cbDoktoru";
+            this.cbDoktoru.Size = new System.Drawing.Size(162, 21);
+            this.cbDoktoru.TabIndex = 5;
             // 
             // FrmHemsire
             // 
@@ -269,5 +291,7 @@
         private System.Windows.Forms.TextBox TxtArama;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbDoktoru;
+        private System.Windows.Forms.Label label7;
     }
 }

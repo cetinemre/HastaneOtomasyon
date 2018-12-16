@@ -22,6 +22,7 @@ namespace HastaneOtomasyon.Forms
 
             try
             {
+                yeniHemsire.Doktor = cbDoktoru.SelectedText;
                 yeniHemsire.Ad = txtAd.Text;
                 yeniHemsire.Soyad = txtSoyad.Text;
                 yeniHemsire.DogumTarihi = dateTimePicker1.Value;
@@ -82,9 +83,10 @@ namespace HastaneOtomasyon.Forms
         {
             FrmAna.FormuTemizle(gbHemsire);
             cbBrans.Items.AddRange(Enum.GetNames(typeof(Kisi.BranslarHemsire)));
+            cbDoktoru.Items.AddRange(Kisi.DoktorList.ToArray());
             var hemsireListesi = Kisi.HemsireList;
             if (Kisi.HemsireList != null) hemsireListesi.AddRange(hemsireListesi.ToArray());
-            // lstHemsire.DataSource = Kisi.HemsireList;
+
         }
 
         private void lstHemsire_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,6 +99,7 @@ namespace HastaneOtomasyon.Forms
             txtTcNo.Text = seciliHemsire.TcNo;
             cbBrans.SelectedItem = seciliHemsire.Brans;
             dateTimePicker1.Value = seciliHemsire.DogumTarihi;
+            cbBrans.SelectedItem = seciliHemsire.Doktor;
         }   
 
         private void TxtArama_KeyUp(object sender, KeyEventArgs e)
