@@ -111,8 +111,8 @@
             this.personelToolStripMenuItem,
             this.hastaToolStripMenuItem});
             this.iceriAktarToolStripMenuItem.Name = "iceriAktarToolStripMenuItem";
-            this.iceriAktarToolStripMenuItem.Size = new System.Drawing.Size(69, 36);
-            this.iceriAktarToolStripMenuItem.Text = "İceriAktar";
+            this.iceriAktarToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
+            this.iceriAktarToolStripMenuItem.Text = "İçeri Aktar";
             // 
             // doktorToolStripMenuItem
             // 
@@ -150,8 +150,8 @@
             this.personelToolStripMenuItem1,
             this.hastaToolStripMenuItem1});
             this.disariAktarToolStripMenuItem.Name = "disariAktarToolStripMenuItem";
-            this.disariAktarToolStripMenuItem.Size = new System.Drawing.Size(76, 36);
-            this.disariAktarToolStripMenuItem.Text = "DisariAktar";
+            this.disariAktarToolStripMenuItem.Size = new System.Drawing.Size(79, 36);
+            this.disariAktarToolStripMenuItem.Text = "Dışarı Aktar";
             // 
             // doktorToolStripMenuItem1
             // 

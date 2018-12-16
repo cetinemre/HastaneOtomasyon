@@ -117,12 +117,5 @@ namespace HastaneOtomasyon.Forms
             FrmAna.FormuTemizle(gbDoktorEkle);
             lstDoktor.Items.AddRange(_aramalar.ToArray());
         }
-
-        private void gbDoktorEkle_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }
