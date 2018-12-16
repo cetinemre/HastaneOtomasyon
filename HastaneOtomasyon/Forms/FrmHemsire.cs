@@ -115,5 +115,6 @@ namespace HastaneOtomasyon.Forms
             FrmAna.FormuTemizle(gbHemsire);
             lstHemsire.Items.AddRange(_aramalar.ToArray());
         }
+
     }
 }
