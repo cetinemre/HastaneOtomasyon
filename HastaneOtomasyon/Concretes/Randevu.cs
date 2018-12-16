@@ -38,5 +38,6 @@ namespace HastaneOtomasyon.Concretes
             get => _durum;
             set => _durum = value;
         }
+        
     }
 }

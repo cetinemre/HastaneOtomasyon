@@ -12,14 +12,13 @@ namespace HastaneOtomasyon.Forms
 {
     public partial class FrmHasta : Form
     {
-        
         public FrmHasta()
         {
             InitializeComponent();
         }
             Hasta seciliHasta;
             Doktor seciliDoktor;
-        public string seciliServis;
+            public string seciliServis;
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             
@@ -36,8 +35,8 @@ namespace HastaneOtomasyon.Forms
                 hastaListesi.Add(yeniHasta);
 
                 FrmAna.FormuTemizle(gbHastaList);
+
               if (hastaListesi != null) lstHasta.Items.AddRange(hastaListesi.ToArray());
-                // gbHasta.Visible = false;
                 gbHastaList.Visible = true;
             }
             catch (Exception exception)
@@ -46,15 +45,9 @@ namespace HastaneOtomasyon.Forms
             }
         }
         
-
         private void FrmHasta_Load(object sender, EventArgs e)
         {
-            gbHasta.Visible = true;
-            gbHastaList.Visible = false;
-            gbDoktor.Visible = false;
-            gbServisList.Visible = false;
-            flowLayoutPanel1.Visible = false;
-            btnRandevuBitir.Visible = false;
+            RefreshLoad();
 
             Button btn;
             DateTime muayeneSaati = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 9, 0, 0);
@@ -83,10 +76,18 @@ namespace HastaneOtomasyon.Forms
             }
         }
 
+        private void RefreshLoad()
+        {
+            gbHasta.Visible = true;
+            gbHastaList.Visible = false;
+            gbDoktor.Visible = false;
+            gbServisList.Visible = false;
+            flowLayoutPanel1.Visible = false;
+            btnRandevuBitir.Visible = false;
+        }
+
         private void btnHastaOnayla_Click(object sender, EventArgs e)
         {
-          //  FrmAna.FormuTemizle(gbHastaList);
-          //  FrmAna.FormuTemizle(gbServisList);
             gbServisList.Visible = true;
             seciliHasta = (Hasta) lstHasta.SelectedItem;
             lstHasta.DataSource = Kisi.HastaList;
@@ -99,31 +100,6 @@ namespace HastaneOtomasyon.Forms
             seciliDoktor = (Doktor)lstDoktor.SelectedItem;
             flowLayoutPanel1.Visible = true;
             btnRandevuBitir.Visible = true;
-        }
-
-        private void btnRandevuBitir_Click(object sender, EventArgs e)
-        {
-            var randevuListesi = Kisi.RandevuList;
-            var yeniRandevu = new Randevu();
-
-            try
-            {
-                yeniRandevu.Hasta = seciliHasta;
-                yeniRandevu.Doktor = seciliDoktor;
-                yeniRandevu.Tarih=DateTime.Now;
-                yeniRandevu.Durum = true;
-                yeniRandevu.Saat = flowLayoutPanel1.ToString();
-                
-                // randevuListesi.Add(yeniRandevu);
-              
-                if (randevuListesi != null) lstDoktor.Items.AddRange(randevuListesi?.ToArray());
-                // gbHasta.Visible = false;
-                // gbHastaList.Visible = true;
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show(exception.Message);
-            }
         }
 
         private void btnServisOnayla_Click(object sender, EventArgs e)
@@ -139,10 +115,42 @@ namespace HastaneOtomasyon.Forms
                 }
             }
         }
-
-        private void gbServisList_Enter(object sender, EventArgs e)
+        private void btnRandevuBitir_Click(object sender, EventArgs e)
         {
+            var randevuListesi = Kisi.RandevuList;
+            var yeniRandevu = new Randevu();
+            try
+            {
+                yeniRandevu.Hasta = seciliHasta;
+                yeniRandevu.Doktor = seciliDoktor;
+                yeniRandevu.Tarih = DateTime.Now;
+                yeniRandevu.Durum = true;
+                yeniRandevu.Saat = flowLayoutPanel1.ToString();
 
+                 randevuListesi.Add(yeniRandevu);
+
+                if (randevuListesi != null) lstDoktor.Items.AddRange(randevuListesi?.ToArray());
+                MessageBox.Show($@"{yeniRandevu.Hasta}
+                                    {yeniRandevu.Doktor}
+                                    {yeniRandevu.Tarih}");
+                RefreshScreen();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                RefreshScreen();
+            }
+        }
+
+        private void RefreshScreen()
+        {
+            gbHastaList.Visible = false;
+            gbServisList.Visible = false;
+            gbDoktor.Visible = false;
+            flowLayoutPanel1.Visible = false;
+            btnRandevuBitir.Visible = false;
+            gbHasta.Visible = true;
+            FrmAna.FormuTemizle(gbHasta);
         }
     }
 }
