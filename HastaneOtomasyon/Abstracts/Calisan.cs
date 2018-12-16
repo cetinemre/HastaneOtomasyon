@@ -14,8 +14,8 @@
         HastaBakici = 2500,
         Muhasebe = 3000,
         Satinalma = 4300,
-        AnesteziHemsiresi = 3500,
-        PsikiyatriHemsiresi = 2500,
+        Anestezi = 3500,
+        Psikiyatri = 2500,
         Bashemsire = 4000
     }
 

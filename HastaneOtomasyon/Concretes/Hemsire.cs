@@ -6,16 +6,8 @@ namespace HastaneOtomasyon.Concretes
    {
        private string _brans, _doktor;
 
-       public string Brans  
-       {
-           get => _brans;
-           set => _brans = value;
-       }
-        public string Doktor
-        {
-            get => _doktor;
-            set => _doktor = value;
-        }
+       public string Brans { get; set; }
+        public string Doktor { get; set; }
 
     }
 }
