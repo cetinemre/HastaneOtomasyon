@@ -145,7 +145,7 @@
             this.cbBrans.Margin = new System.Windows.Forms.Padding(4);
             this.cbBrans.Name = "cbBrans";
             this.cbBrans.Size = new System.Drawing.Size(184, 24);
-            this.cbBrans.TabIndex = 35;
+            this.cbBrans.TabIndex = 35;         
             // 
             // label5
             // 
