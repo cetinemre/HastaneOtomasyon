@@ -95,9 +95,10 @@ namespace HastaneOtomasyon.Forms
 
         private void btnDoktorOnayla_Click(object sender, EventArgs e)
         {
-            //FrmAna.FormuTemizle(gbDoktor);
-            //seciliDoktor = (Doktor)lstDoktor.SelectedItem;
-            //lstDoktor.DataSource = Kisi.DoktorList;
+            FrmAna.FormuTemizle(gbDoktor);
+            seciliDoktor = (Doktor)lstDoktor.SelectedItem;
+            flowLayoutPanel1.Visible = true;
+            btnRandevuBitir.Visible = true;
         }
 
         private void btnRandevuBitir_Click(object sender, EventArgs e)
@@ -109,16 +110,18 @@ namespace HastaneOtomasyon.Forms
             {
                 yeniRandevu.Hasta = seciliHasta;
                 yeniRandevu.Doktor = seciliDoktor;
-              //  yeniRandevu.
+                yeniRandevu.Tarih=DateTime.Now;
+                yeniRandevu.Durum = true;
+              //  yeniRandevu.Saat=flowLayoutPanel1.
 
                
                 
                //     randevuListesi.Add(yeniRandevu);
 
 
-                if (randevuListesi != null) lstHasta.Items.AddRange(randevuListesi.ToArray());
+                if (randevuListesi != null) lstDoktor.Items.AddRange(randevuListesi.ToArray());
                 // gbHasta.Visible = false;
-                gbHastaList.Visible = true;
+                // gbHastaList.Visible = true;
             }
             catch (Exception exception)
             {
@@ -130,7 +133,14 @@ namespace HastaneOtomasyon.Forms
         {
             seciliServis = lstServis.SelectedItem.ToString();
             gbDoktor.Visible = true;
-
+            FrmAna.FormuTemizle(gbDoktor);
+            foreach (var doktor in Kisi.DoktorList)
+            {
+                if (doktor.Brans==seciliServis)
+                {
+                    lstDoktor.Items.Add(doktor);
+                }
+            }
         }
     }
 }
