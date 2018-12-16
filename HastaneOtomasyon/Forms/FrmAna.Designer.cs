@@ -113,7 +113,6 @@
             this.iceriAktarToolStripMenuItem.Name = "iceriAktarToolStripMenuItem";
             this.iceriAktarToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
             this.iceriAktarToolStripMenuItem.Text = "İçeri Aktar";
-            this.iceriAktarToolStripMenuItem.Click += new System.EventHandler(this.iceriAktarToolStripMenuItem_Click);
             // 
             // doktorToolStripMenuItem
             // 

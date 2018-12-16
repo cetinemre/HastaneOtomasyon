@@ -204,7 +204,7 @@ namespace HastaneOtomasyon.Forms
             dosyaKaydet.Title = @"Bir JSON dosyası seçiniz";
             dosyaKaydet.Filter = @"(JSON Dosyası) | *.json";
             dosyaKaydet.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            dosyaKaydet.FileName = "DoktorListesi.json";
+            dosyaKaydet.FileName = "DoktorList.json";
             if (dosyaKaydet.ShowDialog() == DialogResult.OK)
             {
                 var file = File.Open(dosyaKaydet.FileName, FileMode.Create);
@@ -261,11 +261,6 @@ namespace HastaneOtomasyon.Forms
                 writer.Close();
                 writer.Dispose();
             }
-        }
-
-        private void iceriAktarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

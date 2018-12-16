@@ -22,7 +22,7 @@ namespace HastaneOtomasyon.Forms
 
             try
             {
-                yeniHemsire.Doktor = cbDoktoru.SelectedText;
+                yeniHemsire.Doktor = cbDoktoru.Text;
                 yeniHemsire.Ad = txtAd.Text;
                 yeniHemsire.Soyad = txtSoyad.Text;
                 yeniHemsire.DogumTarihi = dateTimePicker1.Value;
@@ -34,13 +34,14 @@ namespace HastaneOtomasyon.Forms
                 FrmAna.FormuTemizle(gbHemsire);
 
                 if (hemsireListesi != null) lstHemsire.Items.AddRange(hemsireListesi.ToArray());
+                
             }
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
             }
         }
-
+       
         private void btnHemsireSil_Click(object sender, EventArgs e)
         {
             if (lstHemsire.SelectedItem == null) return;
@@ -64,6 +65,7 @@ namespace HastaneOtomasyon.Forms
 
             try
             {
+                seciliHemsire.Doktor = cbDoktoru.Text;
                 seciliHemsire.Ad = txtAd.Text;
                 seciliHemsire.Soyad = txtSoyad.Text;
                 seciliHemsire.TcNo = txtTcNo.Text;
@@ -99,7 +101,7 @@ namespace HastaneOtomasyon.Forms
             txtTcNo.Text = seciliHemsire.TcNo;
             cbBrans.SelectedItem = seciliHemsire.Brans;
             dateTimePicker1.Value = seciliHemsire.DogumTarihi;
-            cbBrans.SelectedItem = seciliHemsire.Doktor;
+            cbDoktoru.SelectedItem = seciliHemsire.Doktor;
         }   
 
         private void TxtArama_KeyUp(object sender, KeyEventArgs e)
@@ -124,5 +126,6 @@ namespace HastaneOtomasyon.Forms
             FrmAna.FormuTemizle(gbHemsire);
             if (Kisi.HemsireList != null) lstHemsire.Items.AddRange(Kisi.HemsireList.ToArray());
         }
+
     }
 }

@@ -38,6 +38,8 @@
             this.lstHemsire = new System.Windows.Forms.ListBox();
             this.btnHemsireEkle = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cbDoktoru = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.cbBrans = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbDoktoru = new System.Windows.Forms.ComboBox();
             this.gbHemsire.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,9 +73,11 @@
             this.gbHemsire.Controls.Add(this.txtTcNo);
             this.gbHemsire.Controls.Add(this.txtSoyad);
             this.gbHemsire.Controls.Add(this.txtAd);
-            this.gbHemsire.Location = new System.Drawing.Point(12, 12);
+            this.gbHemsire.Location = new System.Drawing.Point(16, 15);
+            this.gbHemsire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbHemsire.Name = "gbHemsire";
-            this.gbHemsire.Size = new System.Drawing.Size(780, 437);
+            this.gbHemsire.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbHemsire.Size = new System.Drawing.Size(1040, 538);
             this.gbHemsire.TabIndex = 0;
             this.gbHemsire.TabStop = false;
             this.gbHemsire.Text = "Hemsire Bilgileri";
@@ -84,17 +86,19 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(405, 27);
+            this.label6.Location = new System.Drawing.Point(540, 33);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 13);
+            this.label6.Size = new System.Drawing.Size(177, 17);
             this.label6.TabIndex = 13;
             this.label6.Text = "Hemsire Listesinde Arama:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(608, 41);
+            this.button1.Location = new System.Drawing.Point(811, 50);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 23);
+            this.button1.Size = new System.Drawing.Size(61, 28);
             this.button1.TabIndex = 11;
             this.button1.Text = "Yenile";
             this.button1.UseVisualStyleBackColor = true;
@@ -102,28 +106,30 @@
             // 
             // TxtArama
             // 
-            this.TxtArama.Location = new System.Drawing.Point(408, 43);
+            this.TxtArama.Location = new System.Drawing.Point(544, 53);
+            this.TxtArama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtArama.MaxLength = 100;
             this.TxtArama.Name = "TxtArama";
-            this.TxtArama.Size = new System.Drawing.Size(194, 20);
+            this.TxtArama.Size = new System.Drawing.Size(257, 22);
             this.TxtArama.TabIndex = 9;
             this.TxtArama.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtArama_KeyUp);
             // 
             // btnHemsireGuncelle
             // 
-            this.btnHemsireGuncelle.Location = new System.Drawing.Point(175, 311);
+            this.btnHemsireGuncelle.Location = new System.Drawing.Point(233, 383);
+            this.btnHemsireGuncelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
-            this.btnHemsireGuncelle.Size = new System.Drawing.Size(162, 53);
+            this.btnHemsireGuncelle.Size = new System.Drawing.Size(216, 65);
             this.btnHemsireGuncelle.TabIndex = 8;
             this.btnHemsireGuncelle.Text = "Güncelle";
             this.btnHemsireGuncelle.Click += new System.EventHandler(this.btnHemsireGuncelle_Click);
             // 
             // btnHemsireSil
             // 
-            this.btnHemsireSil.Location = new System.Drawing.Point(175, 253);
-            this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHemsireSil.Location = new System.Drawing.Point(233, 311);
+            this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHemsireSil.Name = "btnHemsireSil";
-            this.btnHemsireSil.Size = new System.Drawing.Size(162, 53);
+            this.btnHemsireSil.Size = new System.Drawing.Size(216, 65);
             this.btnHemsireSil.TabIndex = 7;
             this.btnHemsireSil.Text = "Sil";
             this.btnHemsireSil.UseVisualStyleBackColor = true;
@@ -132,18 +138,20 @@
             // lstHemsire
             // 
             this.lstHemsire.FormattingEnabled = true;
-            this.lstHemsire.Location = new System.Drawing.Point(408, 67);
-            this.lstHemsire.Margin = new System.Windows.Forms.Padding(2);
+            this.lstHemsire.ItemHeight = 16;
+            this.lstHemsire.Location = new System.Drawing.Point(544, 82);
+            this.lstHemsire.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstHemsire.Name = "lstHemsire";
-            this.lstHemsire.Size = new System.Drawing.Size(246, 277);
+            this.lstHemsire.Size = new System.Drawing.Size(327, 340);
             this.lstHemsire.TabIndex = 10;
             this.lstHemsire.SelectedIndexChanged += new System.EventHandler(this.lstHemsire_SelectedIndexChanged);
             // 
             // btnHemsireEkle
             // 
-            this.btnHemsireEkle.Location = new System.Drawing.Point(175, 195);
+            this.btnHemsireEkle.Location = new System.Drawing.Point(233, 240);
+            this.btnHemsireEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHemsireEkle.Name = "btnHemsireEkle";
-            this.btnHemsireEkle.Size = new System.Drawing.Size(162, 53);
+            this.btnHemsireEkle.Size = new System.Drawing.Size(216, 65);
             this.btnHemsireEkle.TabIndex = 6;
             this.btnHemsireEkle.Text = "Ekle";
             this.btnHemsireEkle.Click += new System.EventHandler(this.btnHemsireEkle_Click);
@@ -151,116 +159,129 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(175, 117);
+            this.dateTimePicker1.Location = new System.Drawing.Point(233, 144);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.MaxDate = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(215, 22);
             this.dateTimePicker1.TabIndex = 4;
             this.dateTimePicker1.Value = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
+            // 
+            // cbDoktoru
+            // 
+            this.cbDoktoru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDoktoru.FormattingEnabled = true;
+            this.cbDoktoru.Location = new System.Drawing.Point(233, 207);
+            this.cbDoktoru.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDoktoru.Name = "cbDoktoru";
+            this.cbDoktoru.Size = new System.Drawing.Size(215, 24);
+            this.cbDoktoru.TabIndex = 5;
+            //
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(127, 210);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 17);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Doktoru";
             // 
             // cbBrans
             // 
             this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBrans.FormattingEnabled = true;
-            this.cbBrans.Location = new System.Drawing.Point(175, 141);
+            this.cbBrans.Location = new System.Drawing.Point(233, 174);
+            this.cbBrans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbBrans.Name = "cbBrans";
-            this.cbBrans.Size = new System.Drawing.Size(162, 21);
+            this.cbBrans.Size = new System.Drawing.Size(215, 24);
             this.cbBrans.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(95, 144);
+            this.label5.Location = new System.Drawing.Point(127, 177);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Branşı";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(95, 118);
+            this.label4.Location = new System.Drawing.Point(127, 145);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.Size = new System.Drawing.Size(89, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "DoğumTarihi";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(95, 94);
+            this.label3.Location = new System.Drawing.Point(127, 116);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "TC No";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 70);
+            this.label2.Location = new System.Drawing.Point(127, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Soyad";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 46);
+            this.label1.Location = new System.Drawing.Point(127, 57);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.Size = new System.Drawing.Size(25, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ad";
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(175, 91);
+            this.txtTcNo.Location = new System.Drawing.Point(233, 112);
+            this.txtTcNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(162, 20);
+            this.txtTcNo.Size = new System.Drawing.Size(215, 22);
             this.txtTcNo.TabIndex = 3;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(175, 67);
+            this.txtSoyad.Location = new System.Drawing.Point(233, 82);
+            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(162, 20);
+            this.txtSoyad.Size = new System.Drawing.Size(215, 22);
             this.txtSoyad.TabIndex = 2;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(175, 43);
+            this.txtAd.Location = new System.Drawing.Point(233, 53);
+            this.txtAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(162, 20);
+            this.txtAd.Size = new System.Drawing.Size(215, 22);
             this.txtAd.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(95, 171);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Doktoru";
-            // 
-            // cbDoktoru
-            // 
-            this.cbDoktoru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDoktoru.FormattingEnabled = true;
-            this.cbDoktoru.Location = new System.Drawing.Point(175, 168);
-            this.cbDoktoru.Name = "cbDoktoru";
-            this.cbDoktoru.Size = new System.Drawing.Size(162, 21);
-            this.cbDoktoru.TabIndex = 5;
             // 
             // FrmHemsire
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(804, 461);
+            this.ClientSize = new System.Drawing.Size(1072, 567);
             this.Controls.Add(this.gbHemsire);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmHemsire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hemşire İşlemleri";
