@@ -62,7 +62,7 @@
             this.txtTCNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTCNo.MaxLength = 11;
             this.txtTCNo.Name = "txtTCNo";
-            this.txtTCNo.Size = new System.Drawing.Size(132, 22);
+            this.txtTCNo.Size = new System.Drawing.Size(165, 22);
             this.txtTCNo.TabIndex = 3;
             // 
             // txtSoyad
@@ -70,7 +70,7 @@
             this.txtSoyad.Location = new System.Drawing.Point(123, 66);
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(132, 22);
+            this.txtSoyad.Size = new System.Drawing.Size(165, 22);
             this.txtSoyad.TabIndex = 2;
             // 
             // txtAd
@@ -78,7 +78,7 @@
             this.txtAd.Location = new System.Drawing.Point(123, 34);
             this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(132, 22);
+            this.txtAd.Size = new System.Drawing.Size(165, 22);
             this.txtAd.TabIndex = 1;
             // 
             // lblDT
@@ -128,7 +128,7 @@
             this.lstHasta.Location = new System.Drawing.Point(8, 23);
             this.lstHasta.Margin = new System.Windows.Forms.Padding(4);
             this.lstHasta.Name = "lstHasta";
-            this.lstHasta.Size = new System.Drawing.Size(295, 132);
+            this.lstHasta.Size = new System.Drawing.Size(280, 132);
             this.lstHasta.TabIndex = 6;
             // 
             // lstDoktor
@@ -138,12 +138,12 @@
             this.lstDoktor.Location = new System.Drawing.Point(8, 23);
             this.lstDoktor.Margin = new System.Windows.Forms.Padding(4);
             this.lstDoktor.Name = "lstDoktor";
-            this.lstDoktor.Size = new System.Drawing.Size(295, 132);
+            this.lstDoktor.Size = new System.Drawing.Size(280, 132);
             this.lstDoktor.TabIndex = 10;
             // 
             // btnKaydet
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(123, 162);
+            this.btnKaydet.Location = new System.Drawing.Point(156, 161);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(132, 28);
@@ -159,25 +159,25 @@
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(132, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(165, 22);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // gbHastaList
             // 
             this.gbHastaList.Controls.Add(this.btnHastaOnayla);
             this.gbHastaList.Controls.Add(this.lstHasta);
-            this.gbHastaList.Location = new System.Drawing.Point(437, 27);
+            this.gbHastaList.Location = new System.Drawing.Point(419, 27);
             this.gbHastaList.Margin = new System.Windows.Forms.Padding(4);
             this.gbHastaList.Name = "gbHastaList";
             this.gbHastaList.Padding = new System.Windows.Forms.Padding(4);
-            this.gbHastaList.Size = new System.Drawing.Size(324, 214);
+            this.gbHastaList.Size = new System.Drawing.Size(299, 214);
             this.gbHastaList.TabIndex = 0;
             this.gbHastaList.TabStop = false;
             this.gbHastaList.Text = "Hasta Seçiniz";
             // 
             // btnHastaOnayla
             // 
-            this.btnHastaOnayla.Location = new System.Drawing.Point(204, 161);
+            this.btnHastaOnayla.Location = new System.Drawing.Point(188, 161);
             this.btnHastaOnayla.Margin = new System.Windows.Forms.Padding(4);
             this.btnHastaOnayla.Name = "btnHastaOnayla";
             this.btnHastaOnayla.Size = new System.Drawing.Size(100, 28);
@@ -194,14 +194,14 @@
             this.gbDoktor.Margin = new System.Windows.Forms.Padding(4);
             this.gbDoktor.Name = "gbDoktor";
             this.gbDoktor.Padding = new System.Windows.Forms.Padding(4);
-            this.gbDoktor.Size = new System.Drawing.Size(323, 214);
+            this.gbDoktor.Size = new System.Drawing.Size(299, 214);
             this.gbDoktor.TabIndex = 0;
             this.gbDoktor.TabStop = false;
             this.gbDoktor.Text = "Doktor Seçiniz";
             // 
             // btnDoktorOnayla
             // 
-            this.btnDoktorOnayla.Location = new System.Drawing.Point(204, 161);
+            this.btnDoktorOnayla.Location = new System.Drawing.Point(188, 163);
             this.btnDoktorOnayla.Margin = new System.Windows.Forms.Padding(4);
             this.btnDoktorOnayla.Name = "btnDoktorOnayla";
             this.btnDoktorOnayla.Size = new System.Drawing.Size(100, 28);
@@ -215,7 +215,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(419, 249);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(637, 252);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(631, 252);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
             // gbHasta
@@ -233,7 +233,7 @@
             this.gbHasta.Margin = new System.Windows.Forms.Padding(4);
             this.gbHasta.Name = "gbHasta";
             this.gbHasta.Padding = new System.Windows.Forms.Padding(4);
-            this.gbHasta.Size = new System.Drawing.Size(277, 214);
+            this.gbHasta.Size = new System.Drawing.Size(299, 214);
             this.gbHasta.TabIndex = 0;
             this.gbHasta.TabStop = false;
             this.gbHasta.Text = "Hasta Bilgileri";
@@ -253,18 +253,19 @@
             // 
             this.gbServisList.Controls.Add(this.btnServisOnayla);
             this.gbServisList.Controls.Add(this.lstServis);
-            this.gbServisList.Location = new System.Drawing.Point(761, 27);
+            this.gbServisList.Location = new System.Drawing.Point(751, 27);
             this.gbServisList.Margin = new System.Windows.Forms.Padding(4);
             this.gbServisList.Name = "gbServisList";
             this.gbServisList.Padding = new System.Windows.Forms.Padding(4);
-            this.gbServisList.Size = new System.Drawing.Size(296, 214);
+            this.gbServisList.Size = new System.Drawing.Size(299, 214);
             this.gbServisList.TabIndex = 0;
             this.gbServisList.TabStop = false;
             this.gbServisList.Text = "Servis Seçiniz";
+            this.gbServisList.Enter += new System.EventHandler(this.gbServisList_Enter);
             // 
             // btnServisOnayla
             // 
-            this.btnServisOnayla.Location = new System.Drawing.Point(177, 164);
+            this.btnServisOnayla.Location = new System.Drawing.Point(188, 161);
             this.btnServisOnayla.Margin = new System.Windows.Forms.Padding(4);
             this.btnServisOnayla.Name = "btnServisOnayla";
             this.btnServisOnayla.Size = new System.Drawing.Size(100, 28);
@@ -277,10 +278,10 @@
             // 
             this.lstServis.FormattingEnabled = true;
             this.lstServis.ItemHeight = 16;
-            this.lstServis.Location = new System.Drawing.Point(8, 23);
+            this.lstServis.Location = new System.Drawing.Point(0, 23);
             this.lstServis.Margin = new System.Windows.Forms.Padding(4);
             this.lstServis.Name = "lstServis";
-            this.lstServis.Size = new System.Drawing.Size(268, 132);
+            this.lstServis.Size = new System.Drawing.Size(280, 132);
             this.lstServis.TabIndex = 8;
             // 
             // FrmHasta

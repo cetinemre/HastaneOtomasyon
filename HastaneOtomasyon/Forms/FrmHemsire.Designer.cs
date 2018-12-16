@@ -76,7 +76,7 @@
             // 
             // TxtArama
             // 
-            this.TxtArama.Location = new System.Drawing.Point(549, 47);
+            this.TxtArama.Location = new System.Drawing.Point(544, 47);
             this.TxtArama.Margin = new System.Windows.Forms.Padding(4);
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(327, 22);
@@ -85,20 +85,20 @@
             // 
             // btnHemsireGuncelle
             // 
-            this.btnHemsireGuncelle.Location = new System.Drawing.Point(268, 342);
+            this.btnHemsireGuncelle.Location = new System.Drawing.Point(233, 358);
             this.btnHemsireGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
-            this.btnHemsireGuncelle.Size = new System.Drawing.Size(185, 64);
+            this.btnHemsireGuncelle.Size = new System.Drawing.Size(216, 65);
             this.btnHemsireGuncelle.TabIndex = 8;
             this.btnHemsireGuncelle.Text = "Güncelle";
             this.btnHemsireGuncelle.Click += new System.EventHandler(this.btnHemsireGuncelle_Click);
             // 
             // btnHemsireSil
             // 
-            this.btnHemsireSil.Location = new System.Drawing.Point(268, 272);
+            this.btnHemsireSil.Location = new System.Drawing.Point(233, 286);
             this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHemsireSil.Name = "btnHemsireSil";
-            this.btnHemsireSil.Size = new System.Drawing.Size(185, 64);
+            this.btnHemsireSil.Size = new System.Drawing.Size(216, 65);
             this.btnHemsireSil.TabIndex = 7;
             this.btnHemsireSil.Text = "Sil";
             this.btnHemsireSil.UseVisualStyleBackColor = true;
@@ -108,19 +108,19 @@
             // 
             this.lstHemsire.FormattingEnabled = true;
             this.lstHemsire.ItemHeight = 16;
-            this.lstHemsire.Location = new System.Drawing.Point(549, 81);
+            this.lstHemsire.Location = new System.Drawing.Point(544, 82);
             this.lstHemsire.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstHemsire.Name = "lstHemsire";
-            this.lstHemsire.Size = new System.Drawing.Size(327, 324);
+            this.lstHemsire.Size = new System.Drawing.Size(327, 340);
             this.lstHemsire.TabIndex = 10;
             this.lstHemsire.SelectedIndexChanged += new System.EventHandler(this.lstHemsire_SelectedIndexChanged);
             // 
             // btnHemsireEkle
             // 
-            this.btnHemsireEkle.Location = new System.Drawing.Point(268, 202);
+            this.btnHemsireEkle.Location = new System.Drawing.Point(233, 213);
             this.btnHemsireEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnHemsireEkle.Name = "btnHemsireEkle";
-            this.btnHemsireEkle.Size = new System.Drawing.Size(185, 64);
+            this.btnHemsireEkle.Size = new System.Drawing.Size(216, 65);
             this.btnHemsireEkle.TabIndex = 6;
             this.btnHemsireEkle.Text = "Ekle";
             this.btnHemsireEkle.Click += new System.EventHandler(this.btnHemsireEkle_Click);
@@ -128,12 +128,12 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(268, 137);
+            this.dateTimePicker1.Location = new System.Drawing.Point(233, 144);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.MaxDate = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(184, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(215, 22);
             this.dateTimePicker1.TabIndex = 4;
             this.dateTimePicker1.Value = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             // 
@@ -141,16 +141,16 @@
             // 
             this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBrans.FormattingEnabled = true;
-            this.cbBrans.Location = new System.Drawing.Point(268, 169);
+            this.cbBrans.Location = new System.Drawing.Point(233, 174);
             this.cbBrans.Margin = new System.Windows.Forms.Padding(4);
             this.cbBrans.Name = "cbBrans";
-            this.cbBrans.Size = new System.Drawing.Size(184, 24);
+            this.cbBrans.Size = new System.Drawing.Size(215, 24);
             this.cbBrans.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(131, 172);
+            this.label5.Location = new System.Drawing.Point(127, 177);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
@@ -160,7 +160,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(131, 144);
+            this.label4.Location = new System.Drawing.Point(127, 145);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 17);
@@ -170,7 +170,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(131, 111);
+            this.label3.Location = new System.Drawing.Point(127, 116);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
@@ -180,7 +180,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(131, 82);
+            this.label2.Location = new System.Drawing.Point(127, 86);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 17);
@@ -190,7 +190,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(131, 50);
+            this.label1.Location = new System.Drawing.Point(127, 57);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 17);
@@ -199,27 +199,27 @@
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(268, 107);
+            this.txtTcNo.Location = new System.Drawing.Point(233, 112);
             this.txtTcNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(184, 22);
-            this.txtTcNo.TabIndex = 3;
+            this.txtTcNo.Size = new System.Drawing.Size(215, 22);
+            this.txtTcNo.TabIndex = 3;          
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(268, 79);
+            this.txtSoyad.Location = new System.Drawing.Point(233, 82);
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(184, 22);
+            this.txtSoyad.Size = new System.Drawing.Size(215, 22);
             this.txtSoyad.TabIndex = 2;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(268, 47);
+            this.txtAd.Location = new System.Drawing.Point(233, 53);
             this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(184, 22);
+            this.txtAd.Size = new System.Drawing.Size(215, 22);
             this.txtAd.TabIndex = 1;
             // 
             // FrmHemsire

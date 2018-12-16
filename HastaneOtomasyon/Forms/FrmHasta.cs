@@ -140,6 +140,9 @@ namespace HastaneOtomasyon.Forms
             }
         }
 
-       
+        private void gbServisList_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
