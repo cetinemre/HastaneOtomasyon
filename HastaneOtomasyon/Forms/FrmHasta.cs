@@ -112,7 +112,7 @@ namespace HastaneOtomasyon.Forms
                 yeniRandevu.Doktor = seciliDoktor;
                 yeniRandevu.Tarih=DateTime.Now;
                 yeniRandevu.Durum = true;
-              //  yeniRandevu.Saat=flowLayoutPanel1.
+               // yeniRandevu.Saat= 
 
                
                 
