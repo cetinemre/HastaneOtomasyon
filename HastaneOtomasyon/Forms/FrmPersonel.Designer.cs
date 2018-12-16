@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonel));
             this.gbPersonel = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbBrans = new System.Windows.Forms.ComboBox();
             this.TxtArama = new System.Windows.Forms.TextBox();
             this.lstPersonel = new System.Windows.Forms.ListBox();
             this.btnPersonelGuncelle = new System.Windows.Forms.Button();
@@ -43,8 +45,6 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.cbBrans = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.gbPersonel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,13 +74,31 @@
             this.gbPersonel.TabStop = false;
             this.gbPersonel.Text = "Personel Bilgileri";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(124, 183);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Brans";
+            // 
+            // cbBrans
+            // 
+            this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBrans.FormattingEnabled = true;
+            this.cbBrans.Location = new System.Drawing.Point(263, 183);
+            this.cbBrans.Name = "cbBrans";
+            this.cbBrans.Size = new System.Drawing.Size(203, 24);
+            this.cbBrans.TabIndex = 5;
+            // 
             // TxtArama
             // 
             this.TxtArama.Location = new System.Drawing.Point(548, 52);
             this.TxtArama.Margin = new System.Windows.Forms.Padding(4);
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(311, 22);
-            this.TxtArama.TabIndex = 29;
+            this.TxtArama.TabIndex = 9;
             this.TxtArama.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtArama_KeyUp);
             // 
             // lstPersonel
@@ -91,7 +109,7 @@
             this.lstPersonel.Margin = new System.Windows.Forms.Padding(4);
             this.lstPersonel.Name = "lstPersonel";
             this.lstPersonel.Size = new System.Drawing.Size(311, 372);
-            this.lstPersonel.TabIndex = 28;
+            this.lstPersonel.TabIndex = 10;
             this.lstPersonel.SelectedIndexChanged += new System.EventHandler(this.lstPersonel_SelectedIndexChanged);
             // 
             // btnPersonelGuncelle
@@ -100,7 +118,7 @@
             this.btnPersonelGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnPersonelGuncelle.Name = "btnPersonelGuncelle";
             this.btnPersonelGuncelle.Size = new System.Drawing.Size(203, 58);
-            this.btnPersonelGuncelle.TabIndex = 27;
+            this.btnPersonelGuncelle.TabIndex = 8;
             this.btnPersonelGuncelle.Text = "Güncelle";
             this.btnPersonelGuncelle.Click += new System.EventHandler(this.btnPersonelGuncelle_Click);
             // 
@@ -110,7 +128,7 @@
             this.btnPersonelSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnPersonelSil.Name = "btnPersonelSil";
             this.btnPersonelSil.Size = new System.Drawing.Size(203, 58);
-            this.btnPersonelSil.TabIndex = 26;
+            this.btnPersonelSil.TabIndex = 7;
             this.btnPersonelSil.Text = "Sil";
             this.btnPersonelSil.UseVisualStyleBackColor = true;
             this.btnPersonelSil.Click += new System.EventHandler(this.btnPersonelSil_Click);
@@ -121,7 +139,7 @@
             this.btnPersonelEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnPersonelEkle.Name = "btnPersonelEkle";
             this.btnPersonelEkle.Size = new System.Drawing.Size(203, 58);
-            this.btnPersonelEkle.TabIndex = 25;
+            this.btnPersonelEkle.TabIndex = 6;
             this.btnPersonelEkle.Text = "Ekle";
             this.btnPersonelEkle.UseVisualStyleBackColor = true;
             this.btnPersonelEkle.Click += new System.EventHandler(this.btnPersonelEkle_Click);
@@ -135,7 +153,7 @@
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(203, 22);
-            this.dateTimePicker1.TabIndex = 24;
+            this.dateTimePicker1.TabIndex = 3;
             this.dateTimePicker1.Value = new System.DateTime(2000, 12, 13, 0, 0, 0, 0);
             // 
             // label4
@@ -155,7 +173,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
-            this.label3.TabIndex = 19;
+            this.label3.TabIndex = 0;
             this.label3.Text = "TC No";
             // 
             // label2
@@ -165,7 +183,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 17);
-            this.label2.TabIndex = 20;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Soyad";
             // 
             // label1
@@ -175,7 +193,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 17);
-            this.label1.TabIndex = 21;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Ad";
             // 
             // txtTcNo
@@ -185,7 +203,7 @@
             this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.Size = new System.Drawing.Size(203, 22);
-            this.txtTcNo.TabIndex = 23;
+            this.txtTcNo.TabIndex = 4;
             // 
             // txtSoyad
             // 
@@ -193,7 +211,7 @@
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(203, 22);
-            this.txtSoyad.TabIndex = 22;
+            this.txtSoyad.TabIndex = 2;
             // 
             // txtAd
             // 
@@ -201,25 +219,7 @@
             this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(203, 22);
-            this.txtAd.TabIndex = 17;
-            // 
-            // cbBrans
-            // 
-            this.cbBrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBrans.FormattingEnabled = true;
-            this.cbBrans.Location = new System.Drawing.Point(263, 183);
-            this.cbBrans.Name = "cbBrans";
-            this.cbBrans.Size = new System.Drawing.Size(203, 24);
-            this.cbBrans.TabIndex = 31;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(124, 183);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 17);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "Brans";
+            this.txtAd.TabIndex = 1;
             // 
             // FrmPersonel
             // 

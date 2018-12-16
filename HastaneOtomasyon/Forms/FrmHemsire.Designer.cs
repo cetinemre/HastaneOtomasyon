@@ -80,7 +80,7 @@
             this.TxtArama.Margin = new System.Windows.Forms.Padding(4);
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(327, 22);
-            this.TxtArama.TabIndex = 41;
+            this.TxtArama.TabIndex = 9;
             this.TxtArama.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtArama_KeyUp);
             // 
             // btnHemsireGuncelle
@@ -89,7 +89,7 @@
             this.btnHemsireGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnHemsireGuncelle.Name = "btnHemsireGuncelle";
             this.btnHemsireGuncelle.Size = new System.Drawing.Size(185, 64);
-            this.btnHemsireGuncelle.TabIndex = 40;
+            this.btnHemsireGuncelle.TabIndex = 8;
             this.btnHemsireGuncelle.Text = "Güncelle";
             this.btnHemsireGuncelle.Click += new System.EventHandler(this.btnHemsireGuncelle_Click);
             // 
@@ -99,7 +99,7 @@
             this.btnHemsireSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHemsireSil.Name = "btnHemsireSil";
             this.btnHemsireSil.Size = new System.Drawing.Size(185, 64);
-            this.btnHemsireSil.TabIndex = 39;
+            this.btnHemsireSil.TabIndex = 7;
             this.btnHemsireSil.Text = "Sil";
             this.btnHemsireSil.UseVisualStyleBackColor = true;
             this.btnHemsireSil.Click += new System.EventHandler(this.btnHemsireSil_Click);
@@ -112,7 +112,7 @@
             this.lstHemsire.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstHemsire.Name = "lstHemsire";
             this.lstHemsire.Size = new System.Drawing.Size(327, 324);
-            this.lstHemsire.TabIndex = 38;
+            this.lstHemsire.TabIndex = 10;
             this.lstHemsire.SelectedIndexChanged += new System.EventHandler(this.lstHemsire_SelectedIndexChanged);
             // 
             // btnHemsireEkle
@@ -121,7 +121,7 @@
             this.btnHemsireEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnHemsireEkle.Name = "btnHemsireEkle";
             this.btnHemsireEkle.Size = new System.Drawing.Size(185, 64);
-            this.btnHemsireEkle.TabIndex = 37;
+            this.btnHemsireEkle.TabIndex = 6;
             this.btnHemsireEkle.Text = "Ekle";
             this.btnHemsireEkle.Click += new System.EventHandler(this.btnHemsireEkle_Click);
             // 
@@ -134,7 +134,7 @@
             this.dateTimePicker1.MinDate = new System.DateTime(1923, 10, 29, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(184, 22);
-            this.dateTimePicker1.TabIndex = 36;
+            this.dateTimePicker1.TabIndex = 4;
             this.dateTimePicker1.Value = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             // 
             // cbBrans
@@ -145,7 +145,7 @@
             this.cbBrans.Margin = new System.Windows.Forms.Padding(4);
             this.cbBrans.Name = "cbBrans";
             this.cbBrans.Size = new System.Drawing.Size(184, 24);
-            this.cbBrans.TabIndex = 35;         
+            this.cbBrans.TabIndex = 5;
             // 
             // label5
             // 
@@ -154,7 +154,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
-            this.label5.TabIndex = 30;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Branşı";
             // 
             // label4
@@ -164,7 +164,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 17);
-            this.label4.TabIndex = 31;
+            this.label4.TabIndex = 0;
             this.label4.Text = "DoğumTarihi";
             // 
             // label3
@@ -174,7 +174,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
-            this.label3.TabIndex = 32;
+            this.label3.TabIndex = 0;
             this.label3.Text = "TC No";
             // 
             // label2
@@ -184,7 +184,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 17);
-            this.label2.TabIndex = 33;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Soyad";
             // 
             // label1
@@ -194,7 +194,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 17);
-            this.label1.TabIndex = 34;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Ad";
             // 
             // txtTcNo
@@ -204,7 +204,7 @@
             this.txtTcNo.MaxLength = 11;
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.Size = new System.Drawing.Size(184, 22);
-            this.txtTcNo.TabIndex = 27;
+            this.txtTcNo.TabIndex = 3;
             // 
             // txtSoyad
             // 
@@ -212,7 +212,7 @@
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(184, 22);
-            this.txtSoyad.TabIndex = 28;
+            this.txtSoyad.TabIndex = 2;
             // 
             // txtAd
             // 
@@ -220,7 +220,7 @@
             this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(184, 22);
-            this.txtAd.TabIndex = 29;
+            this.txtAd.TabIndex = 1;
             // 
             // FrmHemsire
             // 

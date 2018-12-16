@@ -142,5 +142,7 @@ namespace HastaneOtomasyon.Forms
                 }
             }
         }
+
+       
     }
 }
