@@ -121,17 +121,86 @@ namespace HastaneOtomasyon.Forms
 
         private void hemsireToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            dosyaAc.Title = @"Bir JSON dosyası seçiniz";
+            dosyaAc.Filter = @"(JSON Dosyası) | *.json";
+            dosyaAc.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dosyaAc.FileName = "HemsireList.json";
+            if (dosyaAc.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    var dosya = File.OpenRead(dosyaAc.FileName);
+                    var reader = new StreamReader(dosya);
+                    var dosyaIcerigi = reader.ReadToEnd();
+                    reader.Close();
+                    dosya.Close();
+                    Kisi.HemsireList = JsonConvert.DeserializeObject<List<Hemsire>>(dosyaIcerigi);
 
+                    MessageBox.Show($@"{Kisi.HemsireList.Count} hemsire sisteme basariyla eklendi");
+                    var hemsireListesi = Kisi.HemsireList;
+                    if (Kisi.HemsireList != null) hemsireListesi.AddRange(hemsireListesi.ToArray());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(@"Bir hata olustu: " + ex.Message);
+                }
+            }
         }
 
         private void personelToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            dosyaAc.Title = @"Bir JSON dosyası seçiniz";
+            dosyaAc.Filter = @"(JSON Dosyası) | *.json";
+            dosyaAc.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dosyaAc.FileName = "PersonelList.json";
+            if (dosyaAc.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    var dosya = File.OpenRead(dosyaAc.FileName);
+                    var reader = new StreamReader(dosya);
+                    var dosyaIcerigi = reader.ReadToEnd();
+                    reader.Close();
+                    dosya.Close();
+                    Kisi.PersonelList = JsonConvert.DeserializeObject<List<Personel>>(dosyaIcerigi);
 
+                    MessageBox.Show($@"{Kisi.PersonelList.Count} personel sisteme basariyla eklendi");
+                    var personelListesi = Kisi.PersonelList;
+                    if (Kisi.PersonelList != null) personelListesi.AddRange(personelListesi.ToArray());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(@"Bir hata olustu: " + ex.Message);
+                }
+            }
         }
 
         private void hastaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            dosyaAc.Title = @"Bir JSON dosyası seçiniz";
+            dosyaAc.Filter = @"(JSON Dosyası) | *.json";
+            dosyaAc.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dosyaAc.FileName = "HastaList.json";
+            if (dosyaAc.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    var dosya = File.OpenRead(dosyaAc.FileName);
+                    var reader = new StreamReader(dosya);
+                    var dosyaIcerigi = reader.ReadToEnd();
+                    reader.Close();
+                    dosya.Close();
+                    Kisi.HastaList = JsonConvert.DeserializeObject<List<Hasta>>(dosyaIcerigi);
 
+                    MessageBox.Show($@"{Kisi.HastaList.Count} hasta sisteme basariyla eklendi");
+                    var hastaListesi = Kisi.HastaList;
+                    if (Kisi.HastaList != null) hastaListesi.AddRange(hastaListesi.ToArray());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(@"Bir hata olustu: " + ex.Message);
+                }
+            }
         }
 
         private void doktorToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -152,17 +221,50 @@ namespace HastaneOtomasyon.Forms
 
         private void hemsireToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            dosyaKaydet.Title = @"Bir JSON dosyası seçiniz";
+            dosyaKaydet.Filter = @"(JSON Dosyası) | *.json";
+            dosyaKaydet.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dosyaKaydet.FileName = "HemsireList.json";
+            if (dosyaKaydet.ShowDialog() == DialogResult.OK)
+            {
+                var file = File.Open(dosyaKaydet.FileName, FileMode.Create);
+                var writer = new StreamWriter(file);
+                writer.Write(JsonConvert.SerializeObject(Kisi.HemsireList));
+                writer.Close();
+                writer.Dispose();
+            }
         }
 
         private void personelToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            dosyaKaydet.Title = @"Bir JSON dosyası seçiniz";
+            dosyaKaydet.Filter = @"(JSON Dosyası) | *.json";
+            dosyaKaydet.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dosyaKaydet.FileName = "PersonelList.json";
+            if (dosyaKaydet.ShowDialog() == DialogResult.OK)
+            {
+                var file = File.Open(dosyaKaydet.FileName, FileMode.Create);
+                var writer = new StreamWriter(file);
+                writer.Write(JsonConvert.SerializeObject(Kisi.PersonelList));
+                writer.Close();
+                writer.Dispose();
+            }
         }
 
         private void hastaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            dosyaKaydet.Title = @"Bir JSON dosyası seçiniz";
+            dosyaKaydet.Filter = @"(JSON Dosyası) | *.json";
+            dosyaKaydet.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dosyaKaydet.FileName = "HastaList.json";
+            if (dosyaKaydet.ShowDialog() == DialogResult.OK)
+            {
+                var file = File.Open(dosyaKaydet.FileName, FileMode.Create);
+                var writer = new StreamWriter(file);
+                writer.Write(JsonConvert.SerializeObject(Kisi.HastaList));
+                writer.Close();
+                writer.Dispose();
+            }
         }
     }
 }
