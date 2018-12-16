@@ -11,7 +11,7 @@
         Ortopedi = 7000,
         Dis = 8000,
         Kbb = 5000,
-        HastaBakici = 2500,
+        Hizmetli = 2500,
         Muhasebe = 3000,
         Satinalma = 4300,
         Anestezi = 3500,

@@ -30,9 +30,11 @@ namespace HastaneOtomasyon.Forms
                 yeniDoktor.Maas = (int) Enum.Parse(typeof(Maaslar), yeniDoktor.Brans);
                 doktorListesi.Add(yeniDoktor);
 
+
                 FrmAna.FormuTemizle(gbDoktorEkle);
 
-                 if (doktorListesi != null) lstDoktor.Items.AddRange(doktorListesi.ToArray());
+                if (doktorListesi != null) lstDoktor.Items.AddRange(doktorListesi.ToArray());
+             
             }
             catch (Exception exception)
             {
