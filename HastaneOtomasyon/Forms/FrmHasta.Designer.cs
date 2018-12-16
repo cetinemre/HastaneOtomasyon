@@ -46,9 +46,14 @@
             this.btnDoktorOnayla = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.gbHasta = new System.Windows.Forms.GroupBox();
+            this.btnRandevuBitir = new System.Windows.Forms.Button();
+            this.gbServisList = new System.Windows.Forms.GroupBox();
+            this.lstServis = new System.Windows.Forms.ListBox();
+            this.btnServisOnayla = new System.Windows.Forms.Button();
             this.gbHastaList.SuspendLayout();
             this.gbDoktor.SuspendLayout();
             this.gbHasta.SuspendLayout();
+            this.gbServisList.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtTCNo
@@ -148,7 +153,7 @@
             // 
             this.gbHastaList.Controls.Add(this.btnHastaOnayla);
             this.gbHastaList.Controls.Add(this.lstHasta);
-            this.gbHastaList.Location = new System.Drawing.Point(247, 22);
+            this.gbHastaList.Location = new System.Drawing.Point(328, 22);
             this.gbHastaList.Name = "gbHastaList";
             this.gbHastaList.Size = new System.Drawing.Size(243, 174);
             this.gbHastaList.TabIndex = 8;
@@ -169,7 +174,7 @@
             // 
             this.gbDoktor.Controls.Add(this.btnDoktorOnayla);
             this.gbDoktor.Controls.Add(this.lstDoktor);
-            this.gbDoktor.Location = new System.Drawing.Point(517, 22);
+            this.gbDoktor.Location = new System.Drawing.Point(46, 233);
             this.gbDoktor.Name = "gbDoktor";
             this.gbDoktor.Size = new System.Drawing.Size(242, 174);
             this.gbDoktor.TabIndex = 9;
@@ -188,7 +193,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 237);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(314, 202);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(478, 205);
             this.flowLayoutPanel1.TabIndex = 12;
@@ -204,12 +209,51 @@
             this.gbHasta.Controls.Add(this.dateTimePicker1);
             this.gbHasta.Controls.Add(this.txtSoyad);
             this.gbHasta.Controls.Add(this.txtTCNo);
-            this.gbHasta.Location = new System.Drawing.Point(12, 22);
+            this.gbHasta.Location = new System.Drawing.Point(46, 22);
             this.gbHasta.Name = "gbHasta";
             this.gbHasta.Size = new System.Drawing.Size(208, 174);
             this.gbHasta.TabIndex = 11;
             this.gbHasta.TabStop = false;
             this.gbHasta.Text = "Hasta Bilgileri";
+            // 
+            // btnRandevuBitir
+            // 
+            this.btnRandevuBitir.Location = new System.Drawing.Point(481, 413);
+            this.btnRandevuBitir.Name = "btnRandevuBitir";
+            this.btnRandevuBitir.Size = new System.Drawing.Size(123, 33);
+            this.btnRandevuBitir.TabIndex = 13;
+            this.btnRandevuBitir.Text = "Randevu Al";
+            this.btnRandevuBitir.UseVisualStyleBackColor = true;
+            this.btnRandevuBitir.Click += new System.EventHandler(this.btnRandevuBitir_Click);
+            // 
+            // gbServisList
+            // 
+            this.gbServisList.Controls.Add(this.btnServisOnayla);
+            this.gbServisList.Controls.Add(this.lstServis);
+            this.gbServisList.Location = new System.Drawing.Point(571, 22);
+            this.gbServisList.Name = "gbServisList";
+            this.gbServisList.Size = new System.Drawing.Size(222, 174);
+            this.gbServisList.TabIndex = 14;
+            this.gbServisList.TabStop = false;
+            this.gbServisList.Text = "Servis Seçiniz";
+            // 
+            // lstServis
+            // 
+            this.lstServis.FormattingEnabled = true;
+            this.lstServis.Location = new System.Drawing.Point(6, 19);
+            this.lstServis.Name = "lstServis";
+            this.lstServis.Size = new System.Drawing.Size(202, 108);
+            this.lstServis.TabIndex = 0;
+            // 
+            // btnServisOnayla
+            // 
+            this.btnServisOnayla.Location = new System.Drawing.Point(133, 133);
+            this.btnServisOnayla.Name = "btnServisOnayla";
+            this.btnServisOnayla.Size = new System.Drawing.Size(75, 23);
+            this.btnServisOnayla.TabIndex = 1;
+            this.btnServisOnayla.Text = "Onayla";
+            this.btnServisOnayla.UseVisualStyleBackColor = true;
+            this.btnServisOnayla.Click += new System.EventHandler(this.btnServisOnayla_Click);
             // 
             // FrmHasta
             // 
@@ -217,6 +261,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(804, 454);
+            this.Controls.Add(this.gbServisList);
+            this.Controls.Add(this.btnRandevuBitir);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.gbHasta);
             this.Controls.Add(this.gbDoktor);
@@ -230,6 +276,7 @@
             this.gbDoktor.ResumeLayout(false);
             this.gbHasta.ResumeLayout(false);
             this.gbHasta.PerformLayout();
+            this.gbServisList.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -252,5 +299,9 @@
         private System.Windows.Forms.Button btnHastaOnayla;
         private System.Windows.Forms.Button btnDoktorOnayla;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnRandevuBitir;
+        private System.Windows.Forms.GroupBox gbServisList;
+        private System.Windows.Forms.ListBox lstServis;
+        private System.Windows.Forms.Button btnServisOnayla;
     }
 }

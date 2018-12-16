@@ -15,6 +15,8 @@ namespace HastaneOtomasyon.Abstracts
 
         public static List<Hemsire> HemsireList { get; set; } = new List<Hemsire>();
 
+        public static List<Randevu> RandevuList { get; set; } = new List<Randevu>();
+
 
         private string _tcNo, _ad, _soyad;
         private DateTime _dogumTarihi;

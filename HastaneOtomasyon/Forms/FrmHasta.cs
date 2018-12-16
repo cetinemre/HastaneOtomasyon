@@ -17,9 +17,12 @@ namespace HastaneOtomasyon.Forms
         {
             InitializeComponent();
         }
-      
+            Hasta seciliHasta;
+            Doktor seciliDoktor;
+        public string seciliServis;
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+            
             var hastaListesi = Kisi.HastaList;
 
             Hasta yeniHasta = new Hasta();
@@ -32,7 +35,7 @@ namespace HastaneOtomasyon.Forms
 
                 hastaListesi.Add(yeniHasta);
 
-
+                FrmAna.FormuTemizle(gbHastaList);
               if (hastaListesi != null) lstHasta.Items.AddRange(hastaListesi.ToArray());
                 // gbHasta.Visible = false;
                 gbHastaList.Visible = true;
@@ -49,7 +52,9 @@ namespace HastaneOtomasyon.Forms
             gbHasta.Visible = true;
             gbHastaList.Visible = false;
             gbDoktor.Visible = false;
-            flowLayoutPanel1.Visible = true;
+            gbServisList.Visible = false;
+            flowLayoutPanel1.Visible = false;
+            btnRandevuBitir.Visible = false;
 
             Button btn;
             DateTime muayeneSaati = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 9, 0, 0);
@@ -80,19 +85,52 @@ namespace HastaneOtomasyon.Forms
 
         private void btnHastaOnayla_Click(object sender, EventArgs e)
         {
-           var seciliHasta = (Hasta) lstHasta.SelectedItem;
-           lstHasta.DataSource = Kisi.DoktorList;
+          //  FrmAna.FormuTemizle(gbHastaList);
+          //  FrmAna.FormuTemizle(gbServisList);
+            gbServisList.Visible = true;
+            seciliHasta = (Hasta) lstHasta.SelectedItem;
+            lstHasta.DataSource = Kisi.HastaList;
+            lstServis.Items.AddRange(Enum.GetNames(typeof(Kisi.BranslarDoktor)));
         }
 
         private void btnDoktorOnayla_Click(object sender, EventArgs e)
         {
-
+            //FrmAna.FormuTemizle(gbDoktor);
+            //seciliDoktor = (Doktor)lstDoktor.SelectedItem;
+            //lstDoktor.DataSource = Kisi.DoktorList;
         }
 
         private void btnRandevuBitir_Click(object sender, EventArgs e)
         {
+            var randevuListesi = Kisi.RandevuList;
+
+            Randevu yeniRandevu = new Randevu();
+            try
+            {
+                yeniRandevu.Hasta = seciliHasta;
+                yeniRandevu.Doktor = seciliDoktor;
+              //  yeniRandevu.
+
+               
+                
+               //     randevuListesi.Add(yeniRandevu);
+
+
+                if (randevuListesi != null) lstHasta.Items.AddRange(randevuListesi.ToArray());
+                // gbHasta.Visible = false;
+                gbHastaList.Visible = true;
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
+
+        private void btnServisOnayla_Click(object sender, EventArgs e)
+        {
+            seciliServis = lstServis.SelectedItem.ToString();
+            gbDoktor.Visible = true;
 
         }
-  
     }
 }
