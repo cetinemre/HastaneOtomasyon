@@ -109,7 +109,6 @@ namespace HastaneOtomasyon.Forms
                     
                     MessageBox.Show($@"{Kisi.DoktorList.Count} doktor sisteme basariyla eklendi");
                     var doktorListesi = Kisi.DoktorList;
-                    if (Kisi.DoktorList != null) doktorListesi.AddRange(doktorListesi.ToArray());
                 }
                 catch (Exception ex)
                 {
@@ -137,7 +136,6 @@ namespace HastaneOtomasyon.Forms
 
                     MessageBox.Show($@"{Kisi.HemsireList.Count} hemsire sisteme basariyla eklendi");
                     var hemsireListesi = Kisi.HemsireList;
-                    if (Kisi.HemsireList != null) hemsireListesi.AddRange(hemsireListesi.ToArray());
                 }
                 catch (Exception ex)
                 {
@@ -165,7 +163,6 @@ namespace HastaneOtomasyon.Forms
 
                     MessageBox.Show($@"{Kisi.PersonelList.Count} personel sisteme basariyla eklendi");
                     var personelListesi = Kisi.PersonelList;
-                    if (Kisi.PersonelList != null) personelListesi.AddRange(personelListesi.ToArray());
                 }
                 catch (Exception ex)
                 {
@@ -193,7 +190,6 @@ namespace HastaneOtomasyon.Forms
 
                     MessageBox.Show($@"{Kisi.HastaList.Count} hasta sisteme basariyla eklendi");
                     var hastaListesi = Kisi.HastaList;
-                    if (Kisi.HastaList != null) hastaListesi.AddRange(hastaListesi.ToArray());
                 }
                 catch (Exception ex)
                 {
@@ -264,6 +260,11 @@ namespace HastaneOtomasyon.Forms
                 writer.Close();
                 writer.Dispose();
             }
+        }
+
+        private void iceriAktarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
