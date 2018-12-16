@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktor));
             this.gbDoktorEkle = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnYenile = new System.Windows.Forms.Button();
             this.TxtArama = new System.Windows.Forms.TextBox();
             this.btnDoktorSil = new System.Windows.Forms.Button();
             this.btnDoktorGuncelle = new System.Windows.Forms.Button();
@@ -45,8 +47,6 @@
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.btnYenile = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.gbDoktorEkle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,9 +76,30 @@
             this.gbDoktorEkle.TabStop = false;
             this.gbDoktorEkle.Text = "Doktor Bilgileri";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(405, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Doktor Listesinde Arama:";
+            // 
+            // btnYenile
+            // 
+            this.btnYenile.Location = new System.Drawing.Point(608, 41);
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Size = new System.Drawing.Size(46, 23);
+            this.btnYenile.TabIndex = 11;
+            this.btnYenile.Text = "Yenile";
+            this.btnYenile.UseVisualStyleBackColor = true;
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
+            // 
             // TxtArama
             // 
             this.TxtArama.Location = new System.Drawing.Point(408, 43);
+            this.TxtArama.MaxLength = 100;
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(194, 20);
             this.TxtArama.TabIndex = 9;
@@ -208,26 +229,6 @@
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(162, 20);
             this.txtAd.TabIndex = 1;
-            // 
-            // btnYenile
-            // 
-            this.btnYenile.Location = new System.Drawing.Point(608, 41);
-            this.btnYenile.Name = "btnYenile";
-            this.btnYenile.Size = new System.Drawing.Size(46, 23);
-            this.btnYenile.TabIndex = 11;
-            this.btnYenile.Text = "Yenile";
-            this.btnYenile.UseVisualStyleBackColor = true;
-            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(405, 27);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Doktor Listesinde Arama:";
             // 
             // FrmDoktor
             // 

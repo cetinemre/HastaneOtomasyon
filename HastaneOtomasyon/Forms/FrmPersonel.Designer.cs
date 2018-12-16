@@ -99,6 +99,7 @@
             // TxtArama
             // 
             this.TxtArama.Location = new System.Drawing.Point(408, 43);
+            this.TxtArama.MaxLength = 100;
             this.TxtArama.Name = "TxtArama";
             this.TxtArama.Size = new System.Drawing.Size(194, 20);
             this.TxtArama.TabIndex = 8;
