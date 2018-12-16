@@ -104,22 +104,19 @@ namespace HastaneOtomasyon.Forms
         private void btnRandevuBitir_Click(object sender, EventArgs e)
         {
             var randevuListesi = Kisi.RandevuList;
+            var yeniRandevu = new Randevu();
 
-            Randevu yeniRandevu = new Randevu();
             try
             {
                 yeniRandevu.Hasta = seciliHasta;
                 yeniRandevu.Doktor = seciliDoktor;
                 yeniRandevu.Tarih=DateTime.Now;
                 yeniRandevu.Durum = true;
-               // yeniRandevu.Saat= 
-
-               
+                yeniRandevu.Saat = flowLayoutPanel1.ToString();
                 
-               //     randevuListesi.Add(yeniRandevu);
-
-
-                if (randevuListesi != null) lstDoktor.Items.AddRange(randevuListesi.ToArray());
+                // randevuListesi.Add(yeniRandevu);
+              
+                if (randevuListesi != null) lstDoktor.Items.AddRange(randevuListesi?.ToArray());
                 // gbHasta.Visible = false;
                 // gbHastaList.Visible = true;
             }
