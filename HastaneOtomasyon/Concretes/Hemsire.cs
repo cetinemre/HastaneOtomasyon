@@ -1,4 +1,5 @@
 ﻿using HastaneOtomasyon.Abstracts;
+#pragma warning disable 169
 
 namespace HastaneOtomasyon.Concretes
 {

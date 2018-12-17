@@ -14,7 +14,7 @@ namespace HastaneOtomasyon.Forms
         }
         List<Hemsire> _aramalar = new List<Hemsire>();
 
-        private void btnHemsireEkle_Click(object sender, System.EventArgs e)
+        private void btnHemsireEkle_Click(object sender, EventArgs e)
         {
 
             var hemsireListesi = Kisi.HemsireList;

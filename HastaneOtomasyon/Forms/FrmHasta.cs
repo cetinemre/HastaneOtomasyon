@@ -7,6 +7,8 @@ using System.Windows.Forms;
 // ReSharper disable UnusedMember.Local
 // ReSharper disable UnusedParameter.Local
 // ReSharper disable RedundantAssignment
+// ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable InconsistentNaming
 
 namespace HastaneOtomasyon.Forms
 {
@@ -129,7 +131,7 @@ namespace HastaneOtomasyon.Forms
 
                  randevuListesi.Add(yeniRandevu);
 
-                if (randevuListesi != null) lstDoktor.Items.AddRange(randevuListesi?.ToArray());
+                if (randevuListesi != null) lstDoktor.Items.AddRange(randevuListesi.ToArray());
                 MessageBox.Show($@"{yeniRandevu.Hasta}
                                     {yeniRandevu.Doktor}
                                     {yeniRandevu.Tarih}");
